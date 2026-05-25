@@ -8,7 +8,7 @@ from typing import Any
 
 import fitz
 import pdfplumber
-from google import genai
+from openai import OpenAI
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
@@ -22,7 +22,9 @@ OUTPUT_DIR = BASE_DIR / "output_test"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 ENV_FILE = BASE_DIR / ".env"
 
-DEFAULT_MODEL = "gemini-2.5-flash"
+DEFAULT_LLM_PROVIDER = "groq"
+DEFAULT_MODEL = "llama-3.3-70b-versatile"
+DEFAULT_API_URL = "https://api.groq.com/openai/v1"
 
 
 @dataclass
@@ -445,23 +447,46 @@ def build_extraction_context(
 
 
 def call_llm_for_extraction(prompt: str) -> dict[str, Any]:
-    api_key = (os.getenv("GEMINI_API_KEY") or load_dotenv_value("GEMINI_API_KEY")).strip()
-    model_name = (os.getenv("GEMINI_MODEL") or load_dotenv_value("GEMINI_MODEL") or DEFAULT_MODEL).strip()
+    provider = (os.getenv("LLM_PROVIDER") or load_dotenv_value("LLM_PROVIDER") or DEFAULT_LLM_PROVIDER).strip().lower()
+    api_key = (
+        os.getenv("GROQ_API_KEY")
+        or load_dotenv_value("GROQ_API_KEY")
+        or os.getenv("LLAMA_API_KEY")
+        or load_dotenv_value("LLAMA_API_KEY")
+    ).strip()
+    model_name = (
+        os.getenv("GROQ_MODEL")
+        or load_dotenv_value("GROQ_MODEL")
+        or os.getenv("LLAMA_MODEL")
+        or load_dotenv_value("LLAMA_MODEL")
+        or DEFAULT_MODEL
+    ).strip()
+    api_url = (
+        os.getenv("GROQ_API_URL")
+        or load_dotenv_value("GROQ_API_URL")
+        or os.getenv("LLAMA_API_URL")
+        or load_dotenv_value("LLAMA_API_URL")
+        or DEFAULT_API_URL
+    ).strip()
+    if provider not in {"groq", "llama"}:
+        raise RuntimeError(f"Unsupported LLM_PROVIDER for extraction pipeline: {provider}")
     if not api_key:
-        raise RuntimeError("GEMINI_API_KEY is not configured.")
+        raise RuntimeError("GROQ_API_KEY or LLAMA_API_KEY is not configured.")
 
-    client = genai.Client(api_key=api_key)
-    response = client.models.generate_content(
-        model=model_name,
-        contents=prompt,
-        config=genai.types.GenerateContentConfig(
+    client = OpenAI(api_key=api_key, base_url=api_url)
+    try:
+        response = client.chat.completions.create(
+            model=model_name,
+            messages=[{"role": "user", "content": prompt}],
             temperature=0.0,
             top_p=0.1,
-            max_output_tokens=4096,
-            response_mime_type="application/json",
-        ),
-    )
-    text = (response.text or "").strip()
+            max_tokens=4096,
+            response_format={"type": "json_object"},
+        )
+    except Exception as exc:
+        raise RuntimeError(f"LLM API failed: {exc}") from exc
+
+    text = (response.choices[0].message.content or "").strip()
     return parse_llm_json(text)
 
 
@@ -714,7 +739,14 @@ def run_pipeline() -> dict[str, Any]:
         "retrieved_chunk_count": len(retrieved_chunks),
         "fallback_pages": fallback_pages,
         "retrieval_scores": retrieval,
-        "llm_model": os.getenv("GEMINI_MODEL") or load_dotenv_value("GEMINI_MODEL") or DEFAULT_MODEL,
+        "llm_provider": os.getenv("LLM_PROVIDER") or load_dotenv_value("LLM_PROVIDER") or DEFAULT_LLM_PROVIDER,
+        "llm_model": (
+            os.getenv("GROQ_MODEL")
+            or load_dotenv_value("GROQ_MODEL")
+            or os.getenv("LLAMA_MODEL")
+            or load_dotenv_value("LLAMA_MODEL")
+            or DEFAULT_MODEL
+        ),
         "llm_error": llm_error,
     }
 

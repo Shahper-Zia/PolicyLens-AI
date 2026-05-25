@@ -8,8 +8,7 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
-from google import genai
-from google.genai import errors as genai_errors
+from openai import OpenAI
 
 
 BASE_DIR = Path(__file__).resolve().parents[1]
@@ -49,9 +48,27 @@ def load_dotenv_value(key: str) -> str:
     return ""
 
 
-LLM_PROVIDER = (os.getenv("LLM_PROVIDER") or load_dotenv_value("LLM_PROVIDER") or "deepseek").strip().lower()
-GEMINI_API_KEY = (os.getenv("GEMINI_API_KEY") or load_dotenv_value("GEMINI_API_KEY")).strip()
-GEMINI_MODEL = (os.getenv("GEMINI_MODEL") or load_dotenv_value("GEMINI_MODEL") or "gemini-2.5-flash").strip()
+LLM_PROVIDER = (os.getenv("LLM_PROVIDER") or load_dotenv_value("LLM_PROVIDER") or "groq").strip().lower()
+GROQ_API_KEY = (
+    os.getenv("GROQ_API_KEY")
+    or load_dotenv_value("GROQ_API_KEY")
+    or os.getenv("LLAMA_API_KEY")
+    or load_dotenv_value("LLAMA_API_KEY")
+).strip()
+GROQ_MODEL = (
+    os.getenv("GROQ_MODEL")
+    or load_dotenv_value("GROQ_MODEL")
+    or os.getenv("LLAMA_MODEL")
+    or load_dotenv_value("LLAMA_MODEL")
+    or "llama-3.3-70b-versatile"
+).strip()
+GROQ_API_URL = (
+    os.getenv("GROQ_API_URL")
+    or load_dotenv_value("GROQ_API_URL")
+    or os.getenv("LLAMA_API_URL")
+    or load_dotenv_value("LLAMA_API_URL")
+    or "https://api.groq.com/openai/v1"
+).strip()
 DEEPSEEK_API_KEY = (
     os.getenv("DEEPSEEK_API_KEY")
     or load_dotenv_value("DEEPSEEK_API_KEY")
@@ -64,7 +81,11 @@ DEEPSEEK_API_URL = (
     or load_dotenv_value("DEEPSEEK_API_URL")
     or "https://api.deepseek.com/chat/completions"
 ).strip()
-ACTIVE_MODEL = DEEPSEEK_MODEL if LLM_PROVIDER == "deepseek" else GEMINI_MODEL
+ACTIVE_MODEL = {
+    "deepseek": DEEPSEEK_MODEL,
+    "groq": GROQ_MODEL,
+    "llama": GROQ_MODEL,
+}.get(LLM_PROVIDER, GROQ_MODEL)
 MAX_OUTPUT_TOKENS = int(os.getenv("MAX_OUTPUT_TOKENS") or load_dotenv_value("MAX_OUTPUT_TOKENS") or "2048")
 REQUESTS_PER_MINUTE = int(os.getenv("REQUESTS_PER_MINUTE") or load_dotenv_value("REQUESTS_PER_MINUTE") or "5")
 REQUEST_DELAY_SECONDS = float(
@@ -389,64 +410,45 @@ def call_deepseek(payload: dict, retries: int = 3) -> list[dict]:
             raise
 
 
-def call_gemini(payload: dict, retries: int = 3) -> list[dict]:
-    if not GEMINI_API_KEY:
-        raise RuntimeError("GEMINI_API_KEY is not set in the environment.")
+def call_groq(payload: dict, retries: int = 3) -> list[dict]:
+    if not GROQ_API_KEY:
+        raise RuntimeError("GROQ_API_KEY or LLAMA_API_KEY is not set in the environment or .env file.")
+
+    prompt_text = prompt_text_from_payload(payload)
 
     for attempt in range(retries):
         try:
             throttle_llm_call()
             logger.info(
-                "Calling Gemini model=%s attempt=%s max_output_tokens=%s",
-                GEMINI_MODEL,
+                "Calling Groq model=%s attempt=%s max_output_tokens=%s",
+                GROQ_MODEL,
                 attempt + 1,
                 payload.get("generationConfig", {}).get("maxOutputTokens", MAX_OUTPUT_TOKENS),
             )
-            client = genai.Client(api_key=GEMINI_API_KEY)
-            response = client.models.generate_content(
-                model=GEMINI_MODEL,
-                contents=payload["contents"],
-                config=genai.types.GenerateContentConfig(
-                    temperature=payload.get("generationConfig", {}).get("temperature", 0.1),
-                    top_p=payload.get("generationConfig", {}).get("topP", 0.9),
-                    max_output_tokens=payload.get("generationConfig", {}).get("maxOutputTokens", MAX_OUTPUT_TOKENS),
-                    response_mime_type="application/json",
-                ),
+
+            client = OpenAI(api_key=GROQ_API_KEY, base_url=GROQ_API_URL)
+            response = client.chat.completions.create(
+                model=GROQ_MODEL,
+                messages=[{"role": "user", "content": prompt_text}],
+                temperature=payload.get("generationConfig", {}).get("temperature", 0.1),
+                top_p=payload.get("generationConfig", {}).get("topP", 0.9),
+                max_tokens=payload.get("generationConfig", {}).get("maxOutputTokens", MAX_OUTPUT_TOKENS),
             )
 
-            text = (response.text or "").strip()
+            text = (response.choices[0].message.content or "").strip()
             if not text:
-                logger.warning("Empty response from Gemini")
+                logger.warning("Empty response from Groq")
                 return []
 
             parsed = parse_gemini_items(text)
-            logger.info("Gemini returned %s parseable items", len(parsed))
+            logger.info("Groq returned %s parseable items", len(parsed))
             return parsed
 
-        except json.JSONDecodeError:
-            logger.warning("Failed to decode Gemini JSON response on attempt %s", attempt + 1)
-            if attempt < retries - 1:
-                time.sleep(2)
-                continue
-            return []
-
-        except genai_errors.ClientError as e:
-            logger.warning("Gemini call failed on attempt %s: %s", attempt + 1, e)
-            if is_daily_quota_error(e):
-                logger.error("Daily Gemini request quota exhausted for model=%s", GEMINI_MODEL)
-                raise
+        except Exception as e:
+            logger.warning("Groq call failed on attempt %s: %s", attempt + 1, e)
             if attempt < retries - 1:
                 retry_delay = extract_retry_delay_seconds(e)
-                sleep_seconds = retry_delay if retry_delay is not None else REQUEST_DELAY_SECONDS
-                logger.info("Sleeping %.2fs before retry after Gemini ClientError", sleep_seconds)
-                time.sleep(sleep_seconds)
-                continue
-            raise
-
-        except Exception as e:
-            logger.warning("Gemini call failed on attempt %s: %s", attempt + 1, e)
-            if attempt < retries - 1:
-                time.sleep(REQUEST_DELAY_SECONDS)
+                time.sleep(retry_delay if retry_delay is not None else REQUEST_DELAY_SECONDS)
                 continue
             raise
 
@@ -454,8 +456,8 @@ def call_gemini(payload: dict, retries: int = 3) -> list[dict]:
 def call_llm(payload: dict, retries: int = 3) -> list[dict]:
     if LLM_PROVIDER == "deepseek":
         return call_deepseek(payload, retries=retries)
-    if LLM_PROVIDER == "gemini":
-        return call_gemini(payload, retries=retries)
+    if LLM_PROVIDER in {"groq", "llama"}:
+        return call_groq(payload, retries=retries)
     raise RuntimeError(f"Unsupported LLM_PROVIDER: {LLM_PROVIDER}")
 
 

@@ -2,7 +2,7 @@ from pathlib import Path
 import json
 import sys
 
-from google import genai
+from openai import OpenAI
 
 CURRENT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = CURRENT_DIR.parent
@@ -20,20 +20,18 @@ PARSED_OUT = OUTPUT_TEST_DIR / "extractor_test_parsed.json"
 
 
 def get_raw_response(payload: dict) -> str:
-    if not b.GEMINI_API_KEY:
-        raise RuntimeError("GEMINI_API_KEY is not set.")
+    if not b.GROQ_API_KEY:
+        raise RuntimeError("GROQ_API_KEY or LLAMA_API_KEY is not set.")
 
-    client = genai.Client(api_key=b.GEMINI_API_KEY)
-    response = client.models.generate_content(
-        model=b.GEMINI_MODEL,
-        contents=payload["contents"],
-        config=genai.types.GenerateContentConfig(
-            temperature=payload.get("generationConfig", {}).get("temperature", 0.1),
-            top_p=payload.get("generationConfig", {}).get("topP", 0.9),
-            max_output_tokens=payload.get("generationConfig", {}).get("maxOutputTokens", 1024),
-        ),
+    client = OpenAI(api_key=b.GROQ_API_KEY, base_url=b.GROQ_API_URL)
+    response = client.chat.completions.create(
+        model=b.GROQ_MODEL,
+        messages=[{"role": "user", "content": b.prompt_text_from_payload(payload)}],
+        temperature=payload.get("generationConfig", {}).get("temperature", 0.1),
+        top_p=payload.get("generationConfig", {}).get("topP", 0.9),
+        max_tokens=payload.get("generationConfig", {}).get("maxOutputTokens", 1024),
     )
-    return (response.text or "").strip()
+    return (response.choices[0].message.content or "").strip()
 
 
 def main() -> None:
@@ -46,8 +44,8 @@ def main() -> None:
 
     print(f"file        : {first.name}")
     print(f"chunk_count : {len(chunks)}")
-    print(f"model       : {b.GEMINI_MODEL}")
-    print(f"api_key     : {bool(b.GEMINI_API_KEY)}")
+    print(f"model       : {b.GROQ_MODEL}")
+    print(f"api_key     : {bool(b.GROQ_API_KEY)}")
     print(f"output_dir  : {OUTPUT_TEST_DIR}")
 
     all_parsed = []
@@ -62,7 +60,7 @@ def main() -> None:
             raw = get_raw_response(payload)
             raw_lines.append(f"\n### CHUNK {idx}/3\n{raw}\n")
 
-            print("\n----- RAW GEMINI RESPONSE -----")
+            print("\n----- RAW GROQ RESPONSE -----")
             print(raw if raw else "[empty response]")
             print("----- END RAW RESPONSE -----\n")
 

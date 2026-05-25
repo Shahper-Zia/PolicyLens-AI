@@ -3,7 +3,7 @@
     "filename": "330109-4880941.pdf",
     "brand": "TREMFYA",
     "age": "FDA labelled age",
-    "step_therapy_requirements": "The patient is unable to take THREE preferred products, where indicated, for the given diagnosis due to a trial and inadequate treatment response or intolerance, or a contraindication. Preferred products include: a preferred ustekinumab product, and TWO additional preferred products (a preferred adalimumab product OR Enbrel, Rinvoq, or Otezla).",
+    "step_therapy_requirements": "## Applicable Drug List:\n\nNon-Preferred: Tremfya\n\n## Policy/Guideline:\n\n## Documentation for all indications:\n\nThe patient is unable to take THREE preferred products, where indicated, for the given diagnosis due to a trial and inadequate treatment response or intolerance, or a contraindication. Documentation is required for approval.",
     "number_of_steps_brands": "3",
     "number_of_steps_generic": "NA",
     "step_through_phototherapy": "No",
@@ -11,176 +11,105 @@
     "initial_auth_duration": "12",
     "reauthorization_duration": "12",
     "reauthorization_required": "Yes",
-    "reauthorization_requirements": "Reduction in body surface area (BSA) affected from baseline or improvement in signs and symptoms from baseline (e.g., itching, redness, flaking, scaling, burning, cracking, pain) for PsO; positive clinical response for PsA; positive clinical response to therapy or remission for UC/CD.",
-    "specialist_types": "dermatologist, rheumatologist, gastroenterologist",
-    "quantity_limits": "Tremfya 100 mg/mL prefilled syringe/One-press injector: 1 syringe/injector per 56 days (Exception: 2 syringes/injectors per 28 days); Tremfya 200 mg/2 mL prefilled syringe/pen: 1 syringe/pen per 28 days (Exception: 6 syringes/pens per 56 days); Tremfya 200 mg/2 mL prefilled pen Induction Pack for Crohn's Disease: Exception limit: 3 cartons (6 pens) per 56 days.",
+    "reauthorization_requirements": "## Plaque psoriasis (PsO) 1-6\n\nAuthorization of 12 months may be granted for all adult members (including new members) who are using the requested medication for moderate to severe plaque psoriasis and who achieve or maintain a positive clinical response as evidenced by low disease activity or improvement in signs and symptoms of the condition when either of the following is met:\n\n- Reduction in body surface area (BSA) affected from baseline\n- Improvement in signs and symptoms from baseline (e.g., itching, redness, flaking, scaling, burning, cracking, pain)",
+    "specialist_types": null,
+    "quantity_limits": "AETNA BETTER HEALTH®\nCoverage Policy/Guideline; Name: Tremfya Page: 2 of 7; Effective Date: 5/1/2025 Last Review Date: 4/2025; ☐Illinois Florida ☒Florida Kids\nApplies ☐\n☐New Jersey ☒Maryland Michigan\nto: ☐\n☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD; AETNA BETTER HEALTH®\nCoverage Policy/Guideline; Name: Tremfya Page: 3 of 7",
     "access_score": null
   },
   "source_provenance_mappings": {
     "age": {
+      "method": "heuristic",
       "source_ids": [
-        "chunk_2"
-      ],
-      "page_numbers": [
-        1
-      ],
-      "evidence_snippets": [
-        "Treatment of adult patients"
+        "chunk_2",
+        "chunk_9",
+        "chunk_11",
+        "chunk_14",
+        "chunk_23"
       ]
     },
     "step_therapy_requirements": {
+      "method": "heuristic",
       "source_ids": [
         "chunk_3",
         "chunk_4"
-      ],
-      "page_numbers": [
-        1,
-        1
-      ],
-      "evidence_snippets": [
-        "The patient is unable to take THREE preferred products",
-        "A preferred ustekinumab product",
-        "TWO additional preferred products",
-        "A preferred adalimumab product OR Enbrel",
-        "Rinvoq",
-        "Otezla"
       ]
     },
     "number_of_steps_brands": {
+      "method": "heuristic",
       "source_ids": [
         "chunk_3",
         "chunk_4"
-      ],
-      "page_numbers": [
-        1,
-        1
-      ],
-      "evidence_snippets": [
-        "The patient is unable to take THREE preferred products"
       ]
     },
     "number_of_steps_generic": {
+      "method": "heuristic",
       "source_ids": [
-        "chunk_3"
-      ],
-      "page_numbers": [
-        1
-      ],
-      "evidence_snippets": [
-        "The patient is unable to take THREE preferred products"
+        "chunk_3",
+        "chunk_4"
       ]
     },
     "step_through_phototherapy": {
+      "method": "heuristic",
       "source_ids": [
-        "chunk_10",
-        "pdf_page_3"
-      ],
-      "page_numbers": [
-        2,
-        3
-      ],
-      "evidence_snippets": [
-        "Member has had an inadequate response or intolerance to either phototherapy (e.g., UVB, PUVA) or pharmacologic treatment"
+        "chunk_2",
+        "chunk_10"
       ]
     },
     "tb_test_required": {
+      "method": "heuristic",
       "source_ids": [
-        "chunk_19"
-      ],
-      "page_numbers": [
-        5
-      ],
-      "evidence_snippets": [
-        "Member has had a documented negative tuberculosis (TB) test"
+        "chunk_19",
+        "chunk_23"
       ]
     },
     "initial_auth_duration": {
+      "method": "heuristic",
       "source_ids": [
-        "chunk_22"
-      ],
-      "page_numbers": [
-        6
-      ],
-      "evidence_snippets": [
-        "Initial and Renewal Approval: 12 months"
+        "chunk_9",
+        "chunk_11",
+        "chunk_12",
+        "chunk_14"
       ]
     },
     "reauthorization_duration": {
+      "method": "heuristic",
       "source_ids": [
-        "chunk_22"
-      ],
-      "page_numbers": [
-        6
-      ],
-      "evidence_snippets": [
-        "Initial and Renewal Approval: 12 months"
+        "chunk_9",
+        "chunk_11",
+        "chunk_12",
+        "chunk_14"
       ]
     },
     "reauthorization_required": {
+      "method": "heuristic",
       "source_ids": [
-        "chunk_22"
-      ],
-      "page_numbers": [
-        6
-      ],
-      "evidence_snippets": [
-        "Initial and Renewal Approval: 12 months"
+        "chunk_14"
       ]
     },
     "reauthorization_requirements": {
+      "method": "heuristic",
       "source_ids": [
-        "chunk_14",
-        "pdf_page_2",
-        "pdf_page_5"
-      ],
-      "page_numbers": [
-        4,
-        2,
-        5
-      ],
-      "evidence_snippets": [
-        "Reduction in body surface area (BSA) affected from baseline",
-        "Improvement in signs and symptoms from baseline",
-        "Chart notes or medical record documentation supporting positive clinical response"
+        "chunk_14"
       ]
     },
     "specialist_types": {
-      "source_ids": [
-        "pdf_page_2"
-      ],
-      "page_numbers": [
-        2
-      ],
-      "evidence_snippets": [
-        "dermatologist",
-        "rheumatologist",
-        "gastroenterologist"
-      ]
+      "method": "heuristic",
+      "source_ids": []
     },
     "quantity_limits": {
+      "method": "heuristic",
       "source_ids": [
         "chunk_22"
-      ],
-      "page_numbers": [
-        6
-      ],
-      "evidence_snippets": [
-        "1 syringe/injector per 56 days",
-        "Exception limit: 2 syringes/injectors per 28 days",
-        "1 syringe/pen per 28 days",
-        "Exception limit: 6 syringes/pens per 56 days",
-        "Exception limit: 3 cartons (6 pens) per 56 days"
       ]
+    },
+    "access_score": {
+      "method": "heuristic",
+      "source_ids": []
     }
   },
-  "reasoning_summary": [
-    "The policy requires the patient to try three preferred products, which are all biologics/targeted therapies, resulting in 3 branded steps.",
-    "Phototherapy is listed as an option for PsO but is not a mandatory prerequisite step for all patients, as it is part of an OR condition.",
-    "Reauthorization is required as evidenced by the explicit 12-month renewal duration and continuation criteria.",
-    "Age is defined as 'adult' across all indications, mapping to 'FDA labelled age'.",
-    "Quantity limits are explicitly stated in the 'Quantity Level Limit' section."
+  "debug_notes": [
+    "Heuristic fallback used because LLM extraction was unavailable."
   ],
-  "debug_notes": [],
   "retrieved_markdown_chunks": [
     {
       "filename": "330109-4880941.pdf",
@@ -929,7 +858,8 @@
         ]
       }
     },
-    "llm_model": "gemini-3.1-flash-lite",
-    "llm_error": null
+    "llm_provider": "groq",
+    "llm_model": "llama-3.1-8b-instant",
+    "llm_error": "RuntimeError: LLM API failed: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-8b-instant` in organization `org_01ksfp3ybae7grsannxe4hn32z` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 13434, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
   }
 }
