@@ -378,7 +378,12 @@ git clone https://github.com/yourusername/PolicyLens-AI.git
 
 cd PolicyLens-AI
 
+python -m venv .venv
+.venv\\Scripts\\activate
+
 pip install -r requirements.txt
+
+python ./src/main.py
 ```
 
 ---
