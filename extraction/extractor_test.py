@@ -2,7 +2,7 @@ from pathlib import Path
 import json
 import sys
 
-from openai import OpenAI
+from extraction.llm_client import call_llm_text, resolve_model
 
 CURRENT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = CURRENT_DIR.parent
@@ -20,18 +20,16 @@ PARSED_OUT = OUTPUT_TEST_DIR / "extractor_test_parsed.json"
 
 
 def get_raw_response(payload: dict) -> str:
-    if not b.GROQ_API_KEY:
-        raise RuntimeError("GROQ_API_KEY or LLAMA_API_KEY is not set.")
-
-    client = OpenAI(api_key=b.GROQ_API_KEY, base_url=b.GROQ_API_URL)
-    response = client.chat.completions.create(
-        model=b.GROQ_MODEL,
-        messages=[{"role": "user", "content": b.prompt_text_from_payload(payload)}],
+    provider = b.LLM_PROVIDER
+    return call_llm_text(
+        b.prompt_text_from_payload(payload),
+        provider=provider,
+        model=resolve_model(provider),
         temperature=payload.get("generationConfig", {}).get("temperature", 0.1),
         top_p=payload.get("generationConfig", {}).get("topP", 0.9),
         max_tokens=payload.get("generationConfig", {}).get("maxOutputTokens", 1024),
+        json_mode=False,
     )
-    return (response.choices[0].message.content or "").strip()
 
 
 def main() -> None:
@@ -44,8 +42,8 @@ def main() -> None:
 
     print(f"file        : {first.name}")
     print(f"chunk_count : {len(chunks)}")
-    print(f"model       : {b.GROQ_MODEL}")
-    print(f"api_key     : {bool(b.GROQ_API_KEY)}")
+    print(f"provider    : {b.LLM_PROVIDER}")
+    print(f"model       : {resolve_model(b.LLM_PROVIDER)}")
     print(f"output_dir  : {OUTPUT_TEST_DIR}")
 
     all_parsed = []

@@ -858,8 +858,8 @@
         ]
       }
     },
-    "llm_provider": "groq",
-    "llm_model": "llama-3.1-8b-instant",
-    "llm_error": "RuntimeError: LLM API failed: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-8b-instant` in organization `org_01ksfp3ybae7grsannxe4hn32z` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 13434, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+    "llm_provider": "gemini",
+    "llm_model": "gemini-3.1-flash-lite",
+    "llm_error": "RuntimeError: LLM API failed: 403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'Your API key was reported as leaked. Please use another API key.', 'status': 'PERMISSION_DENIED'}}"
   }
 }

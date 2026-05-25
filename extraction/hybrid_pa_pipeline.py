@@ -2,14 +2,21 @@ import csv
 import json
 import os
 import re
+import sys
 from dataclasses import dataclass, asdict
 from pathlib import Path
 from typing import Any
 
 import fitz
 import pdfplumber
-from openai import OpenAI
 from sklearn.feature_extraction.text import TfidfVectorizer
+
+CURRENT_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = CURRENT_DIR.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from extraction.llm_client import call_llm_text, resolve_model, resolve_provider
 
 
 BASE_DIR = Path(__file__).resolve().parents[1]
@@ -21,11 +28,6 @@ OUTPUT_SCHEMA_FILE = BASE_DIR / "output_schema.py"
 OUTPUT_DIR = BASE_DIR / "output_test"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 ENV_FILE = BASE_DIR / ".env"
-
-DEFAULT_LLM_PROVIDER = "groq"
-DEFAULT_MODEL = "llama-3.3-70b-versatile"
-DEFAULT_API_URL = "https://api.groq.com/openai/v1"
-
 
 @dataclass
 class Chunk:
@@ -447,46 +449,21 @@ def build_extraction_context(
 
 
 def call_llm_for_extraction(prompt: str) -> dict[str, Any]:
-    provider = (os.getenv("LLM_PROVIDER") or load_dotenv_value("LLM_PROVIDER") or DEFAULT_LLM_PROVIDER).strip().lower()
-    api_key = (
-        os.getenv("GROQ_API_KEY")
-        or load_dotenv_value("GROQ_API_KEY")
-        or os.getenv("LLAMA_API_KEY")
-        or load_dotenv_value("LLAMA_API_KEY")
-    ).strip()
-    model_name = (
-        os.getenv("GROQ_MODEL")
-        or load_dotenv_value("GROQ_MODEL")
-        or os.getenv("LLAMA_MODEL")
-        or load_dotenv_value("LLAMA_MODEL")
-        or DEFAULT_MODEL
-    ).strip()
-    api_url = (
-        os.getenv("GROQ_API_URL")
-        or load_dotenv_value("GROQ_API_URL")
-        or os.getenv("LLAMA_API_URL")
-        or load_dotenv_value("LLAMA_API_URL")
-        or DEFAULT_API_URL
-    ).strip()
-    if provider not in {"groq", "llama"}:
-        raise RuntimeError(f"Unsupported LLM_PROVIDER for extraction pipeline: {provider}")
-    if not api_key:
-        raise RuntimeError("GROQ_API_KEY or LLAMA_API_KEY is not configured.")
-
-    client = OpenAI(api_key=api_key, base_url=api_url)
+    provider = resolve_provider()
+    model_name = resolve_model(provider)
     try:
-        response = client.chat.completions.create(
+        text = call_llm_text(
+            prompt,
+            provider=provider,
             model=model_name,
-            messages=[{"role": "user", "content": prompt}],
             temperature=0.0,
             top_p=0.1,
             max_tokens=4096,
-            response_format={"type": "json_object"},
+            json_mode=True,
         )
     except Exception as exc:
         raise RuntimeError(f"LLM API failed: {exc}") from exc
 
-    text = (response.choices[0].message.content or "").strip()
     return parse_llm_json(text)
 
 
@@ -739,14 +716,8 @@ def run_pipeline() -> dict[str, Any]:
         "retrieved_chunk_count": len(retrieved_chunks),
         "fallback_pages": fallback_pages,
         "retrieval_scores": retrieval,
-        "llm_provider": os.getenv("LLM_PROVIDER") or load_dotenv_value("LLM_PROVIDER") or DEFAULT_LLM_PROVIDER,
-        "llm_model": (
-            os.getenv("GROQ_MODEL")
-            or load_dotenv_value("GROQ_MODEL")
-            or os.getenv("LLAMA_MODEL")
-            or load_dotenv_value("LLAMA_MODEL")
-            or DEFAULT_MODEL
-        ),
+        "llm_provider": resolve_provider(),
+        "llm_model": resolve_model(resolve_provider()),
         "llm_error": llm_error,
     }
 

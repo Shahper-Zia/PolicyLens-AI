@@ -1,0 +1,4336 @@
+{
+  "filename": "330109-4880941.pdf",
+  "brand_name": "TREMFYA",
+  "chunk_count": 233,
+  "source_counts": {
+    "docling_md": 219,
+    "pdfplumber_text": 7,
+    "table": 7,
+    "fitz_fallback": 0
+  },
+  "parameter_queries": {
+    "Age": "TREMFYA age eligibility or age restrictions prior authorization",
+    "Step Therapy Requirements Documented in Policy": "TREMFYA step therapy preferred products prior authorization",
+    "Number of Steps through Brands": "TREMFYA branded biologic step therapy preferred products",
+    "Number of Steps through Generic": "TREMFYA generic non-biologic step therapy topicals",
+    "Step through-Phototherapy": "TREMFYA phototherapy PUVA UVB prior authorization",
+    "TB Test required": "TREMFYA tuberculosis TB test screening prior authorization",
+    "Initial Authorization Duration(in-months)": "TREMFYA initial authorization duration months",
+    "Reauthorization Duration(in-months)": "TREMFYA reauthorization duration months",
+    "Reauthorization Required": "TREMFYA renewal reauthorization required",
+    "Reauthorization Requirements Documented in Policy": "TREMFYA continuation of therapy reauthorization criteria",
+    "Specialist Types": "TREMFYA prescriber specialty specialist types",
+    "Quantity Limits": "TREMFYA quantity limit dosing limit quantity level limit"
+  },
+  "retrieval": {
+    "Age": [
+      {
+        "chunk_id": "pdftext_6",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 6",
+        "page_number": 6,
+        "score": 0.9112,
+        "semantic_score": 0.0541,
+        "keyword_score": 0.8571
+      },
+      {
+        "chunk_id": "md_196",
+        "source_type": "docling_md",
+        "section_title": "Quantity Level Limit:",
+        "page_number": 6,
+        "score": 0.7627,
+        "semantic_score": 0.0484,
+        "keyword_score": 0.7143
+      },
+      {
+        "chunk_id": "pdftext_1",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 1",
+        "page_number": 1,
+        "score": 0.7596,
+        "semantic_score": 0.0453,
+        "keyword_score": 0.7143
+      },
+      {
+        "chunk_id": "table_7_1",
+        "source_type": "table",
+        "section_title": "Page 7 Table 1",
+        "page_number": 7,
+        "score": 0.5968,
+        "semantic_score": 0.0182,
+        "keyword_score": 0.4286
+      },
+      {
+        "chunk_id": "table_6_1",
+        "source_type": "table",
+        "section_title": "Page 6 Table 1",
+        "page_number": 6,
+        "score": 0.5968,
+        "semantic_score": 0.0182,
+        "keyword_score": 0.4286
+      },
+      {
+        "chunk_id": "table_5_1",
+        "source_type": "table",
+        "section_title": "Page 5 Table 1",
+        "page_number": 5,
+        "score": 0.5968,
+        "semantic_score": 0.0182,
+        "keyword_score": 0.4286
+      }
+    ],
+    "Step Therapy Requirements Documented in Policy": [
+      {
+        "chunk_id": "pdftext_1",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 1",
+        "page_number": 1,
+        "score": 1.0767,
+        "semantic_score": 0.2196,
+        "keyword_score": 0.8571
+      },
+      {
+        "chunk_id": "md_29",
+        "source_type": "docling_md",
+        "section_title": "THREE preferred products:",
+        "page_number": 1,
+        "score": 0.739,
+        "semantic_score": 0.4533,
+        "keyword_score": 0.2857
+      },
+      {
+        "chunk_id": "md_30",
+        "source_type": "docling_md",
+        "section_title": "THREE preferred products:",
+        "page_number": 1,
+        "score": 0.4985,
+        "semantic_score": 0.2128,
+        "keyword_score": 0.2857
+      },
+      {
+        "chunk_id": "pdftext_2",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 2",
+        "page_number": 2,
+        "score": 0.4855,
+        "semantic_score": 0.0569,
+        "keyword_score": 0.4286
+      },
+      {
+        "chunk_id": "md_196",
+        "source_type": "docling_md",
+        "section_title": "Quantity Level Limit:",
+        "page_number": 6,
+        "score": 0.4851,
+        "semantic_score": 0.0565,
+        "keyword_score": 0.4286
+      },
+      {
+        "chunk_id": "pdftext_6",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 6",
+        "page_number": 6,
+        "score": 0.4794,
+        "semantic_score": 0.0508,
+        "keyword_score": 0.4286
+      }
+    ],
+    "Number of Steps through Brands": [
+      {
+        "chunk_id": "pdftext_1",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 1",
+        "page_number": 1,
+        "score": 0.7486,
+        "semantic_score": 0.1772,
+        "keyword_score": 0.5714
+      },
+      {
+        "chunk_id": "md_29",
+        "source_type": "docling_md",
+        "section_title": "THREE preferred products:",
+        "page_number": 1,
+        "score": 0.7188,
+        "semantic_score": 0.4331,
+        "keyword_score": 0.2857
+      },
+      {
+        "chunk_id": "md_30",
+        "source_type": "docling_md",
+        "section_title": "THREE preferred products:",
+        "page_number": 1,
+        "score": 0.489,
+        "semantic_score": 0.2033,
+        "keyword_score": 0.2857
+      },
+      {
+        "chunk_id": "pdftext_2",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 2",
+        "page_number": 2,
+        "score": 0.4812,
+        "semantic_score": 0.0526,
+        "keyword_score": 0.4286
+      },
+      {
+        "chunk_id": "pdftext_5",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 5",
+        "page_number": 5,
+        "score": 0.4551,
+        "semantic_score": 0.0265,
+        "keyword_score": 0.4286
+      },
+      {
+        "chunk_id": "pdftext_3",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 3",
+        "page_number": 3,
+        "score": 0.442,
+        "semantic_score": 0.0134,
+        "keyword_score": 0.4286
+      }
+    ],
+    "Number of Steps through Generic": [
+      {
+        "chunk_id": "pdftext_2",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 2",
+        "page_number": 2,
+        "score": 0.4791,
+        "semantic_score": 0.0506,
+        "keyword_score": 0.4286
+      },
+      {
+        "chunk_id": "pdftext_1",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 1",
+        "page_number": 1,
+        "score": 0.4695,
+        "semantic_score": 0.0409,
+        "keyword_score": 0.4286
+      },
+      {
+        "chunk_id": "md_25",
+        "source_type": "docling_md",
+        "section_title": "Applicable Drug List:",
+        "page_number": 1,
+        "score": 0.4602,
+        "semantic_score": 0.1745,
+        "keyword_score": 0.2857
+      },
+      {
+        "chunk_id": "pdftext_5",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 5",
+        "page_number": 5,
+        "score": 0.454,
+        "semantic_score": 0.0255,
+        "keyword_score": 0.4286
+      },
+      {
+        "chunk_id": "pdftext_3",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 3",
+        "page_number": 3,
+        "score": 0.4414,
+        "semantic_score": 0.0129,
+        "keyword_score": 0.4286
+      },
+      {
+        "chunk_id": "md_198",
+        "source_type": "docling_md",
+        "section_title": "References:",
+        "page_number": 6,
+        "score": 0.4308,
+        "semantic_score": 0.0022,
+        "keyword_score": 0.4286
+      }
+    ],
+    "Step through-Phototherapy": [
+      {
+        "chunk_id": "pdftext_3",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 3",
+        "page_number": 3,
+        "score": 0.9015,
+        "semantic_score": 0.0681,
+        "keyword_score": 0.8333
+      },
+      {
+        "chunk_id": "pdftext_1",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 1",
+        "page_number": 1,
+        "score": 0.7376,
+        "semantic_score": 0.0709,
+        "keyword_score": 0.6667
+      },
+      {
+        "chunk_id": "md_94",
+        "source_type": "docling_md",
+        "section_title": "Document",
+        "page_number": 3,
+        "score": 0.5763,
+        "semantic_score": 0.0763,
+        "keyword_score": 0.5
+      },
+      {
+        "chunk_id": "md_196",
+        "source_type": "docling_md",
+        "section_title": "Quantity Level Limit:",
+        "page_number": 6,
+        "score": 0.5605,
+        "semantic_score": 0.0605,
+        "keyword_score": 0.5
+      },
+      {
+        "chunk_id": "pdftext_6",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 6",
+        "page_number": 6,
+        "score": 0.5544,
+        "semantic_score": 0.0544,
+        "keyword_score": 0.5
+      },
+      {
+        "chunk_id": "md_32",
+        "source_type": "docling_md",
+        "section_title": "Documentation",
+        "page_number": 1,
+        "score": 0.5089,
+        "semantic_score": 0.1755,
+        "keyword_score": 0.3333
+      }
+    ],
+    "TB Test required": [
+      {
+        "chunk_id": "pdftext_5",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 5",
+        "page_number": 5,
+        "score": 0.973,
+        "semantic_score": 0.1396,
+        "keyword_score": 0.8333
+      },
+      {
+        "chunk_id": "md_162",
+        "source_type": "docling_md",
+        "section_title": "Other1,7",
+        "page_number": 5,
+        "score": 0.594,
+        "semantic_score": 0.2607,
+        "keyword_score": 0.3333
+      },
+      {
+        "chunk_id": "md_196",
+        "source_type": "docling_md",
+        "section_title": "Quantity Level Limit:",
+        "page_number": 6,
+        "score": 0.5562,
+        "semantic_score": 0.0562,
+        "keyword_score": 0.5
+      },
+      {
+        "chunk_id": "pdftext_1",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 1",
+        "page_number": 1,
+        "score": 0.5526,
+        "semantic_score": 0.0526,
+        "keyword_score": 0.5
+      },
+      {
+        "chunk_id": "pdftext_6",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 6",
+        "page_number": 6,
+        "score": 0.5506,
+        "semantic_score": 0.0506,
+        "keyword_score": 0.5
+      },
+      {
+        "chunk_id": "md_32",
+        "source_type": "docling_md",
+        "section_title": "Documentation",
+        "page_number": 1,
+        "score": 0.4965,
+        "semantic_score": 0.1632,
+        "keyword_score": 0.3333
+      }
+    ],
+    "Initial Authorization Duration(in-months)": [
+      {
+        "chunk_id": "pdftext_6",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 6",
+        "page_number": 6,
+        "score": 1.068,
+        "semantic_score": 0.068,
+        "keyword_score": 1.0
+      },
+      {
+        "chunk_id": "pdftext_3",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 3",
+        "page_number": 3,
+        "score": 0.8748,
+        "semantic_score": 0.0748,
+        "keyword_score": 0.8
+      },
+      {
+        "chunk_id": "pdftext_2",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 2",
+        "page_number": 2,
+        "score": 0.8469,
+        "semantic_score": 0.0469,
+        "keyword_score": 0.8
+      },
+      {
+        "chunk_id": "pdftext_4",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 4",
+        "page_number": 4,
+        "score": 0.6543,
+        "semantic_score": 0.0543,
+        "keyword_score": 0.6
+      },
+      {
+        "chunk_id": "pdftext_5",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 5",
+        "page_number": 5,
+        "score": 0.6369,
+        "semantic_score": 0.0369,
+        "keyword_score": 0.6
+      },
+      {
+        "chunk_id": "md_194",
+        "source_type": "docling_md",
+        "section_title": "Approval:",
+        "page_number": 6,
+        "score": 0.5609,
+        "semantic_score": 0.1609,
+        "keyword_score": 0.4
+      }
+    ],
+    "Reauthorization Duration(in-months)": [
+      {
+        "chunk_id": "pdftext_6",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 6",
+        "page_number": 6,
+        "score": 0.8038,
+        "semantic_score": 0.0538,
+        "keyword_score": 0.75
+      },
+      {
+        "chunk_id": "pdftext_3",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 3",
+        "page_number": 3,
+        "score": 0.8015,
+        "semantic_score": 0.0515,
+        "keyword_score": 0.75
+      },
+      {
+        "chunk_id": "pdftext_4",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 4",
+        "page_number": 4,
+        "score": 0.5328,
+        "semantic_score": 0.0328,
+        "keyword_score": 0.5
+      },
+      {
+        "chunk_id": "pdftext_5",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 5",
+        "page_number": 5,
+        "score": 0.5267,
+        "semantic_score": 0.0267,
+        "keyword_score": 0.5
+      },
+      {
+        "chunk_id": "pdftext_2",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 2",
+        "page_number": 2,
+        "score": 0.5176,
+        "semantic_score": 0.0176,
+        "keyword_score": 0.5
+      },
+      {
+        "chunk_id": "md_203",
+        "source_type": "docling_md",
+        "section_title": "AETNA BETTER HEALTH®",
+        "page_number": 6,
+        "score": 0.4908,
+        "semantic_score": 0.2408,
+        "keyword_score": 0.25
+      }
+    ],
+    "Reauthorization Required": [
+      {
+        "chunk_id": "pdftext_6",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 6",
+        "page_number": 6,
+        "score": 0.5465,
+        "semantic_score": 0.0465,
+        "keyword_score": 0.5
+      },
+      {
+        "chunk_id": "pdftext_1",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 1",
+        "page_number": 1,
+        "score": 0.544,
+        "semantic_score": 0.044,
+        "keyword_score": 0.5
+      },
+      {
+        "chunk_id": "md_203",
+        "source_type": "docling_md",
+        "section_title": "AETNA BETTER HEALTH®",
+        "page_number": 6,
+        "score": 0.4794,
+        "semantic_score": 0.2294,
+        "keyword_score": 0.25
+      },
+      {
+        "chunk_id": "md_170",
+        "source_type": "docling_md",
+        "section_title": "AETNA BETTER HEALTH®",
+        "page_number": 5,
+        "score": 0.4794,
+        "semantic_score": 0.2294,
+        "keyword_score": 0.25
+      },
+      {
+        "chunk_id": "md_139",
+        "source_type": "docling_md",
+        "section_title": "AETNA BETTER HEALTH®",
+        "page_number": 4,
+        "score": 0.4794,
+        "semantic_score": 0.2294,
+        "keyword_score": 0.25
+      },
+      {
+        "chunk_id": "md_108",
+        "source_type": "docling_md",
+        "section_title": "AETNA BETTER HEALTH®",
+        "page_number": 3,
+        "score": 0.4794,
+        "semantic_score": 0.2294,
+        "keyword_score": 0.25
+      }
+    ],
+    "Reauthorization Requirements Documented in Policy": [
+      {
+        "chunk_id": "md_125",
+        "source_type": "docling_md",
+        "section_title": "Continuation of Therapy",
+        "page_number": 4,
+        "score": 0.9248,
+        "semantic_score": 0.5248,
+        "keyword_score": 0.4
+      },
+      {
+        "chunk_id": "pdftext_2",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 2",
+        "page_number": 2,
+        "score": 0.8996,
+        "semantic_score": 0.0996,
+        "keyword_score": 0.8
+      },
+      {
+        "chunk_id": "pdftext_1",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 1",
+        "page_number": 1,
+        "score": 0.6462,
+        "semantic_score": 0.0462,
+        "keyword_score": 0.6
+      },
+      {
+        "chunk_id": "pdftext_4",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 4",
+        "page_number": 4,
+        "score": 0.6366,
+        "semantic_score": 0.0366,
+        "keyword_score": 0.6
+      },
+      {
+        "chunk_id": "pdftext_3",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 3",
+        "page_number": 3,
+        "score": 0.635,
+        "semantic_score": 0.035,
+        "keyword_score": 0.6
+      },
+      {
+        "chunk_id": "md_19",
+        "source_type": "docling_md",
+        "section_title": "Intent:",
+        "page_number": 1,
+        "score": 0.4679,
+        "semantic_score": 0.0679,
+        "keyword_score": 0.4
+      }
+    ],
+    "Specialist Types": [
+      {
+        "chunk_id": "md_66",
+        "source_type": "docling_md",
+        "section_title": "Prescriber Specialty:",
+        "page_number": 2,
+        "score": 0.9517,
+        "semantic_score": 0.5517,
+        "keyword_score": 0.4
+      },
+      {
+        "chunk_id": "pdftext_2",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 2",
+        "page_number": 2,
+        "score": 0.6384,
+        "semantic_score": 0.0384,
+        "keyword_score": 0.6
+      },
+      {
+        "chunk_id": "md_203",
+        "source_type": "docling_md",
+        "section_title": "AETNA BETTER HEALTH®",
+        "page_number": 6,
+        "score": 0.401,
+        "semantic_score": 0.201,
+        "keyword_score": 0.2
+      },
+      {
+        "chunk_id": "md_170",
+        "source_type": "docling_md",
+        "section_title": "AETNA BETTER HEALTH®",
+        "page_number": 5,
+        "score": 0.401,
+        "semantic_score": 0.201,
+        "keyword_score": 0.2
+      },
+      {
+        "chunk_id": "md_139",
+        "source_type": "docling_md",
+        "section_title": "AETNA BETTER HEALTH®",
+        "page_number": 4,
+        "score": 0.401,
+        "semantic_score": 0.201,
+        "keyword_score": 0.2
+      },
+      {
+        "chunk_id": "md_108",
+        "source_type": "docling_md",
+        "section_title": "AETNA BETTER HEALTH®",
+        "page_number": 3,
+        "score": 0.401,
+        "semantic_score": 0.201,
+        "keyword_score": 0.2
+      }
+    ],
+    "Quantity Limits": [
+      {
+        "chunk_id": "md_195",
+        "source_type": "docling_md",
+        "section_title": "Quantity Level Limit:",
+        "page_number": 6,
+        "score": 1.4725,
+        "semantic_score": 0.7225,
+        "keyword_score": 0.75
+      },
+      {
+        "chunk_id": "pdftext_6",
+        "source_type": "pdfplumber_text",
+        "section_title": "PDF Page 6",
+        "page_number": 6,
+        "score": 1.1854,
+        "semantic_score": 0.1854,
+        "keyword_score": 1.0
+      },
+      {
+        "chunk_id": "md_196",
+        "source_type": "docling_md",
+        "section_title": "Quantity Level Limit:",
+        "page_number": 6,
+        "score": 0.6167,
+        "semantic_score": 0.1167,
+        "keyword_score": 0.5
+      },
+      {
+        "chunk_id": "md_188",
+        "source_type": "docling_md",
+        "section_title": "Dosage and Administration",
+        "page_number": 6,
+        "score": 0.5396,
+        "semantic_score": 0.0396,
+        "keyword_score": 0.5
+      },
+      {
+        "chunk_id": "md_192",
+        "source_type": "docling_md",
+        "section_title": "Approval Duration and Quantity Restrictions:",
+        "page_number": 6,
+        "score": 0.394,
+        "semantic_score": 0.144,
+        "keyword_score": 0.25
+      },
+      {
+        "chunk_id": "table_7_1",
+        "source_type": "table",
+        "section_title": "Page 7 Table 1",
+        "page_number": 7,
+        "score": 0.2905,
+        "semantic_score": 0.0155,
+        "keyword_score": 0.125
+      }
+    ]
+  },
+  "chunks": [
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_1",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 1,
+      "text": "Page:",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_2",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 1,
+      "text": "1 of 7",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_3",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 1,
+      "text": "Effective Date:",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_4",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 1,
+      "text": "5/1/2025",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_5",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 1,
+      "text": "Last Review Date:",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_6",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 1,
+      "text": "4/2025",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_7",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 1,
+      "text": "Applies",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_8",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 1,
+      "text": "to:",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_9",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 1,
+      "text": "- [ ] ☐Illinois",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_10",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 1,
+      "text": "- [ ] New Jersey ☐",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_11",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 1,
+      "text": "- [ ] Pennsylvania Kids ☒",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_12",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 1,
+      "text": "- [ ] ☐Florida",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_13",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 1,
+      "text": "- [x] Maryland ☒",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_14",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 1,
+      "text": "- [ ] Virginia ☐",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_15",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 1,
+      "text": "- [x] ☒ Florida Kids",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_16",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 1,
+      "text": "- [ ] ☐ Michigan",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_17",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 1,
+      "text": "- [ ] ☒Kentucky PRMD",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_18",
+      "source_type": "docling_md",
+      "section_title": "Intent:",
+      "page_number": 1,
+      "text": "## Intent:",
+      "heading_path": [
+        "Intent:"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_19",
+      "source_type": "docling_md",
+      "section_title": "Intent:",
+      "page_number": 1,
+      "text": "The intent of this policy/guideline is to provide information to the prescribing practitioner outlining the coverage criteria for Tremfya under the patient's prescription drug benefit.",
+      "heading_path": [
+        "Intent:"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_20",
+      "source_type": "docling_md",
+      "section_title": "Description:",
+      "page_number": 1,
+      "text": "## Description:",
+      "heading_path": [
+        "Description:"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_21",
+      "source_type": "docling_md",
+      "section_title": "FDA -Approved Indications",
+      "page_number": 1,
+      "text": "## FDA -Approved Indications",
+      "heading_path": [
+        "FDA -Approved Indications"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_22",
+      "source_type": "docling_md",
+      "section_title": "FDA -Approved Indications",
+      "page_number": 1,
+      "text": "- Treatment of adult patients with moderate to severe plaque psoriasis (PsO) who are candidates for systemic therapy or phototherapy\n- Treatment of adult patients with active psoriatic arthritis (PsA)\n- Treatment of moderately to severely active ulcerative colitis (UC) in adults\n- Treatment of moderately to severely active Crohn's disease (CD) in adults",
+      "heading_path": [
+        "FDA -Approved Indications"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_23",
+      "source_type": "docling_md",
+      "section_title": "FDA -Approved Indications",
+      "page_number": 1,
+      "text": "All other indications are considered experimental/investigational and not medically necessary.",
+      "heading_path": [
+        "FDA -Approved Indications"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_24",
+      "source_type": "docling_md",
+      "section_title": "Applicable Drug List:",
+      "page_number": 1,
+      "text": "## Applicable Drug List:",
+      "heading_path": [
+        "Applicable Drug List:"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_25",
+      "source_type": "docling_md",
+      "section_title": "Applicable Drug List:",
+      "page_number": 1,
+      "text": "Non-Preferred: Tremfya",
+      "heading_path": [
+        "Applicable Drug List:"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_26",
+      "source_type": "docling_md",
+      "section_title": "Policy/Guideline:",
+      "page_number": 1,
+      "text": "## Policy/Guideline:",
+      "heading_path": [
+        "Policy/Guideline:"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_27",
+      "source_type": "docling_md",
+      "section_title": "Documentation for all indications:",
+      "page_number": 1,
+      "text": "## Documentation for all indications:",
+      "heading_path": [
+        "Documentation for all indications:"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_28",
+      "source_type": "docling_md",
+      "section_title": "Documentation for all indications:",
+      "page_number": 1,
+      "text": "The patient is unable to take THREE preferred products, where indicated, for the given diagnosis due to a trial and inadequate treatment response or intolerance, or a contraindication. Documentation is required for approval.",
+      "heading_path": [
+        "Documentation for all indications:"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_29",
+      "source_type": "docling_md",
+      "section_title": "THREE preferred products:",
+      "page_number": 1,
+      "text": "## THREE preferred products:",
+      "heading_path": [
+        "THREE preferred products:"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_30",
+      "source_type": "docling_md",
+      "section_title": "THREE preferred products:",
+      "page_number": 1,
+      "text": "- A preferred ustekinumab product\n- TWO additional preferred products\n- o A preferred adalimumab product OR Enbrel\n- o Rinvoq\n- o Otezla",
+      "heading_path": [
+        "THREE preferred products:"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_31",
+      "source_type": "docling_md",
+      "section_title": "Documentation",
+      "page_number": 1,
+      "text": "## Documentation",
+      "heading_path": [
+        "Documentation"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_32",
+      "source_type": "docling_md",
+      "section_title": "Documentation",
+      "page_number": 1,
+      "text": "Submission of the following information is necessary to initiate the prior authorization review:",
+      "heading_path": [
+        "Documentation"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_33",
+      "source_type": "docling_md",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 1,
+      "text": "## AETNA BETTER HEALTH®",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_34",
+      "source_type": "docling_md",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 1,
+      "text": "Coverage Policy/Guideline",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_35",
+      "source_type": "docling_md",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 1,
+      "text": "Name:",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_36",
+      "source_type": "docling_md",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 1,
+      "text": "Tremfya",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_37",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 2,
+      "text": "Page:",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_38",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 2,
+      "text": "2 of 7",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_39",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 2,
+      "text": "Effective Date: 5/1/2025",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_40",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 2,
+      "text": "Last Review Date:",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_41",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 2,
+      "text": "4/2025",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_42",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 2,
+      "text": "Applies",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_43",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 2,
+      "text": "to:",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_44",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 2,
+      "text": "- [ ] ☐Illinois",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_45",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 2,
+      "text": "- [ ] ☐Florida",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_46",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 2,
+      "text": "- [x] ☒Florida Kids",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_47",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 2,
+      "text": "- [ ] ☐New Jersey",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_48",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 2,
+      "text": "- [x] ☒Maryland",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_49",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 2,
+      "text": "- [ ] ☐Michigan",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_50",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 2,
+      "text": "- [ ] ☒Pennsylvania Kids",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_51",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 2,
+      "text": "- [ ] ☐Virginia",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_52",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 2,
+      "text": "- [x] ☒Kentucky PRMD",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_53",
+      "source_type": "docling_md",
+      "section_title": "Plaque psoriasis (PsO)",
+      "page_number": 2,
+      "text": "## Plaque psoriasis (PsO)",
+      "heading_path": [
+        "Plaque psoriasis (PsO)"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_54",
+      "source_type": "docling_md",
+      "section_title": "Initial requests",
+      "page_number": 2,
+      "text": "## Initial requests",
+      "heading_path": [
+        "Initial requests"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_55",
+      "source_type": "docling_md",
+      "section_title": "Initial requests",
+      "page_number": 2,
+      "text": "- Chart notes or medical record documentation of affected area(s) and body surface area (BSA) affected (if applicable).\n- Chart notes, medical record documentation, or claims history supporting previous medications tried (if applicable), including response to therapy. If therapy is not advisable, documentation of clinical reason to avoid therapy.",
+      "heading_path": [
+        "Initial requests"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_56",
+      "source_type": "docling_md",
+      "section_title": "Continuation requests",
+      "page_number": 2,
+      "text": "## Continuation requests",
+      "heading_path": [
+        "Continuation requests"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_57",
+      "source_type": "docling_md",
+      "section_title": "Continuation requests",
+      "page_number": 2,
+      "text": "Chart notes or medical record documentation of decreased body surface area (BSA) affected and/or improvement in signs and symptoms.",
+      "heading_path": [
+        "Continuation requests"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_58",
+      "source_type": "docling_md",
+      "section_title": "Psoriatic arthritis (PsA)",
+      "page_number": 2,
+      "text": "## Psoriatic arthritis (PsA)",
+      "heading_path": [
+        "Psoriatic arthritis (PsA)"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_59",
+      "source_type": "docling_md",
+      "section_title": "Initial requests",
+      "page_number": 2,
+      "text": "## Initial requests",
+      "heading_path": [
+        "Initial requests"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_60",
+      "source_type": "docling_md",
+      "section_title": "Initial requests",
+      "page_number": 2,
+      "text": "Chart notes, medical record documentation, or claims history supporting previous medications tried (if applicable), including response to therapy. If therapy is not advisable, documentation of clinical reason to avoid therapy.",
+      "heading_path": [
+        "Initial requests"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_61",
+      "source_type": "docling_md",
+      "section_title": "Continuation requests",
+      "page_number": 2,
+      "text": "## Continuation requests",
+      "heading_path": [
+        "Continuation requests"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_62",
+      "source_type": "docling_md",
+      "section_title": "Continuation requests",
+      "page_number": 2,
+      "text": "Chart notes or medical record documentation supporting positive clinical response.",
+      "heading_path": [
+        "Continuation requests"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_63",
+      "source_type": "docling_md",
+      "section_title": "Ulcerative colitis (UC) and Crohn's disease (CD)",
+      "page_number": 2,
+      "text": "## Ulcerative colitis (UC) and Crohn's disease (CD)",
+      "heading_path": [
+        "Ulcerative colitis (UC) and Crohn's disease (CD)"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_64",
+      "source_type": "docling_md",
+      "section_title": "Continuation requests",
+      "page_number": 2,
+      "text": "## Continuation requests",
+      "heading_path": [
+        "Continuation requests"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_65",
+      "source_type": "docling_md",
+      "section_title": "Continuation requests",
+      "page_number": 2,
+      "text": "Chart notes or medical record documentation supporting positive clinical response to therapy or remission.",
+      "heading_path": [
+        "Continuation requests"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_66",
+      "source_type": "docling_md",
+      "section_title": "Prescriber Specialty:",
+      "page_number": 2,
+      "text": "## Prescriber Specialty:",
+      "heading_path": [
+        "Prescriber Specialty:"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_67",
+      "source_type": "docling_md",
+      "section_title": "Prescriber Specialty:",
+      "page_number": 2,
+      "text": "This medication must be prescribed by or in consultation with one of the following:",
+      "heading_path": [
+        "Prescriber Specialty:"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_68",
+      "source_type": "docling_md",
+      "section_title": "Prescriber Specialty:",
+      "page_number": 2,
+      "text": "- Plaque psoriasis: dermatologist\n- Psoriatic arthritis: rheumatologist or dermatologist\n- Ulcerative colitis and Crohn's disease: gastroenterologist",
+      "heading_path": [
+        "Prescriber Specialty:"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_69",
+      "source_type": "docling_md",
+      "section_title": "Coverage Criteria",
+      "page_number": 2,
+      "text": "## Coverage Criteria",
+      "heading_path": [
+        "Coverage Criteria"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_70",
+      "source_type": "docling_md",
+      "section_title": "Plaque psoriasis (PsO) 1-6,10",
+      "page_number": 2,
+      "text": "## Plaque psoriasis (PsO) 1-6,10",
+      "heading_path": [
+        "Plaque psoriasis (PsO) 1-6,10"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_71",
+      "source_type": "docling_md",
+      "section_title": "Plaque psoriasis (PsO) 1-6,10",
+      "page_number": 2,
+      "text": "Authorization of 12 months may be granted for adult members who have previously received a biologic or targeted synthetic drug (e.g., Sotyktu, Otezla) indicated for the treatment of moderate to severe plaque psoriasis.",
+      "heading_path": [
+        "Plaque psoriasis (PsO) 1-6,10"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_72",
+      "source_type": "docling_md",
+      "section_title": "Plaque psoriasis (PsO) 1-6,10",
+      "page_number": 2,
+      "text": "Authorization of 12 months may be granted for adult members for treatment of moderate to severe plaque psoriasis when any of the following criteria is met:",
+      "heading_path": [
+        "Plaque psoriasis (PsO) 1-6,10"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_73",
+      "source_type": "docling_md",
+      "section_title": "Plaque psoriasis (PsO) 1-6,10",
+      "page_number": 2,
+      "text": "<!-- image -->",
+      "heading_path": [
+        "Plaque psoriasis (PsO) 1-6,10"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_74",
+      "source_type": "docling_md",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 2,
+      "text": "## AETNA BETTER HEALTH®",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_75",
+      "source_type": "docling_md",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 2,
+      "text": "Coverage Policy/Guideline",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_76",
+      "source_type": "docling_md",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 2,
+      "text": "Name:",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_77",
+      "source_type": "docling_md",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 2,
+      "text": "Tremfya",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_78",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 3,
+      "text": "Page:",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_79",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 3,
+      "text": "3 of 7",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_80",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 3,
+      "text": "Effective Date: 5/1/2025",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_81",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 3,
+      "text": "Last Review Date:",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_82",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 3,
+      "text": "4/2025",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_83",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 3,
+      "text": "Applies",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_84",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 3,
+      "text": "to:",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_85",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 3,
+      "text": "- [ ] ☐Illinois",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_86",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 3,
+      "text": "- [ ] ☐Florida",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_87",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 3,
+      "text": "- [x] ☒Florida Kids",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_88",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 3,
+      "text": "- [ ] ☐New Jersey",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_89",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 3,
+      "text": "- [x] ☒Maryland",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_90",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 3,
+      "text": "- [ ] ☐Michigan",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_91",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 3,
+      "text": "- [x] ☒Pennsylvania Kids",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_92",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 3,
+      "text": "- [ ] ☐Virginia",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_93",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 3,
+      "text": "- [ ] ☒Kentucky PRMD",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_94",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 3,
+      "text": "- Crucial body areas (e.g., hands, feet, face, neck, scalp, genitals/groin, intertriginous areas) are affected.\n- At least 10% of body surface area (BSA) is affected.\n- At least 3% of body surface area (BSA) is affected and the member meets either of the following criteria:\n- o Member has had an inadequate response or intolerance to either phototherapy (e.g., UVB, PUVA) or pharmacologic treatment with methotrexate, cyclosporine, or acitretin.\n- o Member has a clinical reason to avoid pharmacologic treatment with methotrexate, cyclosporine, and acitretin (see Appendix).",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_95",
+      "source_type": "docling_md",
+      "section_title": "Psoriatic arthritis (PsA)1,8 -10",
+      "page_number": 3,
+      "text": "## Psoriatic arthritis (PsA)1,8 -10",
+      "heading_path": [
+        "Psoriatic arthritis (PsA)1,8 -10"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_96",
+      "source_type": "docling_md",
+      "section_title": "Psoriatic arthritis (PsA)1,8 -10",
+      "page_number": 3,
+      "text": "Authorization of 12 months may be granted for adult members who have previously received a biologic or targeted synthetic drug (e.g., Rinvoq, Otezla) indicated for active psoriatic arthritis.",
+      "heading_path": [
+        "Psoriatic arthritis (PsA)1,8 -10"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_97",
+      "source_type": "docling_md",
+      "section_title": "Psoriatic arthritis (PsA)1,8 -10",
+      "page_number": 3,
+      "text": "Authorization of 12 months may be granted for adult members for treatment of active psoriatic arthritis when either of the following criteria is met:",
+      "heading_path": [
+        "Psoriatic arthritis (PsA)1,8 -10"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_98",
+      "source_type": "docling_md",
+      "section_title": "Psoriatic arthritis (PsA)1,8 -10",
+      "page_number": 3,
+      "text": "- Member has mild to moderate disease and meets any of the following criteria:\n- o Member has had an inadequate response to methotrexate, leflunomide, or another conventional synthetic drug (e.g., sulfasalazine) administered at an adequate dose and duration.\n- o Member has an intolerance or contraindication to methotrexate or leflunomide (see Appendix), or another conventional synthetic drug (e.g., sulfasalazine).\n- o Member has enthesitis.\n- Member has severe disease.",
+      "heading_path": [
+        "Psoriatic arthritis (PsA)1,8 -10"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_99",
+      "source_type": "docling_md",
+      "section_title": "Ulcerative colitis (UC)1,12 -14",
+      "page_number": 3,
+      "text": "## Ulcerative colitis (UC)1,12 -14",
+      "heading_path": [
+        "Ulcerative colitis (UC)1,12 -14"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_100",
+      "source_type": "docling_md",
+      "section_title": "Ulcerative colitis (UC)1,12 -14",
+      "page_number": 3,
+      "text": "Authorization of 12 months may be granted for treatment of moderately to severely active ulcerative colitis.",
+      "heading_path": [
+        "Ulcerative colitis (UC)1,12 -14"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_101",
+      "source_type": "docling_md",
+      "section_title": "Crohn's disease (CD)1,15,16",
+      "page_number": 3,
+      "text": "## Crohn's disease (CD)1,15,16",
+      "heading_path": [
+        "Crohn's disease (CD)1,15,16"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_102",
+      "source_type": "docling_md",
+      "section_title": "Crohn's disease (CD)1,15,16",
+      "page_number": 3,
+      "text": "Authorization of 12 months may be granted for treatment of moderately to severely active Crohn's disease.",
+      "heading_path": [
+        "Crohn's disease (CD)1,15,16"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_103",
+      "source_type": "docling_md",
+      "section_title": "Crohn's disease (CD)1,15,16",
+      "page_number": 3,
+      "text": "<!-- image -->",
+      "heading_path": [
+        "Crohn's disease (CD)1,15,16"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_104",
+      "source_type": "docling_md",
+      "section_title": "Crohn's disease (CD)1,15,16",
+      "page_number": 3,
+      "text": "<!-- image -->",
+      "heading_path": [
+        "Crohn's disease (CD)1,15,16"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_105",
+      "source_type": "docling_md",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 3,
+      "text": "## AETNA BETTER HEALTH®",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_106",
+      "source_type": "docling_md",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 3,
+      "text": "Coverage Policy/Guideline",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_107",
+      "source_type": "docling_md",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 3,
+      "text": "Name:",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_108",
+      "source_type": "docling_md",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 3,
+      "text": "Tremfya",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_109",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 4,
+      "text": "Page:",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_110",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 4,
+      "text": "4 of 7",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_111",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 4,
+      "text": "Effective Date: 5/1/2025",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_112",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 4,
+      "text": "Last Review Date:",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_113",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 4,
+      "text": "4/2025",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_114",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 4,
+      "text": "Applies",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_115",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 4,
+      "text": "to:",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_116",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 4,
+      "text": "- [ ] ☐Illinois",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_117",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 4,
+      "text": "- [ ] ☐Florida",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_118",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 4,
+      "text": "- [x] ☒Florida Kids",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_119",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 4,
+      "text": "- [ ] ☐New Jersey",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_120",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 4,
+      "text": "- [x] ☒Maryland",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_121",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 4,
+      "text": "- [ ] ☐Michigan",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_122",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 4,
+      "text": "- [ ] ☒Pennsylvania Kids",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_123",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 4,
+      "text": "- [ ] ☐Virginia",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_124",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 4,
+      "text": "- [ ] ☒Kentucky PRMD",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_125",
+      "source_type": "docling_md",
+      "section_title": "Continuation of Therapy",
+      "page_number": 4,
+      "text": "## Continuation of Therapy",
+      "heading_path": [
+        "Continuation of Therapy"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_126",
+      "source_type": "docling_md",
+      "section_title": "Plaque psoriasis (PsO) 1-6",
+      "page_number": 4,
+      "text": "## Plaque psoriasis (PsO) 1-6",
+      "heading_path": [
+        "Plaque psoriasis (PsO) 1-6"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_127",
+      "source_type": "docling_md",
+      "section_title": "Plaque psoriasis (PsO) 1-6",
+      "page_number": 4,
+      "text": "Authorization of 12 months may be granted for all adult members (including new members) who are using the requested medication for moderate to severe plaque psoriasis and who achieve or maintain a positive clinical response as evidenced by low disease activity or improvement in signs and symptoms of the condition when either of the following is met:",
+      "heading_path": [
+        "Plaque psoriasis (PsO) 1-6"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_128",
+      "source_type": "docling_md",
+      "section_title": "Plaque psoriasis (PsO) 1-6",
+      "page_number": 4,
+      "text": "- Reduction in body surface area (BSA) affected from baseline\n- Improvement in signs and symptoms from baseline (e.g., itching, redness, flaking, scaling, burning, cracking, pain)",
+      "heading_path": [
+        "Plaque psoriasis (PsO) 1-6"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_129",
+      "source_type": "docling_md",
+      "section_title": "Psoriatic arthritis (PsA)1,9,10",
+      "page_number": 4,
+      "text": "## Psoriatic arthritis (PsA)1,9,10",
+      "heading_path": [
+        "Psoriatic arthritis (PsA)1,9,10"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_130",
+      "source_type": "docling_md",
+      "section_title": "Psoriatic arthritis (PsA)1,9,10",
+      "page_number": 4,
+      "text": "Authorization of 12 months may be granted for all adult members (including new members) who are using the requested medication for psoriatic arthritis and who achieve or maintain a positive clinical response as evidenced by low disease activity or improvement in signs and symptoms of the condition when there is improvement in any of the following from baseline:",
+      "heading_path": [
+        "Psoriatic arthritis (PsA)1,9,10"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_131",
+      "source_type": "docling_md",
+      "section_title": "Psoriatic arthritis (PsA)1,9,10",
+      "page_number": 4,
+      "text": "- Number of swollen joints\n- Number of tender joints\n- Dactylitis\n- Enthesitis\n- Skin and/or nail involvement\n- Functional status\n- C-reactive protein (CRP)",
+      "heading_path": [
+        "Psoriatic arthritis (PsA)1,9,10"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_132",
+      "source_type": "docling_md",
+      "section_title": "Ulcerative colitis (UC)1,12 -14",
+      "page_number": 4,
+      "text": "## Ulcerative colitis (UC)1,12 -14",
+      "heading_path": [
+        "Ulcerative colitis (UC)1,12 -14"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_133",
+      "source_type": "docling_md",
+      "section_title": "Ulcerative colitis (UC)1,12 -14",
+      "page_number": 4,
+      "text": "Authorization of 12 months may be granted for all members (including new members) who are using the requested medication for moderately to severely active ulcerative colitis and who achieve or maintain remission.",
+      "heading_path": [
+        "Ulcerative colitis (UC)1,12 -14"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_134",
+      "source_type": "docling_md",
+      "section_title": "Ulcerative colitis (UC)1,12 -14",
+      "page_number": 4,
+      "text": "Authorization of 12 months may be granted for all members (including new members) who are using the requested medication for moderately to severely active ulcerative colitis and who achieve or maintain a positive clinical response as evidenced by low disease activity or improvement in signs and symptoms of the condition when there is improvement in any of the following from baseline:",
+      "heading_path": [
+        "Ulcerative colitis (UC)1,12 -14"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_135",
+      "source_type": "docling_md",
+      "section_title": "Ulcerative colitis (UC)1,12 -14",
+      "page_number": 4,
+      "text": "- Stool frequency\n- Rectal bleeding\n- Urgency of defecation\n- C-reactive protein (CRP)",
+      "heading_path": [
+        "Ulcerative colitis (UC)1,12 -14"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_136",
+      "source_type": "docling_md",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 4,
+      "text": "## AETNA BETTER HEALTH®",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_137",
+      "source_type": "docling_md",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 4,
+      "text": "Coverage Policy/Guideline",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_138",
+      "source_type": "docling_md",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 4,
+      "text": "Name:",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_139",
+      "source_type": "docling_md",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 4,
+      "text": "Tremfya",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_140",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 5,
+      "text": "Page:",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_141",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 5,
+      "text": "5 of 7",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_142",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 5,
+      "text": "Effective Date: 5/1/2025",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_143",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 5,
+      "text": "Last Review Date:",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_144",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 5,
+      "text": "4/2025",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_145",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 5,
+      "text": "Applies",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_146",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 5,
+      "text": "to:",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_147",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 5,
+      "text": "- [ ] ☐Illinois",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_148",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 5,
+      "text": "- [ ] ☐Florida",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_149",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 5,
+      "text": "- [x] ☒Florida Kids",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_150",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 5,
+      "text": "- [ ] ☐New Jersey",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_151",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 5,
+      "text": "- [x] ☒Maryland",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_152",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 5,
+      "text": "- [ ] ☐Michigan",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_153",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 5,
+      "text": "- [ ] ☒Pennsylvania Kids",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_154",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 5,
+      "text": "- [ ] ☐Virginia",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_155",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 5,
+      "text": "- [ ] ☒Kentucky PRMD",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_156",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 5,
+      "text": "- Fecal calprotectin (FC)\n- Appearance of the mucosa on endoscopy, computed tomography enterography (CTE), magnetic resonance enterography (MRE), or intestinal ultrasound\n- Improvement on a disease activity scoring tool (e.g., Ulcerative Colitis Endoscopic Index of Severity [UCEIS], Mayo score)",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_157",
+      "source_type": "docling_md",
+      "section_title": "Crohn's disease (CD)1,15,16",
+      "page_number": 5,
+      "text": "## Crohn's disease (CD)1,15,16",
+      "heading_path": [
+        "Crohn's disease (CD)1,15,16"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_158",
+      "source_type": "docling_md",
+      "section_title": "Crohn's disease (CD)1,15,16",
+      "page_number": 5,
+      "text": "Authorization of 12 months may be granted for all members (including new members) who are using the requested medication for moderately to severely active Crohn's disease and who achieve or maintain remission.",
+      "heading_path": [
+        "Crohn's disease (CD)1,15,16"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_159",
+      "source_type": "docling_md",
+      "section_title": "Crohn's disease (CD)1,15,16",
+      "page_number": 5,
+      "text": "Authorization of 12 months may be granted for all members (including new members) who are using the requested medication for moderately to severely active Crohn's disease and who achieve or maintain a positive clinical response as evidenced by low disease activity or improvement in signs and symptoms of the condition when there is improvement in any of the following from baseline:",
+      "heading_path": [
+        "Crohn's disease (CD)1,15,16"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_160",
+      "source_type": "docling_md",
+      "section_title": "Crohn's disease (CD)1,15,16",
+      "page_number": 5,
+      "text": "- Abdominal pain or tenderness\n- Diarrhea\n- Body weight\n- Abdominal mass\n- Hematocrit\n- Appearance of the mucosa on endoscopy, computed tomography enterography (CTE), magnetic resonance enterography (MRE), or intestinal ultrasound\n- Improvement on a disease activity scoring tool (e.g., Crohn's Disease Activity Index [CDAI] score)",
+      "heading_path": [
+        "Crohn's disease (CD)1,15,16"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_161",
+      "source_type": "docling_md",
+      "section_title": "Other1,7",
+      "page_number": 5,
+      "text": "## Other1,7",
+      "heading_path": [
+        "Other1,7"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_162",
+      "source_type": "docling_md",
+      "section_title": "Other1,7",
+      "page_number": 5,
+      "text": "For all indications: Member has had a documented negative tuberculosis (TB) test (which can include a tuberculosis skin test [TST] or an interferon-release assay [IGRA]) within 12 months of initiating therapy for persons who are naïve to biologic drugs or targeted synthetic drugs associated with an increased risk of TB.",
+      "heading_path": [
+        "Other1,7"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_163",
+      "source_type": "docling_md",
+      "section_title": "Other1,7",
+      "page_number": 5,
+      "text": "If the screening testing for TB is positive, there must be further testing to confirm there is no active disease (e.g., chest x -ray). Do not administer the requested medication to members with active TB infection. If there is latent disease, TB treatment must be started before initiation of the requested medication.",
+      "heading_path": [
+        "Other1,7"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_164",
+      "source_type": "docling_md",
+      "section_title": "Other1,7",
+      "page_number": 5,
+      "text": "For all indications: Member cannot use the requested medication concomitantly with any other biologic drug or targeted synthetic drug for the same indication.",
+      "heading_path": [
+        "Other1,7"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_165",
+      "source_type": "docling_md",
+      "section_title": "Other1,7",
+      "page_number": 5,
+      "text": "<!-- image -->",
+      "heading_path": [
+        "Other1,7"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_166",
+      "source_type": "docling_md",
+      "section_title": "Other1,7",
+      "page_number": 5,
+      "text": "<!-- image -->",
+      "heading_path": [
+        "Other1,7"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_167",
+      "source_type": "docling_md",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 5,
+      "text": "## AETNA BETTER HEALTH®",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_168",
+      "source_type": "docling_md",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 5,
+      "text": "Coverage Policy/Guideline",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_169",
+      "source_type": "docling_md",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 5,
+      "text": "Name:",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_170",
+      "source_type": "docling_md",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 5,
+      "text": "Tremfya",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_171",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 6,
+      "text": "Page:",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_172",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 6,
+      "text": "6 of 7",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_173",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 6,
+      "text": "Effective Date: 5/1/2025",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_174",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 6,
+      "text": "Last Review Date:",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_175",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 6,
+      "text": "4/2025",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_176",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 6,
+      "text": "Applies",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_177",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 6,
+      "text": "to:",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_178",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 6,
+      "text": "- [ ] ☐Illinois",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_179",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 6,
+      "text": "- [ ] ☐Florida",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_180",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 6,
+      "text": "- [x] ☒Florida Kids",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_181",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 6,
+      "text": "- [ ] ☐New Jersey",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_182",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 6,
+      "text": "- [x] ☒Maryland",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_183",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 6,
+      "text": "- [ ] ☐Michigan",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_184",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 6,
+      "text": "- [ ] ☒Pennsylvania Kids",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_185",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 6,
+      "text": "- [ ] ☐Virginia",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_186",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 6,
+      "text": "- [ ] ☒Kentucky PRMD",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_187",
+      "source_type": "docling_md",
+      "section_title": "Dosage and Administration",
+      "page_number": 6,
+      "text": "## Dosage and Administration",
+      "heading_path": [
+        "Dosage and Administration"
+      ],
+      "quality_flags": [
+        "high_value_layout_section"
+      ],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_188",
+      "source_type": "docling_md",
+      "section_title": "Dosage and Administration",
+      "page_number": 6,
+      "text": "Approvals may be subject to dosing limits in accordance with FDA -approved labeling, accepted compendia, and/or evidence-based practice guidelines.",
+      "heading_path": [
+        "Dosage and Administration"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_189",
+      "source_type": "docling_md",
+      "section_title": "Appendix",
+      "page_number": 6,
+      "text": "## Appendix",
+      "heading_path": [
+        "Appendix"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_190",
+      "source_type": "docling_md",
+      "section_title": "Appendix",
+      "page_number": 6,
+      "text": "Examples of Clinical Reasons to Avoid Pharmacologic Treatment with Methotrexate, Cyclosporine, Acitretin, or Leflunomide 11",
+      "heading_path": [
+        "Appendix"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_191",
+      "source_type": "docling_md",
+      "section_title": "Appendix",
+      "page_number": 6,
+      "text": "- Clinical diagnosis of alcohol use disorder, alcoholic liver disease, or other chronic liver disease\n- Drug interaction\n- Risk of treatment -related toxicity\n- Pregnancy or currently planning pregnancy\n- Breastfeeding\n- Significant comorbidity prohibits use of systemic agents (e.g., liver or kidney disease, blood dyscrasias, uncontrolled hypertension)\n- Hypersensitivity\n- History of intolerance or adverse event.",
+      "heading_path": [
+        "Appendix"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_192",
+      "source_type": "docling_md",
+      "section_title": "Approval Duration and Quantity Restrictions:",
+      "page_number": 6,
+      "text": "## Approval Duration and Quantity Restrictions:",
+      "heading_path": [
+        "Approval Duration and Quantity Restrictions:"
+      ],
+      "quality_flags": [
+        "high_value_layout_section"
+      ],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_193",
+      "source_type": "docling_md",
+      "section_title": "Approval:",
+      "page_number": 6,
+      "text": "## Approval:",
+      "heading_path": [
+        "Approval:"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_194",
+      "source_type": "docling_md",
+      "section_title": "Approval:",
+      "page_number": 6,
+      "text": "Initial and Renewal Approval: 12 months",
+      "heading_path": [
+        "Approval:"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_195",
+      "source_type": "docling_md",
+      "section_title": "Quantity Level Limit:",
+      "page_number": 6,
+      "text": "## Quantity Level Limit:",
+      "heading_path": [
+        "Quantity Level Limit:"
+      ],
+      "quality_flags": [
+        "high_value_layout_section"
+      ],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_196",
+      "source_type": "docling_md",
+      "section_title": "Quantity Level Limit:",
+      "page_number": 6,
+      "text": "- Tremfya (guselkumab) 100 mg/mL prefilled syringe/One -press injector:\n- o 1 syringe/injector per 56 days\n- o Exception limit: 2 syringes/injectors per 28 days\n- Tremfya (guselkumab) 200 mg/2 mL prefilled syringe/pen:\n- o 1 syringe/pen per 28 days\n- o Exception limit: 6 syringes/pens per 56 days\n- Tremfya (guselkumab) 200 mg/2 mL prefilled pen Induction Pack for Crohn's Disease:\n- o Exception limit: 3 cartons (6 pens) per 56 days\n* Coverage up to the exception limits may be provided with prior authorization",
+      "heading_path": [
+        "Quantity Level Limit:"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_197",
+      "source_type": "docling_md",
+      "section_title": "References:",
+      "page_number": 6,
+      "text": "## References:",
+      "heading_path": [
+        "References:"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_198",
+      "source_type": "docling_md",
+      "section_title": "References:",
+      "page_number": 6,
+      "text": "1. Tremfya [package insert]. Horsham, PA: Janssen Biotech, Inc.; March 2025.\n2. Menter A, Korman NJ, Elmets CA, et al. Guidelines of care for the management of psoriasis and psoriatic arthritis. Section 4: Guidelines of care for the management and treatment of psoriasis with traditional systemic agents. J Am Acad Dermatol. 2009;61:451 -485.\n3. Menter A, Korman NJ, Elmets CA, et al. Guidelines of care for the management of psoriasis and psoriatic arthritis. Section 6: Guidelines of care for the treatment of psoriasis and psoriatic arthritis: case -based presentations and evidence-based conclusions. J Am Acad Dermatol. 2011;65(1):137-174.\n4. Reich K, Armstrong, AW, Foley P, et al. Efficacy and safety of guselkumab, an anti -interleukin-23 monoclonal antibody, compared with adalimumab for the treatment of patients with moderate to severe psoriasis with randomized withdrawal and retreatment: Results from the phase III, doubleblind, placebo- and active comparator–controlled VOYAGE 2 trial. Am J Clin Dermatol. 2017;76(3):418-431.\n5. Blauvelt A, Papp KA, Griffiths CEM, et al. Efficacy and safety of guselkumab, an anti -interleukin -23 monoclonal antibody, compared with adalimumab for the continuous treatment of patients with moderate to severe psoriasis: Results from the phase III, double-blinded, placebo- and active comparator -controlled VOYAGE 1 trial. Am J Clin Dermatol. 2017;76(3):405-417.\n6. Menter A, Strober BE, Kaplan DH, et al. Joint AAD-NPF guidelines of care for the management and treatment of psoriasis with biologics. J Am Acad Dermatol. 2019;80(4):1029-1072.\n7. Testing for TB Infection. Centers for Disease Control and Prevention. Retrieved on January 22, 2025 from: https://www.cdc.gov/tb/testing/index.html .\n8. Gossec L, Baraliakos X, Kerschbaumer A, et al. European League Against Rheumatism (EULAR) recommendations for the management of psoriatic arthritis with pharmacological therapies: 2019 update. Ann Rheum Dis. 2020;79(6):700-712.\n9. Singh JA, Guyatt G, Ogdie A, et al. 2018 American College of Rheumatology/National Psoriasis Foundation Guideline for the Treatment of Psoriatic Arthritis. Arthritis Rheum. 2018;71:5-32.\n10. Coates LC, Soriano ER, Corp N, et al. Group for Research and Assessment of Psoriasis and Psoriatic Arthritis (GRAPPA): updated treatment recommendations for psoriatic arthritis 2021. Nat Rev Rheumatol. 2022;18(8):465-479.\n11. Menter A, Gelfand JM, Connor C, et al. Joint American Academy of Dermatology -National Psoriasis Foundation guidelines of care for the management of psoriasis with systemic nonbiologic therapies. J Am Acad Dermatol. 2020;82(6):1445 -1486.\n12. Talley NJ, Abreu MT, Achkar J, et al. An evidence-based systematic review on medical therapies for inflammatory bowel disease. Am J Gastroenterol. 2011;106(Suppl 1):S2-S25.\n13. Rubin DT, Ananthakrishnan AN, Siegel CA, et al. 2019 ACG Clinical Guideline: Ulcerative Colitis in Adults. Am J Gastroenterol. 2019;114:384-413.\n14. Singh S, Loftus EV Jr, Limketkai BN, et al. AGA Living Clinical Practice Guideline on Pharmacological Management of Moderate -to-Severe Ulcerative Colitis. Gastroenterology. 2024;167(7):1307-1343.\n15. Lichtenstein GR, Loftus EV Jr, Isaacs KI, et al. ACG Clinical Guideline: Management of Crohn's Disease in Adults. Am J Gastroenterol. 2018;113:481-517.\n16. Feuerstein JD, Ho EY, Shmidt E, et al. AGA Clinical Practice Guidelines on the Medical Management of Moderate to Severe Luminal and Perianal Fistulizing Crohn's Disease. Gastroenterology. 2021;160: 2496 -2508.",
+      "heading_path": [
+        "References:"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_199",
+      "source_type": "docling_md",
+      "section_title": "References:",
+      "page_number": 6,
+      "text": "<!-- image -->",
+      "heading_path": [
+        "References:"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_200",
+      "source_type": "docling_md",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 6,
+      "text": "## AETNA BETTER HEALTH®",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_201",
+      "source_type": "docling_md",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 6,
+      "text": "Coverage Policy/Guideline",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_202",
+      "source_type": "docling_md",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 6,
+      "text": "Name:",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_203",
+      "source_type": "docling_md",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 6,
+      "text": "Tremfya",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_204",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 7,
+      "text": "Page:",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_205",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 7,
+      "text": "7 of 7",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_206",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 7,
+      "text": "Effective Date: 5/1/2025",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_207",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 7,
+      "text": "Last Review Date:",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_208",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 7,
+      "text": "4/2025",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_209",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 7,
+      "text": "Applies",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_210",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 7,
+      "text": "to:",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_211",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 7,
+      "text": "- [ ] ☐Illinois",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_212",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 7,
+      "text": "- [ ] ☐Florida",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_213",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 7,
+      "text": "- [x] ☒Florida Kids",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_214",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 7,
+      "text": "- [ ] ☐New Jersey",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_215",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 7,
+      "text": "- [x] ☒Maryland",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_216",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 7,
+      "text": "- [ ] ☐Michigan",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_217",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 7,
+      "text": "- [ ] ☒Pennsylvania Kids",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_218",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 7,
+      "text": "- [ ] ☐Virginia",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "md_219",
+      "source_type": "docling_md",
+      "section_title": "Document",
+      "page_number": 7,
+      "text": "- [ ] ☒Kentucky PRMD",
+      "heading_path": [],
+      "quality_flags": [],
+      "metadata": {
+        "source": "docling_markdown"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "pdftext_1",
+      "source_type": "pdfplumber_text",
+      "section_title": "PDF Page 1",
+      "page_number": 1,
+      "text": "AETNA BETTER HEALTH® \n \n Coverage Policy/Guideline \n Name: Tremfya Page: 1 of 7 \n Effective Date: 5/1/2025 Last Review Date: 4/2025 \n ☐Illinois Florida ☒Florida Kids \n Applies ☐ \n ☐New Jersey ☒Maryland Michigan \n to: ☐ \n ☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD \n \n Intent: \n \n The intent of this policy/guideline is to provide information to the prescribing practitioner\n outlining the coverage criteria for Tremfya under the patient’s prescription drug benefit.\n \n Description: \n FDA-Approved Indications \n • Treatment of adult patients with moderate to severe plaque psoriasis (PsO) who are\n \n candidates for systemic therapy or phototherapy \n • Treatment of adult patients with active psoriatic arthritis (PsA) \n • Treatment of moderately to severely active ulcerative colitis (UC) in adults\n • Treatment of moderately to severely active Crohn’s disease (CD) in adults\n \n \n All other indications are considered experimental/investigational and not medically\n \n necessary. \n \n Applicable Drug List: \n Non-Preferred: Tremfya \n \n Policy/Guideline: \n \n Documentation for all indications: \n The patient is unable to take THREE preferred products, where indicated, for the\n given diagnosis due to a trial and inadequate treatment response or intolerance, or a\n contraindication. Documentation is required for approval. \n THREE preferred products: \n \n • A preferred ustekinumab product \n • TWO additional preferred products \n A preferred adalimumab product OR Enbrel \n o \n Rinvoq \n o \n Otezla \n o \n Documentation \n Submission of the following information is necessary to initiate the prior authorization\n review:",
+      "heading_path": [
+        "PDF Page 1"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "extraction": "pdfplumber",
+        "layout": true
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "pdftext_2",
+      "source_type": "pdfplumber_text",
+      "section_title": "PDF Page 2",
+      "page_number": 2,
+      "text": "AETNA BETTER HEALTH® \n \n Coverage Policy/Guideline \n Name: Tremfya Page: 2 of 7 \n Effective Date: 5/1/2025 Last Review Date: 4/2025 \n ☐Illinois Florida ☒Florida Kids \n Applies ☐ \n ☐New Jersey ☒Maryland Michigan \n to: ☐ \n ☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD \n Plaque psoriasis (PsO) \n Initial requests \n • Chart notes or medical record documentation of affected area(s) and body surface\n \n area (BSA) affected (if applicable). \n • Chart notes, medical record documentation, or claims history supporting previous\n medications tried (if applicable), including response to therapy. If therapy is not\n advisable, documentation of clinical reason to avoid therapy. \n Continuation requests \n Chart notes or medical record documentation of decreased body surface area (BSA)\n affected and/or improvement in signs and symptoms. \n \n Psoriatic arthritis (PsA) \n Initial requests \n \n Chart notes, medical record documentation, or claims history supporting previous\n medications tried (if applicable), including response to therapy. If therapy is not advisable,\n documentation of clinical reason to avoid therapy. \n \n Continuation requests \n Chart notes or medical record documentation supporting positive clinical response.\n \n Ulcerative colitis (UC) and Crohn’s disease (CD) \n Continuation requests \n Chart notes or medical record documentation supporting positive clinical response to\n therapy or remission. \n \n Prescriber Specialty: \n This medication must be prescribed by or in consultation with one of the following:\n • Plaque psoriasis: dermatologist \n • Psoriatic arthritis: rheumatologist or dermatologist \n \n • Ulcerative colitis and Crohn’s disease: gastroenterologist \n \n Coverage Criteria \n \n Plaque psoriasis (PsO)1-6,10 \n Authorization of 12 months may be granted for adult members who have previously\n \n received a biologic or targeted synthetic drug (e.g., Sotyktu, Otezla) indicated for the\n treatment of moderate to severe plaque psoriasis. \n Authorization of 12 months may be granted for adult members for treatment of moderate to\n severe plaque psoriasis when any of the following criteria is met:",
+      "heading_path": [
+        "PDF Page 2"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "extraction": "pdfplumber",
+        "layout": true
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "pdftext_3",
+      "source_type": "pdfplumber_text",
+      "section_title": "PDF Page 3",
+      "page_number": 3,
+      "text": "AETNA BETTER HEALTH® \n \n Coverage Policy/Guideline \n Name: Tremfya Page: 3 of 7 \n Effective Date: 5/1/2025 Last Review Date: 4/2025 \n ☐Illinois Florida ☒Florida Kids \n Applies ☐ \n ☐New Jersey ☒Maryland Michigan \n to: ☐ \n ☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD \n • Crucial body areas (e.g., hands, feet, face, neck, scalp, genitals/groin, intertriginous\n areas) are affected. \n \n • At least 10% of body surface area (BSA) is affected. \n • At least 3% of body surface area (BSA) is affected and the member meets either of\n the following criteria: \n Member has had an inadequate response or intolerance to either phototherapy\n o \n (e.g., UVB, PUVA) or pharmacologic treatment with methotrexate, cyclosporine,\n or acitretin. \n Member has a clinical reason to avoid pharmacologic treatment with \n o \n methotrexate, cyclosporine, and acitretin (see Appendix). \n Psoriatic arthritis (PsA)1,8-10 \n \n Authorization of 12 months may be granted for adult members who have previously\n received a biologic or targeted synthetic drug (e.g., Rinvoq, Otezla) indicated for active\n psoriatic arthritis. \n Authorization of 12 months may be granted for adult members for treatment of active\n psoriatic arthritis when either of the following criteria is met: \n \n • Member has mild to moderate disease and meets any of the following criteria:\n Member has had an inadequate response to methotrexate, leflunomide, or\n o \n another conventional synthetic drug (e.g., sulfasalazine) administered at an\n adequate dose and duration. \n Member has an intolerance or contraindication to methotrexate or leflunomide\n o \n (see Appendix), or another conventional synthetic drug (e.g., sulfasalazine).\n Member has enthesitis. \n o \n • Member has severe disease. \n Ulcerative colitis (UC)1,12-14 \n Authorization of 12 months may be granted for treatment of moderately to severely active\n ulcerative colitis. \n \n Crohn’s disease (CD)1,15,16 \n Authorization of 12 months may be granted for treatment of moderately to severely active\n Crohn’s disease.",
+      "heading_path": [
+        "PDF Page 3"
+      ],
+      "quality_flags": [
+        "fragmented_lines"
+      ],
+      "metadata": {
+        "extraction": "pdfplumber",
+        "layout": true
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "pdftext_4",
+      "source_type": "pdfplumber_text",
+      "section_title": "PDF Page 4",
+      "page_number": 4,
+      "text": "AETNA BETTER HEALTH® \n \n Coverage Policy/Guideline \n Name: Tremfya Page: 4 of 7 \n Effective Date: 5/1/2025 Last Review Date: 4/2025 \n ☐Illinois Florida ☒Florida Kids \n Applies ☐ \n ☐New Jersey ☒Maryland Michigan \n to: ☐ \n ☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD \n Continuation of Therapy \n \n Plaque psoriasis (PsO)1-6 \n Authorization of 12 months may be granted for all adult members (including new members)\n who are using the requested medication for moderate to severe plaque psoriasis and who\n achieve or maintain a positive clinical response as evidenced by low disease activity or\n improvement in signs and symptoms of the condition when either of the following is met:\n \n • Reduction in body surface area (BSA) affected from baseline \n • Improvement in signs and symptoms from baseline (e.g., itching, redness, flaking,\n \n scaling, burning, cracking, pain) \n Psoriatic arthritis (PsA)1,9,10 \n \n Authorization of 12 months may be granted for all adult members (including new members)\n who are using the requested medication for psoriatic arthritis and who achieve or maintain a\n positive clinical response as evidenced by low disease activity or improvement in signs and\n symptoms of the condition when there is improvement in any of the following from baseline:\n \n • Number of swollen joints \n • Number of tender joints \n • Dactylitis \n • Enthesitis \n \n • Skin and/or nail involvement \n • Functional status \n • C-reactive protein (CRP) \n \n Ulcerative colitis (UC)1,12-14 \n Authorization of 12 months may be granted for all members (including new members) who\n \n are using the requested medication for moderately to severely active ulcerative colitis and\n who achieve or maintain remission. \n Authorization of 12 months may be granted for all members (including new members) who\n are using the requested medication for moderately to severely active ulcerative colitis and\n who achieve or maintain a positive clinical response as evidenced by low disease activity or\n improvement in signs and symptoms of the condition when there is improvement in any of\n \n the following from baseline: \n • Stool frequency \n • Rectal bleeding \n \n • Urgency of defecation \n • C-reactive protein (CRP)",
+      "heading_path": [
+        "PDF Page 4"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "extraction": "pdfplumber",
+        "layout": true
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "pdftext_5",
+      "source_type": "pdfplumber_text",
+      "section_title": "PDF Page 5",
+      "page_number": 5,
+      "text": "AETNA BETTER HEALTH® \n \n Coverage Policy/Guideline \n Name: Tremfya Page: 5 of 7 \n Effective Date: 5/1/2025 Last Review Date: 4/2025 \n ☐Illinois Florida ☒Florida Kids \n Applies ☐ \n ☐New Jersey ☒Maryland Michigan \n to: ☐ \n ☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD \n • Fecal calprotectin (FC) \n • Appearance of the mucosa on endoscopy, computed tomography enterography \n \n (CTE), magnetic resonance enterography (MRE), or intestinal ultrasound \n • Improvement on a disease activity scoring tool (e.g., Ulcerative Colitis Endoscopic\n Index of Severity [UCEIS], Mayo score) \n \n Crohn’s disease (CD)1,15,16 \n Authorization of 12 months may be granted for all members (including new members) who\n are using the requested medication for moderately to severely active Crohn’s disease and\n \n who achieve or maintain remission. \n Authorization of 12 months may be granted for all members (including new members) who\n are using the requested medication for moderately to severely active Crohn’s disease and\n who achieve or maintain a positive clinical response as evidenced by low disease activity or\n improvement in signs and symptoms of the condition when there is improvement in any of\n the following from baseline: \n \n • Abdominal pain or tenderness \n • Diarrhea \n • Body weight \n • Abdominal mass \n • Hematocrit \n • Appearance of the mucosa on endoscopy, computed tomography enterography \n \n (CTE), magnetic resonance enterography (MRE), or intestinal ultrasound \n • Improvement on a disease activity scoring tool (e.g., Crohn’s Disease Activity Index\n [CDAI] score) \n \n Other1,7 \n \n For all indications: Member has had a documented negative tuberculosis (TB) test (which\n can include a tuberculosis skin test [TST] or an interferon-release assay [IGRA]) within 12\n months of initiating therapy for persons who are naïve to biologic drugs or targeted\n synthetic drugs associated with an increased risk of TB. \n If the screening testing for TB is positive, there must be further testing to confirm there is no\n active disease (e.g., chest x-ray). Do not administer the requested medication to members\n \n with active TB infection. If there is latent disease, TB treatment must be started before\n initiation of the requested medication. \n For all indications: Member cannot use the requested medication concomitantly with any\n other biologic drug or targeted synthetic drug for the same indication.",
+      "heading_path": [
+        "PDF Page 5"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "extraction": "pdfplumber",
+        "layout": true
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "pdftext_6",
+      "source_type": "pdfplumber_text",
+      "section_title": "PDF Page 6",
+      "page_number": 6,
+      "text": "AETNA BETTER HEALTH® \n \n Coverage Policy/Guideline \n Name: Tremfya Page: 6 of 7 \n Effective Date: 5/1/2025 Last Review Date: 4/2025 \n ☐Illinois Florida ☒Florida Kids \n Applies ☐ \n ☐New Jersey ☒Maryland Michigan \n to: ☐ \n ☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD \n Dosage and Administration \n \n Approvals may be subject to dosing limits in accordance with FDA-approved labeling,\n accepted compendia, and/or evidence-based practice guidelines. \n Appendix \n \n Examples of Clinical Reasons to Avoid Pharmacologic Treatment with Methotrexate,\n Cyclosporine, Acitretin, or Leflunomide11 \n • Clinical diagnosis of alcohol use disorder, alcoholic liver disease, or other chronic\n \n liver disease \n • Drug interaction \n • Risk of treatment-related toxicity \n • Pregnancy or currently planning pregnancy \n \n • Breastfeeding \n • Significant comorbidity prohibits use of systemic agents (e.g., liver or kidney disease,\n blood dyscrasias, uncontrolled hypertension) \n • Hypersensitivity \n \n • History of intolerance or adverse event. \n \n Approval Duration and Quantity Restrictions: \n Approval: \n Initial and Renewal Approval: 12 months \n \n Quantity Level Limit: \n • Tremfya (guselkumab) 100 mg/mL prefilled syringe/One-press injector: \n \n 1 syringe/injector per 56 days \n o \n Exception limit: 2 syringes/injectors per 28 days \n o \n • Tremfya (guselkumab) 200 mg/2 mL prefilled syringe/pen: \n 1 syringe/pen per 28 days \n o \n Exception limit: 6 syringes/pens per 56 days \n o \n • Tremfya (guselkumab) 200 mg/2 mL prefilled pen Induction Pack for Crohn’s Disease:\n Exception limit: 3 cartons (6 pens) per 56 days \n o \n *Coverage up to the exception limits may be provided with prior authorization\n References: \n 1. Tremfya [package insert]. Horsham, PA: Janssen Biotech, Inc.; March 2025.",
+      "heading_path": [
+        "PDF Page 6"
+      ],
+      "quality_flags": [
+        "fragmented_lines",
+        "high_value_layout_section"
+      ],
+      "metadata": {
+        "extraction": "pdfplumber",
+        "layout": true
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "pdftext_7",
+      "source_type": "pdfplumber_text",
+      "section_title": "PDF Page 7",
+      "page_number": 7,
+      "text": "AETNA BETTER HEALTH® \n \n Coverage Policy/Guideline \n Name: Tremfya Page: 7 of 7 \n Effective Date: 5/1/2025 Last Review Date: 4/2025 \n ☐Illinois Florida ☒Florida Kids \n Applies ☐ \n ☐New Jersey ☒Maryland Michigan \n to: ☐ \n ☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD \n 2. Menter A, Korman NJ, Elmets CA, et al. Guidelines of care for the management of psoriasis and\n psoriatic arthritis. Section 4: Guidelines of care for the management and treatment of psoriasis\n with traditional systemic agents. J Am Acad Dermatol. 2009;61:451-485. \n 3. Menter A, Korman NJ, Elmets CA, et al. Guidelines of care for the management of psoriasis and\n psoriatic arthritis. Section 6: Guidelines of care for the treatment of psoriasis and psoriatic\n arthritis: case-based presentations and evidence-based conclusions. J Am Acad Dermatol.\n 2011;65(1):137-174. \n 4. Reich K, Armstrong, AW, Foley P, et al. Efficacy and safety of guselkumab, an anti-interleukin-23\n monoclonal antibody, compared with adalimumab for the treatment of patients with moderate to\n severe psoriasis with randomized withdrawal and retreatment: Results from the phase III, double-\n blind, placebo- and active comparator–controlled VOYAGE 2 trial. Am J Clin Dermatol.\n 2017;76(3):418-431. \n 5. Blauvelt A, Papp KA, Griffiths CEM, et al. Efficacy and safety of guselkumab, an anti-interleukin-\n 23 monoclonal antibody, compared with adalimumab for the continuous treatment of patients\n with moderate to severe psoriasis: Results from the phase III, double-blinded, placebo- and active\n comparator-controlled VOYAGE 1 trial. Am J Clin Dermatol. 2017;76(3):405-417.\n 6. Menter A, Strober BE, Kaplan DH, et al. Joint AAD-NPF guidelines of care for the management\n and treatment of psoriasis with biologics. J Am Acad Dermatol. 2019;80(4):1029-1072.\n 7. Testing for TB Infection. Centers for Disease Control and Prevention. Retrieved on January 22,\n 2025 from: https://www.cdc.gov/tb/testing/index.html. \n 8. Gossec L, Baraliakos X, Kerschbaumer A, et al. European League Against Rheumatism (EULAR)\n recommendations for the management of psoriatic arthritis with pharmacological therapies: 2019\n update. Ann Rheum Dis. 2020;79(6):700-712. \n 9. Singh JA, Guyatt G, Ogdie A, et al. 2018 American College of Rheumatology/National Psoriasis\n Foundation Guideline for the Treatment of Psoriatic Arthritis. Arthritis Rheum. 2018;71:5-32.\n 10. Coates LC, Soriano ER, Corp N, et al. Group for Research and Assessment of Psoriasis and\n Psoriatic Arthritis (GRAPPA): updated treatment recommendations for psoriatic arthritis 2021. Nat\n Rev Rheumatol. 2022;18(8):465-479. \n 11. Menter A, Gelfand JM, Connor C, et al. Joint American Academy of Dermatology-National\n Psoriasis Foundation guidelines of care for the management of psoriasis with systemic\n nonbiologic therapies. J Am Acad Dermatol. 2020;82(6):1445-1486. \n 12. Talley NJ, Abreu MT, Achkar J, et al. An evidence-based systematic review on medical therapies\n for inflammatory bowel disease. Am J Gastroenterol. 2011;106(Suppl 1):S2-S25.\n 13. Rubin DT, Ananthakrishnan AN, Siegel CA, et al. 2019 ACG Clinical Guideline: Ulcerative Colitis in\n Adults. Am J Gastroenterol. 2019;114:384-413. \n 14. Singh S, Loftus EV Jr, Limketkai BN, et al. AGA Living Clinical Practice Guideline on\n Pharmacological Management of Moderate-to-Severe Ulcerative Colitis. Gastroenterology.\n 2024;167(7):1307-1343. \n 15. Lichtenstein GR, Loftus EV Jr, Isaacs KI, et al. ACG Clinical Guideline: Management of Crohn’s\n Disease in Adults. Am J Gastroenterol. 2018;113:481-517. \n 16. Feuerstein JD, Ho EY, Shmidt E, et al. AGA Clinical Practice Guidelines on the Medical\n Management of Moderate to Severe Luminal and Perianal Fistulizing Crohn’s Disease.\n Gastroenterology. 2021;160: 2496-2508.",
+      "heading_path": [
+        "PDF Page 7"
+      ],
+      "quality_flags": [],
+      "metadata": {
+        "extraction": "pdfplumber",
+        "layout": true
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "table_1_1",
+      "source_type": "table",
+      "section_title": "Page 1 Table 1",
+      "page_number": 1,
+      "text": "AETNA BETTER HEALTH®\nCoverage Policy/Guideline\nName: Tremfya Page: 1 of 7\nEffective Date: 5/1/2025 Last Review Date: 4/2025\n☐Illinois Florida ☒Florida Kids\nApplies ☐\n☐New Jersey ☒Maryland Michigan\nto: ☐\n☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD",
+      "heading_path": [
+        "Page 1",
+        "Table 1"
+      ],
+      "quality_flags": [
+        "table_source"
+      ],
+      "metadata": {
+        "rows": [
+          [
+            "AETNA BETTER HEALTH®\nCoverage Policy/Guideline"
+          ],
+          [
+            "Name: Tremfya Page: 1 of 7"
+          ],
+          [
+            "Effective Date: 5/1/2025 Last Review Date: 4/2025"
+          ],
+          [
+            "☐Illinois Florida ☒Florida Kids\nApplies ☐\n☐New Jersey ☒Maryland Michigan\nto: ☐\n☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD"
+          ]
+        ],
+        "source": "pdfplumber_table"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "table_2_1",
+      "source_type": "table",
+      "section_title": "Page 2 Table 1",
+      "page_number": 2,
+      "text": "AETNA BETTER HEALTH®\nCoverage Policy/Guideline\nName: Tremfya Page: 2 of 7\nEffective Date: 5/1/2025 Last Review Date: 4/2025\n☐Illinois Florida ☒Florida Kids\nApplies ☐\n☐New Jersey ☒Maryland Michigan\nto: ☐\n☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD",
+      "heading_path": [
+        "Page 2",
+        "Table 1"
+      ],
+      "quality_flags": [
+        "table_source"
+      ],
+      "metadata": {
+        "rows": [
+          [
+            "AETNA BETTER HEALTH®\nCoverage Policy/Guideline"
+          ],
+          [
+            "Name: Tremfya Page: 2 of 7"
+          ],
+          [
+            "Effective Date: 5/1/2025 Last Review Date: 4/2025"
+          ],
+          [
+            "☐Illinois Florida ☒Florida Kids\nApplies ☐\n☐New Jersey ☒Maryland Michigan\nto: ☐\n☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD"
+          ]
+        ],
+        "source": "pdfplumber_table"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "table_3_1",
+      "source_type": "table",
+      "section_title": "Page 3 Table 1",
+      "page_number": 3,
+      "text": "AETNA BETTER HEALTH®\nCoverage Policy/Guideline\nName: Tremfya Page: 3 of 7\nEffective Date: 5/1/2025 Last Review Date: 4/2025\n☐Illinois Florida ☒Florida Kids\nApplies ☐\n☐New Jersey ☒Maryland Michigan\nto: ☐\n☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD",
+      "heading_path": [
+        "Page 3",
+        "Table 1"
+      ],
+      "quality_flags": [
+        "table_source"
+      ],
+      "metadata": {
+        "rows": [
+          [
+            "AETNA BETTER HEALTH®\nCoverage Policy/Guideline"
+          ],
+          [
+            "Name: Tremfya Page: 3 of 7"
+          ],
+          [
+            "Effective Date: 5/1/2025 Last Review Date: 4/2025"
+          ],
+          [
+            "☐Illinois Florida ☒Florida Kids\nApplies ☐\n☐New Jersey ☒Maryland Michigan\nto: ☐\n☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD"
+          ]
+        ],
+        "source": "pdfplumber_table"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "table_4_1",
+      "source_type": "table",
+      "section_title": "Page 4 Table 1",
+      "page_number": 4,
+      "text": "AETNA BETTER HEALTH®\nCoverage Policy/Guideline\nName: Tremfya Page: 4 of 7\nEffective Date: 5/1/2025 Last Review Date: 4/2025\n☐Illinois Florida ☒Florida Kids\nApplies ☐\n☐New Jersey ☒Maryland Michigan\nto: ☐\n☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD",
+      "heading_path": [
+        "Page 4",
+        "Table 1"
+      ],
+      "quality_flags": [
+        "table_source"
+      ],
+      "metadata": {
+        "rows": [
+          [
+            "AETNA BETTER HEALTH®\nCoverage Policy/Guideline"
+          ],
+          [
+            "Name: Tremfya Page: 4 of 7"
+          ],
+          [
+            "Effective Date: 5/1/2025 Last Review Date: 4/2025"
+          ],
+          [
+            "☐Illinois Florida ☒Florida Kids\nApplies ☐\n☐New Jersey ☒Maryland Michigan\nto: ☐\n☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD"
+          ]
+        ],
+        "source": "pdfplumber_table"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "table_5_1",
+      "source_type": "table",
+      "section_title": "Page 5 Table 1",
+      "page_number": 5,
+      "text": "AETNA BETTER HEALTH®\nCoverage Policy/Guideline\nName: Tremfya Page: 5 of 7\nEffective Date: 5/1/2025 Last Review Date: 4/2025\n☐Illinois Florida ☒Florida Kids\nApplies ☐\n☐New Jersey ☒Maryland Michigan\nto: ☐\n☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD",
+      "heading_path": [
+        "Page 5",
+        "Table 1"
+      ],
+      "quality_flags": [
+        "table_source"
+      ],
+      "metadata": {
+        "rows": [
+          [
+            "AETNA BETTER HEALTH®\nCoverage Policy/Guideline"
+          ],
+          [
+            "Name: Tremfya Page: 5 of 7"
+          ],
+          [
+            "Effective Date: 5/1/2025 Last Review Date: 4/2025"
+          ],
+          [
+            "☐Illinois Florida ☒Florida Kids\nApplies ☐\n☐New Jersey ☒Maryland Michigan\nto: ☐\n☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD"
+          ]
+        ],
+        "source": "pdfplumber_table"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "table_6_1",
+      "source_type": "table",
+      "section_title": "Page 6 Table 1",
+      "page_number": 6,
+      "text": "AETNA BETTER HEALTH®\nCoverage Policy/Guideline\nName: Tremfya Page: 6 of 7\nEffective Date: 5/1/2025 Last Review Date: 4/2025\n☐Illinois Florida ☒Florida Kids\nApplies ☐\n☐New Jersey ☒Maryland Michigan\nto: ☐\n☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD",
+      "heading_path": [
+        "Page 6",
+        "Table 1"
+      ],
+      "quality_flags": [
+        "table_source"
+      ],
+      "metadata": {
+        "rows": [
+          [
+            "AETNA BETTER HEALTH®\nCoverage Policy/Guideline"
+          ],
+          [
+            "Name: Tremfya Page: 6 of 7"
+          ],
+          [
+            "Effective Date: 5/1/2025 Last Review Date: 4/2025"
+          ],
+          [
+            "☐Illinois Florida ☒Florida Kids\nApplies ☐\n☐New Jersey ☒Maryland Michigan\nto: ☐\n☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD"
+          ]
+        ],
+        "source": "pdfplumber_table"
+      }
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "table_7_1",
+      "source_type": "table",
+      "section_title": "Page 7 Table 1",
+      "page_number": 7,
+      "text": "AETNA BETTER HEALTH®\nCoverage Policy/Guideline\nName: Tremfya Page: 7 of 7\nEffective Date: 5/1/2025 Last Review Date: 4/2025\n☐Illinois Florida ☒Florida Kids\nApplies ☐\n☐New Jersey ☒Maryland Michigan\nto: ☐\n☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD",
+      "heading_path": [
+        "Page 7",
+        "Table 1"
+      ],
+      "quality_flags": [
+        "table_source"
+      ],
+      "metadata": {
+        "rows": [
+          [
+            "AETNA BETTER HEALTH®\nCoverage Policy/Guideline"
+          ],
+          [
+            "Name: Tremfya Page: 7 of 7"
+          ],
+          [
+            "Effective Date: 5/1/2025 Last Review Date: 4/2025"
+          ],
+          [
+            "☐Illinois Florida ☒Florida Kids\nApplies ☐\n☐New Jersey ☒Maryland Michigan\nto: ☐\n☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD"
+          ]
+        ],
+        "source": "pdfplumber_table"
+      }
+    }
+  ]
+}
