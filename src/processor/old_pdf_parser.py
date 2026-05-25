@@ -24,11 +24,11 @@ from docling.backend.pypdfium2_backend import PyPdfiumDocumentBackend
 
 # ── CONFIG ──────────────────────────────────────────────
 
-DRIVE_BASE = "/content/drive/MyDrive/pa_hackathon"
+BASE_DIR = Path(__file__).resolve().parents[1]
 
-PDF_FOLDER = Path(DRIVE_BASE) / "pdfs"
+PDF_FOLDER = BASE_DIR / "data" / "raw_pdfs"
 
-BASE_OUTPUT_FOLDER = Path(DRIVE_BASE) / "extracted_docs"
+BASE_OUTPUT_FOLDER = BASE_DIR / "data" / "extracted_pdfs"
 
 RAW_MD_FOLDER = BASE_OUTPUT_FOLDER / "raw_markdown"
 
