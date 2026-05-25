@@ -1,0 +1,935 @@
+{
+  "final_structured_json": {
+    "filename": "330109-4880941.pdf",
+    "brand": "TREMFYA",
+    "age": "FDA labelled age",
+    "step_therapy_requirements": "The patient is unable to take THREE preferred products, where indicated, for the given diagnosis due to a trial and inadequate treatment response or intolerance, or a contraindication. Preferred products include: a preferred ustekinumab product, and TWO additional preferred products (a preferred adalimumab product OR Enbrel, Rinvoq, or Otezla).",
+    "number_of_steps_brands": "3",
+    "number_of_steps_generic": "NA",
+    "step_through_phototherapy": "No",
+    "tb_test_required": "Y",
+    "initial_auth_duration": "12",
+    "reauthorization_duration": "12",
+    "reauthorization_required": "Yes",
+    "reauthorization_requirements": "Reduction in body surface area (BSA) affected from baseline or improvement in signs and symptoms from baseline (e.g., itching, redness, flaking, scaling, burning, cracking, pain) for PsO; positive clinical response for PsA; positive clinical response to therapy or remission for UC/CD.",
+    "specialist_types": "dermatologist, rheumatologist, gastroenterologist",
+    "quantity_limits": "Tremfya 100 mg/mL prefilled syringe/One-press injector: 1 syringe/injector per 56 days (Exception: 2 syringes/injectors per 28 days); Tremfya 200 mg/2 mL prefilled syringe/pen: 1 syringe/pen per 28 days (Exception: 6 syringes/pens per 56 days); Tremfya 200 mg/2 mL prefilled pen Induction Pack for Crohn's Disease: Exception limit: 3 cartons (6 pens) per 56 days.",
+    "access_score": null
+  },
+  "source_provenance_mappings": {
+    "age": {
+      "source_ids": [
+        "chunk_2"
+      ],
+      "page_numbers": [
+        1
+      ],
+      "evidence_snippets": [
+        "Treatment of adult patients"
+      ]
+    },
+    "step_therapy_requirements": {
+      "source_ids": [
+        "chunk_3",
+        "chunk_4"
+      ],
+      "page_numbers": [
+        1,
+        1
+      ],
+      "evidence_snippets": [
+        "The patient is unable to take THREE preferred products",
+        "A preferred ustekinumab product",
+        "TWO additional preferred products",
+        "A preferred adalimumab product OR Enbrel",
+        "Rinvoq",
+        "Otezla"
+      ]
+    },
+    "number_of_steps_brands": {
+      "source_ids": [
+        "chunk_3",
+        "chunk_4"
+      ],
+      "page_numbers": [
+        1,
+        1
+      ],
+      "evidence_snippets": [
+        "The patient is unable to take THREE preferred products"
+      ]
+    },
+    "number_of_steps_generic": {
+      "source_ids": [
+        "chunk_3"
+      ],
+      "page_numbers": [
+        1
+      ],
+      "evidence_snippets": [
+        "The patient is unable to take THREE preferred products"
+      ]
+    },
+    "step_through_phototherapy": {
+      "source_ids": [
+        "chunk_10",
+        "pdf_page_3"
+      ],
+      "page_numbers": [
+        2,
+        3
+      ],
+      "evidence_snippets": [
+        "Member has had an inadequate response or intolerance to either phototherapy (e.g., UVB, PUVA) or pharmacologic treatment"
+      ]
+    },
+    "tb_test_required": {
+      "source_ids": [
+        "chunk_19"
+      ],
+      "page_numbers": [
+        5
+      ],
+      "evidence_snippets": [
+        "Member has had a documented negative tuberculosis (TB) test"
+      ]
+    },
+    "initial_auth_duration": {
+      "source_ids": [
+        "chunk_22"
+      ],
+      "page_numbers": [
+        6
+      ],
+      "evidence_snippets": [
+        "Initial and Renewal Approval: 12 months"
+      ]
+    },
+    "reauthorization_duration": {
+      "source_ids": [
+        "chunk_22"
+      ],
+      "page_numbers": [
+        6
+      ],
+      "evidence_snippets": [
+        "Initial and Renewal Approval: 12 months"
+      ]
+    },
+    "reauthorization_required": {
+      "source_ids": [
+        "chunk_22"
+      ],
+      "page_numbers": [
+        6
+      ],
+      "evidence_snippets": [
+        "Initial and Renewal Approval: 12 months"
+      ]
+    },
+    "reauthorization_requirements": {
+      "source_ids": [
+        "chunk_14",
+        "pdf_page_2",
+        "pdf_page_5"
+      ],
+      "page_numbers": [
+        4,
+        2,
+        5
+      ],
+      "evidence_snippets": [
+        "Reduction in body surface area (BSA) affected from baseline",
+        "Improvement in signs and symptoms from baseline",
+        "Chart notes or medical record documentation supporting positive clinical response"
+      ]
+    },
+    "specialist_types": {
+      "source_ids": [
+        "pdf_page_2"
+      ],
+      "page_numbers": [
+        2
+      ],
+      "evidence_snippets": [
+        "dermatologist",
+        "rheumatologist",
+        "gastroenterologist"
+      ]
+    },
+    "quantity_limits": {
+      "source_ids": [
+        "chunk_22"
+      ],
+      "page_numbers": [
+        6
+      ],
+      "evidence_snippets": [
+        "1 syringe/injector per 56 days",
+        "Exception limit: 2 syringes/injectors per 28 days",
+        "1 syringe/pen per 28 days",
+        "Exception limit: 6 syringes/pens per 56 days",
+        "Exception limit: 3 cartons (6 pens) per 56 days"
+      ]
+    }
+  },
+  "reasoning_summary": [
+    "The policy requires the patient to try three preferred products, which are all biologics/targeted therapies, resulting in 3 branded steps.",
+    "Phototherapy is listed as an option for PsO but is not a mandatory prerequisite step for all patients, as it is part of an OR condition.",
+    "Reauthorization is required as evidenced by the explicit 12-month renewal duration and continuation criteria.",
+    "Age is defined as 'adult' across all indications, mapping to 'FDA labelled age'.",
+    "Quantity limits are explicitly stated in the 'Quantity Level Limit' section."
+  ],
+  "debug_notes": [],
+  "retrieved_markdown_chunks": [
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "chunk_2",
+      "section_title": "Intent:",
+      "page_number": 1,
+      "text": "## Intent:\n\nThe intent of this policy/guideline is to provide information to the prescribing practitioner outlining the coverage criteria for Tremfya under the patient's prescription drug benefit.\n\n## Description:\n\n## FDA -Approved Indications\n\n- Treatment of adult patients with moderate to severe plaque psoriasis (PsO) who are candidates for systemic therapy or phototherapy\n- Treatment of adult patients with active psoriatic arthritis (PsA)\n- Treatment of moderately to severely active ulcerative colitis (UC) in adults\n- Treatment of moderately to severely active Crohn's disease (CD) in adults\n\nAll other indications are considered experimental/investigational and not medically necessary.",
+      "heading_path": [
+        "Intent:"
+      ],
+      "markdown_quality_flags": []
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "chunk_3",
+      "section_title": "Applicable Drug List:",
+      "page_number": 1,
+      "text": "## Applicable Drug List:\n\nNon-Preferred: Tremfya\n\n## Policy/Guideline:\n\n## Documentation for all indications:\n\nThe patient is unable to take THREE preferred products, where indicated, for the given diagnosis due to a trial and inadequate treatment response or intolerance, or a contraindication. Documentation is required for approval.",
+      "heading_path": [
+        "Applicable Drug List:"
+      ],
+      "markdown_quality_flags": []
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "chunk_4",
+      "section_title": "THREE preferred products:",
+      "page_number": 1,
+      "text": "## THREE preferred products:\n\n- A preferred ustekinumab product\n- TWO additional preferred products\n- o A preferred adalimumab product OR Enbrel\n- o Rinvoq\n- o Otezla\n\n## Documentation\n\nSubmission of the following information is necessary to initiate the prior authorization review:",
+      "heading_path": [
+        "THREE preferred products:"
+      ],
+      "markdown_quality_flags": []
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "chunk_9",
+      "section_title": "Coverage Criteria",
+      "page_number": 2,
+      "text": "## Coverage Criteria\n\n## Plaque psoriasis (PsO) 1-6,10\n\nAuthorization of 12 months may be granted for adult members who have previously received a biologic or targeted synthetic drug (e.g., Sotyktu, Otezla) indicated for the treatment of moderate to severe plaque psoriasis.\n\nAuthorization of 12 months may be granted for adult members for treatment of moderate to severe plaque psoriasis when any of the following criteria is met:\n\n<!-- image -->",
+      "heading_path": [
+        "Coverage Criteria"
+      ],
+      "markdown_quality_flags": [
+        "image_placeholder"
+      ]
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "chunk_10",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 2,
+      "text": "## AETNA BETTER HEALTH®\n\nCoverage Policy/Guideline\n\nName:\n\nTremfya\n\nPage:\n\n3 of 7\n\nEffective Date: 5/1/2025\n\nLast Review Date:\n\n4/2025\n\nApplies\n\nto:\n\n- [ ] ☐Illinois\n\n- [ ] ☐Florida\n\n- [x] ☒Florida Kids\n\n- [ ] ☐New Jersey\n\n- [x] ☒Maryland\n\n- [ ] ☐Michigan\n\n- [x] ☒Pennsylvania Kids\n\n- [ ] ☐Virginia\n\n- [ ] ☒Kentucky PRMD\n\n- Crucial body areas (e.g., hands, feet, face, neck, scalp, genitals/groin, intertriginous areas) are affected.\n- At least 10% of body surface area (BSA) is affected.\n- At least 3% of body surface area (BSA) is affected and the member meets either of the following criteria:\n- o Member has had an inadequate response or intolerance to either phototherapy (e.g., UVB, PUVA) or pharmacologic treatment with methotrexate, cyclosporine, or acitretin.\n- o Member has a clinical reason to avoid pharmacologic treatment with methotrexate, cyclosporine, and acitretin (see Appendix).",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "markdown_quality_flags": [
+        "dense_list_or_flattened_table"
+      ]
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "chunk_11",
+      "section_title": "Psoriatic arthritis (PsA)1,8 -10",
+      "page_number": 3,
+      "text": "## Psoriatic arthritis (PsA)1,8 -10\n\nAuthorization of 12 months may be granted for adult members who have previously received a biologic or targeted synthetic drug (e.g., Rinvoq, Otezla) indicated for active psoriatic arthritis.\n\nAuthorization of 12 months may be granted for adult members for treatment of active psoriatic arthritis when either of the following criteria is met:\n\n- Member has mild to moderate disease and meets any of the following criteria:\n- o Member has had an inadequate response to methotrexate, leflunomide, or another conventional synthetic drug (e.g., sulfasalazine) administered at an adequate dose and duration.\n- o Member has an intolerance or contraindication to methotrexate or leflunomide (see Appendix), or another conventional synthetic drug (e.g., sulfasalazine).\n- o Member has enthesitis.\n- Member has severe disease.",
+      "heading_path": [
+        "Psoriatic arthritis (PsA)1,8 -10"
+      ],
+      "markdown_quality_flags": []
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "chunk_12",
+      "section_title": "Ulcerative colitis (UC)1,12 -14",
+      "page_number": 3,
+      "text": "## Ulcerative colitis (UC)1,12 -14\n\nAuthorization of 12 months may be granted for treatment of moderately to severely active ulcerative colitis.\n\n## Crohn's disease (CD)1,15,16\n\nAuthorization of 12 months may be granted for treatment of moderately to severely active Crohn's disease.\n\n<!-- image -->\n\n<!-- image -->",
+      "heading_path": [
+        "Ulcerative colitis (UC)1,12 -14"
+      ],
+      "markdown_quality_flags": [
+        "image_placeholder"
+      ]
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "chunk_14",
+      "section_title": "Continuation of Therapy",
+      "page_number": 4,
+      "text": "## Continuation of Therapy\n\n## Plaque psoriasis (PsO) 1-6\n\nAuthorization of 12 months may be granted for all adult members (including new members) who are using the requested medication for moderate to severe plaque psoriasis and who achieve or maintain a positive clinical response as evidenced by low disease activity or improvement in signs and symptoms of the condition when either of the following is met:\n\n- Reduction in body surface area (BSA) affected from baseline\n- Improvement in signs and symptoms from baseline (e.g., itching, redness, flaking, scaling, burning, cracking, pain)",
+      "heading_path": [
+        "Continuation of Therapy"
+      ],
+      "markdown_quality_flags": []
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "chunk_19",
+      "section_title": "Other1,7",
+      "page_number": 5,
+      "text": "## Other1,7\n\nFor all indications: Member has had a documented negative tuberculosis (TB) test (which can include a tuberculosis skin test [TST] or an interferon-release assay [IGRA]) within 12 months of initiating therapy for persons who are naïve to biologic drugs or targeted synthetic drugs associated with an increased risk of TB.\n\nIf the screening testing for TB is positive, there must be further testing to confirm there is no active disease (e.g., chest x -ray). Do not administer the requested medication to members with active TB infection. If there is latent disease, TB treatment must be started before initiation of the requested medication.\n\nFor all indications: Member cannot use the requested medication concomitantly with any other biologic drug or targeted synthetic drug for the same indication.\n\n<!-- image -->\n\n<!-- image -->",
+      "heading_path": [
+        "Other1,7"
+      ],
+      "markdown_quality_flags": [
+        "image_placeholder"
+      ]
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "chunk_20",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 5,
+      "text": "## AETNA BETTER HEALTH®\n\nCoverage Policy/Guideline\n\nName:\n\nTremfya\n\nPage:\n\n6 of 7\n\nEffective Date: 5/1/2025\n\nLast Review Date:\n\n4/2025\n\nApplies\n\nto:\n\n- [ ] ☐Illinois\n\n- [ ] ☐Florida\n\n- [x] ☒Florida Kids\n\n- [ ] ☐New Jersey\n\n- [x] ☒Maryland\n\n- [ ] ☐Michigan\n\n- [ ] ☒Pennsylvania Kids\n\n- [ ] ☐Virginia\n\n- [ ] ☒Kentucky PRMD",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "markdown_quality_flags": [
+        "dense_list_or_flattened_table"
+      ]
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "chunk_21",
+      "section_title": "Dosage and Administration",
+      "page_number": 6,
+      "text": "## Dosage and Administration\n\nApprovals may be subject to dosing limits in accordance with FDA -approved labeling, accepted compendia, and/or evidence-based practice guidelines.\n\n## Appendix\n\nExamples of Clinical Reasons to Avoid Pharmacologic Treatment with Methotrexate, Cyclosporine, Acitretin, or Leflunomide 11\n\n- Clinical diagnosis of alcohol use disorder, alcoholic liver disease, or other chronic liver disease\n- Drug interaction\n- Risk of treatment -related toxicity\n- Pregnancy or currently planning pregnancy\n- Breastfeeding\n- Significant comorbidity prohibits use of systemic agents (e.g., liver or kidney disease, blood dyscrasias, uncontrolled hypertension)\n- Hypersensitivity\n- History of intolerance or adverse event.",
+      "heading_path": [
+        "Dosage and Administration"
+      ],
+      "markdown_quality_flags": [
+        "high_value_layout_section"
+      ]
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "chunk_22",
+      "section_title": "Approval Duration and Quantity Restrictions:",
+      "page_number": 6,
+      "text": "## Approval Duration and Quantity Restrictions:\n\n## Approval:\n\nInitial and Renewal Approval: 12 months\n\n## Quantity Level Limit:\n\n- Tremfya (guselkumab) 100 mg/mL prefilled syringe/One -press injector:\n- o 1 syringe/injector per 56 days\n- o Exception limit: 2 syringes/injectors per 28 days\n- Tremfya (guselkumab) 200 mg/2 mL prefilled syringe/pen:\n- o 1 syringe/pen per 28 days\n- o Exception limit: 6 syringes/pens per 56 days\n- Tremfya (guselkumab) 200 mg/2 mL prefilled pen Induction Pack for Crohn's Disease:\n- o Exception limit: 3 cartons (6 pens) per 56 days\n* Coverage up to the exception limits may be provided with prior authorization",
+      "heading_path": [
+        "Approval Duration and Quantity Restrictions:"
+      ],
+      "markdown_quality_flags": [
+        "dense_list_or_flattened_table",
+        "high_value_layout_section"
+      ]
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "chunk_23",
+      "section_title": "References:",
+      "page_number": 6,
+      "text": "## References:\n\n1. Tremfya [package insert]. Horsham, PA: Janssen Biotech, Inc.; March 2025.\n2. Menter A, Korman NJ, Elmets CA, et al. Guidelines of care for the management of psoriasis and psoriatic arthritis. Section 4: Guidelines of care for the management and treatment of psoriasis with traditional systemic agents. J Am Acad Dermatol. 2009;61:451 -485.\n3. Menter A, Korman NJ, Elmets CA, et al. Guidelines of care for the management of psoriasis and psoriatic arthritis. Section 6: Guidelines of care for the treatment of psoriasis and psoriatic arthritis: case -based presentations and evidence-based conclusions. J Am Acad Dermatol. 2011;65(1):137-174.\n4. Reich K, Armstrong, AW, Foley P, et al. Efficacy and safety of guselkumab, an anti -interleukin-23 monoclonal antibody, compared with adalimumab for the treatment of patients with moderate to severe psoriasis with randomized withdrawal and retreatment: Results from the phase III, doubleblind, placebo- and active comparator–controlled VOYAGE 2 trial. Am J Clin Dermatol. 2017;76(3):418-431.\n5. Blauvelt A, Papp KA, Griffiths CEM, et al. Efficacy and safety of guselkumab, an anti -interleukin -23 monoclonal antibody, compared with adalimumab for the continuous treatment of patients with moderate to severe psoriasis: Results from the phase III, double-blinded, placebo- and active comparator -controlled VOYAGE 1 trial. Am J Clin Dermatol. 2017;76(3):405-417.\n6. Menter A, Strober BE, Kaplan DH, et al. Joint AAD-NPF guidelines of care for the management and treatment of psoriasis with biologics. J Am Acad Dermatol. 2019;80(4):1029-1072.\n7. Testing for TB Infection. Centers for Disease Control and Prevention. Retrieved on January 22, 2025 from: https://www.cdc.gov/tb/testing/index.html .\n8. Gossec L, Baraliakos X, Kerschbaumer A, et al. European League Against Rheumatism (EULAR) recommendations for the management of psoriatic arthritis with pharmacological therapies: 2019 update. Ann Rheum Dis. 2020;79(6):700-712.\n9. Singh JA, Guyatt G, Ogdie A, et al. 2018 American College of Rheumatology/National Psoriasis Foundation Guideline for the Treatment of Psoriatic Arthritis. Arthritis Rheum. 2018;71:5-32.\n10. Coates LC, Soriano ER, Corp N, et al. Group for Research and Assessment of Psoriasis and Psoriatic Arthritis (GRAPPA): updated treatment recommendations for psoriatic arthritis 2021. Nat Rev Rheumatol. 2022;18(8):465-479.\n11. Menter A, Gelfand JM, Connor C, et al. Joint American Academy of Dermatology -National Psoriasis Foundation guidelines of care for the management of psoriasis with systemic nonbiologic therapies. J Am Acad Dermatol. 2020;82(6):1445 -1486.\n12. Talley NJ, Abreu MT, Achkar J, et al. An evidence-based systematic review on medical therapies for inflammatory bowel disease. Am J Gastroenterol. 2011;106(Suppl 1):S2-S25.\n13. Rubin DT, Ananthakrishnan AN, Siegel CA, et al. 2019 ACG Clinical Guideline: Ulcerative Colitis in Adults. Am J Gastroenterol. 2019;114:384-413.\n14. Singh S, Loftus EV Jr, Limketkai BN, et al. AGA Living Clinical Practice Guideline on Pharmacological Management of Moderate -to-Severe Ulcerative Colitis. Gastroenterology. 2024;167(7):1307-1343.\n15. Lichtenstein GR, Loftus EV Jr, Isaacs KI, et al. ACG Clinical Guideline: Management of Crohn's Disease in Adults. Am J Gastroenterol. 2018;113:481-517.\n16. Feuerstein JD, Ho EY, Shmidt E, et al. AGA Clinical Practice Guidelines on the Medical Management of Moderate to Severe Luminal and Perianal Fistulizing Crohn's Disease. Gastroenterology. 2021;160: 2496 -2508.\n\n<!-- image -->",
+      "heading_path": [
+        "References:"
+      ],
+      "markdown_quality_flags": [
+        "image_placeholder"
+      ]
+    },
+    {
+      "filename": "330109-4880941.pdf",
+      "brand_name": "TREMFYA",
+      "chunk_id": "chunk_24",
+      "section_title": "AETNA BETTER HEALTH®",
+      "page_number": 6,
+      "text": "## AETNA BETTER HEALTH®\n\nCoverage Policy/Guideline\n\nName:\n\nTremfya\n\nPage:\n\n7 of 7\n\nEffective Date: 5/1/2025\n\nLast Review Date:\n\n4/2025\n\nApplies\n\nto:\n\n- [ ] ☐Illinois\n\n- [ ] ☐Florida\n\n- [x] ☒Florida Kids\n\n- [ ] ☐New Jersey\n\n- [x] ☒Maryland\n\n- [ ] ☐Michigan\n\n- [ ] ☒Pennsylvania Kids\n\n- [ ] ☐Virginia\n\n- [ ] ☒Kentucky PRMD",
+      "heading_path": [
+        "AETNA BETTER HEALTH®"
+      ],
+      "markdown_quality_flags": [
+        "dense_list_or_flattened_table"
+      ]
+    }
+  ],
+  "pdf_fallback_extracted_sections": [
+    {
+      "section_id": "pdf_page_2",
+      "page_number": 2,
+      "reasons": [
+        "dense_list_or_flattened_table",
+        "image_placeholder",
+        "suspect_number_of_steps_through_generic",
+        "suspect_step_through-phototherapy"
+      ],
+      "text": "AETNA BETTER HEALTH®                                                     \n                                                                                    \n           Coverage Policy/Guideline                                                \n           Name:       Tremfya                      Page:          2 of 7           \n           Effective Date: 5/1/2025                 Last Review Date: 4/2025        \n                    ☐Illinois          Florida             ☒Florida Kids            \n           Applies                    ☐                                             \n                    ☐New Jersey       ☒Maryland             Michigan                \n           to:                                             ☐                        \n                    ☒Pennsylvania Kids ☐Virginia           ☒Kentucky PRMD           \n          Plaque psoriasis (PsO)                                                    \n          Initial requests                                                          \n          • Chart notes or medical record documentation of affected area(s) and body surface\n                                                                                    \n            area (BSA) affected (if applicable).                                    \n          • Chart notes, medical record documentation, or claims history supporting previous\n            medications tried (if applicable), including response to therapy. If therapy is not\n            advisable, documentation of clinical reason to avoid therapy.           \n          Continuation requests                                                     \n          Chart notes or medical record documentation of decreased body surface area (BSA)\n          affected and/or improvement in signs and symptoms.                        \n                                                                                    \n          Psoriatic arthritis (PsA)                                                 \n          Initial requests                                                          \n                                                                                    \n          Chart notes, medical record documentation, or claims history supporting previous\n          medications tried (if applicable), including response to therapy. If therapy is not advisable,\n          documentation of clinical reason to avoid therapy.                        \n                                                                                    \n          Continuation requests                                                     \n          Chart notes or medical record documentation supporting positive clinical response.\n                                                                                    \n          Ulcerative colitis (UC) and Crohn’s disease (CD)                          \n          Continuation requests                                                     \n          Chart notes or medical record documentation supporting positive clinical response to\n          therapy or remission.                                                     \n                                                                                    \n          Prescriber Specialty:                                                     \n          This medication must be prescribed by or in consultation with one of the following:\n          • Plaque psoriasis: dermatologist                                         \n          • Psoriatic arthritis: rheumatologist or dermatologist                    \n                                                                                    \n          • Ulcerative colitis and Crohn’s disease: gastroenterologist              \n                                                                                    \n          Coverage Criteria                                                         \n                                                                                    \n          Plaque psoriasis (PsO)1-6,10                                              \n          Authorization of 12 months may be granted for adult members who have previously\n                                                                                    \n          received a biologic or targeted synthetic drug (e.g., Sotyktu, Otezla) indicated for the\n          treatment of moderate to severe plaque psoriasis.                         \n          Authorization of 12 months may be granted for adult members for treatment of moderate to\n          severe plaque psoriasis when any of the following criteria is met:"
+    },
+    {
+      "section_id": "pdf_page_3",
+      "page_number": 3,
+      "reasons": [
+        "image_placeholder"
+      ],
+      "text": "AETNA BETTER HEALTH®                                                     \n                                                                                    \n           Coverage Policy/Guideline                                                \n           Name:       Tremfya                      Page:          3 of 7           \n           Effective Date: 5/1/2025                 Last Review Date: 4/2025        \n                    ☐Illinois          Florida             ☒Florida Kids            \n           Applies                    ☐                                             \n                    ☐New Jersey       ☒Maryland             Michigan                \n           to:                                             ☐                        \n                    ☒Pennsylvania Kids ☐Virginia           ☒Kentucky PRMD           \n          • Crucial body areas (e.g., hands, feet, face, neck, scalp, genitals/groin, intertriginous\n            areas) are affected.                                                    \n                                                                                    \n          • At least 10% of body surface area (BSA) is affected.                    \n          • At least 3% of body surface area (BSA) is affected and the member meets either of\n            the following criteria:                                                 \n               Member has had an inadequate response or intolerance to either phototherapy\n            o                                                                       \n               (e.g., UVB, PUVA) or pharmacologic treatment with methotrexate, cyclosporine,\n               or acitretin.                                                        \n               Member has a clinical reason to avoid pharmacologic treatment with   \n            o                                                                       \n               methotrexate, cyclosporine, and acitretin (see Appendix).            \n          Psoriatic arthritis (PsA)1,8-10                                           \n                                                                                    \n          Authorization of 12 months may be granted for adult members who have previously\n          received a biologic or targeted synthetic drug (e.g., Rinvoq, Otezla) indicated for active\n          psoriatic arthritis.                                                      \n          Authorization of 12 months may be granted for adult members for treatment of active\n          psoriatic arthritis when either of the following criteria is met:         \n                                                                                    \n          • Member has mild to moderate disease and meets any of the following criteria:\n               Member has had an inadequate response to methotrexate, leflunomide, or\n            o                                                                       \n               another conventional synthetic drug (e.g., sulfasalazine) administered at an\n               adequate dose and duration.                                          \n               Member has an intolerance or contraindication to methotrexate or leflunomide\n            o                                                                       \n               (see Appendix), or another conventional synthetic drug (e.g., sulfasalazine).\n               Member has enthesitis.                                               \n            o                                                                       \n          • Member has severe disease.                                              \n          Ulcerative colitis (UC)1,12-14                                            \n          Authorization of 12 months may be granted for treatment of moderately to severely active\n          ulcerative colitis.                                                       \n                                                                                    \n          Crohn’s disease (CD)1,15,16                                               \n          Authorization of 12 months may be granted for treatment of moderately to severely active\n          Crohn’s disease."
+    },
+    {
+      "section_id": "pdf_page_5",
+      "page_number": 5,
+      "reasons": [
+        "dense_list_or_flattened_table",
+        "image_placeholder"
+      ],
+      "text": "AETNA BETTER HEALTH®                                                     \n                                                                                    \n           Coverage Policy/Guideline                                                \n           Name:       Tremfya                      Page:          5 of 7           \n           Effective Date: 5/1/2025                 Last Review Date: 4/2025        \n                    ☐Illinois          Florida             ☒Florida Kids            \n           Applies                    ☐                                             \n                    ☐New Jersey       ☒Maryland             Michigan                \n           to:                                             ☐                        \n                    ☒Pennsylvania Kids ☐Virginia           ☒Kentucky PRMD           \n          • Fecal calprotectin (FC)                                                 \n          • Appearance of the mucosa on endoscopy, computed tomography enterography \n                                                                                    \n            (CTE), magnetic resonance enterography (MRE), or intestinal ultrasound  \n          • Improvement on a disease activity scoring tool (e.g., Ulcerative Colitis Endoscopic\n            Index of Severity [UCEIS], Mayo score)                                  \n                                                                                    \n          Crohn’s disease (CD)1,15,16                                               \n          Authorization of 12 months may be granted for all members (including new members) who\n          are using the requested medication for moderately to severely active Crohn’s disease and\n                                                                                    \n          who achieve or maintain remission.                                        \n          Authorization of 12 months may be granted for all members (including new members) who\n          are using the requested medication for moderately to severely active Crohn’s disease and\n          who achieve or maintain a positive clinical response as evidenced by low disease activity or\n          improvement in signs and symptoms of the condition when there is improvement in any of\n          the following from baseline:                                              \n                                                                                    \n          • Abdominal pain or tenderness                                            \n          • Diarrhea                                                                \n          • Body weight                                                             \n          • Abdominal mass                                                          \n          • Hematocrit                                                              \n          • Appearance of the mucosa on endoscopy, computed tomography enterography \n                                                                                    \n            (CTE), magnetic resonance enterography (MRE), or intestinal ultrasound  \n          • Improvement on a disease activity scoring tool (e.g., Crohn’s Disease Activity Index\n            [CDAI] score)                                                           \n                                                                                    \n          Other1,7                                                                  \n                                                                                    \n          For all indications: Member has had a documented negative tuberculosis (TB) test (which\n          can include a tuberculosis skin test [TST] or an interferon-release assay [IGRA]) within 12\n          months of initiating therapy for persons who are naïve to biologic drugs or targeted\n          synthetic drugs associated with an increased risk of TB.                  \n          If the screening testing for TB is positive, there must be further testing to confirm there is no\n          active disease (e.g., chest x-ray). Do not administer the requested medication to members\n                                                                                    \n          with active TB infection. If there is latent disease, TB treatment must be started before\n          initiation of the requested medication.                                   \n          For all indications: Member cannot use the requested medication concomitantly with any\n          other biologic drug or targeted synthetic drug for the same indication."
+    },
+    {
+      "section_id": "pdf_page_6",
+      "page_number": 6,
+      "reasons": [
+        "dense_list_or_flattened_table",
+        "high_value_layout_section",
+        "image_placeholder",
+        "suspect_number_of_steps_through_generic",
+        "suspect_quantity_limits"
+      ],
+      "text": "AETNA BETTER HEALTH®                                                     \n                                                                                    \n           Coverage Policy/Guideline                                                \n           Name:       Tremfya                      Page:          6 of 7           \n           Effective Date: 5/1/2025                 Last Review Date: 4/2025        \n                    ☐Illinois          Florida             ☒Florida Kids            \n           Applies                    ☐                                             \n                    ☐New Jersey       ☒Maryland             Michigan                \n           to:                                             ☐                        \n                    ☒Pennsylvania Kids ☐Virginia           ☒Kentucky PRMD           \n          Dosage and Administration                                                 \n                                                                                    \n          Approvals may be subject to dosing limits in accordance with FDA-approved labeling,\n          accepted compendia, and/or evidence-based practice guidelines.            \n          Appendix                                                                  \n                                                                                    \n          Examples of Clinical Reasons to Avoid Pharmacologic Treatment with Methotrexate,\n          Cyclosporine, Acitretin, or Leflunomide11                                 \n          • Clinical diagnosis of alcohol use disorder, alcoholic liver disease, or other chronic\n                                                                                    \n            liver disease                                                           \n          • Drug interaction                                                        \n          • Risk of treatment-related toxicity                                      \n          • Pregnancy or currently planning pregnancy                               \n                                                                                    \n          • Breastfeeding                                                           \n          • Significant comorbidity prohibits use of systemic agents (e.g., liver or kidney disease,\n            blood dyscrasias, uncontrolled hypertension)                            \n          • Hypersensitivity                                                        \n                                                                                    \n          • History of intolerance or adverse event.                                \n                                                                                    \n          Approval Duration and Quantity Restrictions:                              \n          Approval:                                                                 \n          Initial and Renewal Approval: 12 months                                   \n                                                                                    \n          Quantity Level Limit:                                                     \n          • Tremfya (guselkumab) 100 mg/mL prefilled syringe/One-press injector:    \n                                                                                    \n               1 syringe/injector per 56 days                                       \n            o                                                                       \n               Exception limit: 2 syringes/injectors per 28 days                    \n            o                                                                       \n          • Tremfya (guselkumab) 200 mg/2 mL prefilled syringe/pen:                 \n               1 syringe/pen per 28 days                                            \n            o                                                                       \n               Exception limit: 6 syringes/pens per 56 days                         \n            o                                                                       \n          • Tremfya (guselkumab) 200 mg/2 mL prefilled pen Induction Pack for Crohn’s Disease:\n               Exception limit: 3 cartons (6 pens) per 56 days                      \n            o                                                                       \n          *Coverage up to the exception limits may be provided with prior authorization\n          References:                                                               \n          1. Tremfya [package insert]. Horsham, PA: Janssen Biotech, Inc.; March 2025."
+    }
+  ],
+  "extracted_tables": [
+    {
+      "page_number": 2,
+      "table_id": "page_2_table_1",
+      "rows": [
+        [
+          "AETNA BETTER HEALTH®\nCoverage Policy/Guideline"
+        ],
+        [
+          "Name: Tremfya Page: 2 of 7"
+        ],
+        [
+          "Effective Date: 5/1/2025 Last Review Date: 4/2025"
+        ],
+        [
+          "☐Illinois Florida ☒Florida Kids\nApplies ☐\n☐New Jersey ☒Maryland Michigan\nto: ☐\n☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD"
+        ]
+      ]
+    },
+    {
+      "page_number": 3,
+      "table_id": "page_3_table_1",
+      "rows": [
+        [
+          "AETNA BETTER HEALTH®\nCoverage Policy/Guideline"
+        ],
+        [
+          "Name: Tremfya Page: 3 of 7"
+        ],
+        [
+          "Effective Date: 5/1/2025 Last Review Date: 4/2025"
+        ],
+        [
+          "☐Illinois Florida ☒Florida Kids\nApplies ☐\n☐New Jersey ☒Maryland Michigan\nto: ☐\n☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD"
+        ]
+      ]
+    },
+    {
+      "page_number": 5,
+      "table_id": "page_5_table_1",
+      "rows": [
+        [
+          "AETNA BETTER HEALTH®\nCoverage Policy/Guideline"
+        ],
+        [
+          "Name: Tremfya Page: 5 of 7"
+        ],
+        [
+          "Effective Date: 5/1/2025 Last Review Date: 4/2025"
+        ],
+        [
+          "☐Illinois Florida ☒Florida Kids\nApplies ☐\n☐New Jersey ☒Maryland Michigan\nto: ☐\n☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD"
+        ]
+      ]
+    },
+    {
+      "page_number": 6,
+      "table_id": "page_6_table_1",
+      "rows": [
+        [
+          "AETNA BETTER HEALTH®\nCoverage Policy/Guideline"
+        ],
+        [
+          "Name: Tremfya Page: 6 of 7"
+        ],
+        [
+          "Effective Date: 5/1/2025 Last Review Date: 4/2025"
+        ],
+        [
+          "☐Illinois Florida ☒Florida Kids\nApplies ☐\n☐New Jersey ☒Maryland Michigan\nto: ☐\n☒Pennsylvania Kids ☐Virginia ☒Kentucky PRMD"
+        ]
+      ]
+    }
+  ],
+  "debug_metadata": {
+    "processed_filename": "330109-4880941.pdf",
+    "brand_name": "TREMFYA",
+    "markdown_path": "C:\\Users\\MD AREEB  AKHTAR\\PolicyLens-AI\\data\\extracted_pdfs\\raw_markdown\\330109-4880941.md",
+    "pdf_path": "C:\\Users\\MD AREEB  AKHTAR\\PolicyLens-AI\\data\\raw_pdfs\\330109-4880941.pdf",
+    "total_chunks_created": 24,
+    "retrieved_chunk_count": 14,
+    "fallback_pages": [
+      {
+        "page_number": 2,
+        "reasons": [
+          "dense_list_or_flattened_table",
+          "image_placeholder",
+          "suspect_number_of_steps_through_generic",
+          "suspect_step_through-phototherapy"
+        ],
+        "queries_considered": [
+          "Age",
+          "Step Therapy Requirements Documented in Policy",
+          "Number of Steps through Brands",
+          "Number of Steps through Generic",
+          "Step through-Phototherapy",
+          "TB Test required",
+          "Initial Authorization Duration(in-months)",
+          "Reauthorization Duration(in-months)",
+          "Reauthorization Required",
+          "Reauthorization Requirements Documented in Policy",
+          "Specialist Types",
+          "Quantity Limits"
+        ]
+      },
+      {
+        "page_number": 3,
+        "reasons": [
+          "image_placeholder"
+        ],
+        "queries_considered": [
+          "Age",
+          "Step Therapy Requirements Documented in Policy",
+          "Number of Steps through Brands",
+          "Number of Steps through Generic",
+          "Step through-Phototherapy",
+          "TB Test required",
+          "Initial Authorization Duration(in-months)",
+          "Reauthorization Duration(in-months)",
+          "Reauthorization Required",
+          "Reauthorization Requirements Documented in Policy",
+          "Specialist Types",
+          "Quantity Limits"
+        ]
+      },
+      {
+        "page_number": 5,
+        "reasons": [
+          "dense_list_or_flattened_table",
+          "image_placeholder"
+        ],
+        "queries_considered": [
+          "Age",
+          "Step Therapy Requirements Documented in Policy",
+          "Number of Steps through Brands",
+          "Number of Steps through Generic",
+          "Step through-Phototherapy",
+          "TB Test required",
+          "Initial Authorization Duration(in-months)",
+          "Reauthorization Duration(in-months)",
+          "Reauthorization Required",
+          "Reauthorization Requirements Documented in Policy",
+          "Specialist Types",
+          "Quantity Limits"
+        ]
+      },
+      {
+        "page_number": 6,
+        "reasons": [
+          "dense_list_or_flattened_table",
+          "high_value_layout_section",
+          "image_placeholder",
+          "suspect_number_of_steps_through_generic",
+          "suspect_quantity_limits"
+        ],
+        "queries_considered": [
+          "Age",
+          "Step Therapy Requirements Documented in Policy",
+          "Number of Steps through Brands",
+          "Number of Steps through Generic",
+          "Step through-Phototherapy",
+          "TB Test required",
+          "Initial Authorization Duration(in-months)",
+          "Reauthorization Duration(in-months)",
+          "Reauthorization Required",
+          "Reauthorization Requirements Documented in Policy",
+          "Specialist Types",
+          "Quantity Limits"
+        ]
+      }
+    ],
+    "retrieval_scores": {
+      "overall": [
+        {
+          "chunk_id": "chunk_22",
+          "score": 1.0091,
+          "semantic_score": 0.0591,
+          "keyword_score": 0.75,
+          "brand_boost": 0.2
+        },
+        {
+          "chunk_id": "chunk_2",
+          "score": 0.7253,
+          "semantic_score": 0.0253,
+          "keyword_score": 0.5,
+          "brand_boost": 0.2
+        },
+        {
+          "chunk_id": "chunk_10",
+          "score": 0.723,
+          "semantic_score": 0.023,
+          "keyword_score": 0.5,
+          "brand_boost": 0.2
+        },
+        {
+          "chunk_id": "chunk_4",
+          "score": 0.6068,
+          "semantic_score": 0.1068,
+          "keyword_score": 0.5,
+          "brand_boost": 0.0
+        }
+      ],
+      "by_parameter": {
+        "Age": [
+          {
+            "chunk_id": "chunk_22",
+            "score": 0.5692,
+            "semantic_score": 0.0238,
+            "keyword_score": 0.5455
+          },
+          {
+            "chunk_id": "chunk_2",
+            "score": 0.5658,
+            "semantic_score": 0.0203,
+            "keyword_score": 0.5455
+          },
+          {
+            "chunk_id": "chunk_23",
+            "score": 0.4664,
+            "semantic_score": 0.0118,
+            "keyword_score": 0.4545
+          },
+          {
+            "chunk_id": "chunk_10",
+            "score": 0.4659,
+            "semantic_score": 0.0113,
+            "keyword_score": 0.4545
+          }
+        ],
+        "Step Therapy Requirements Documented in Policy": [
+          {
+            "chunk_id": "chunk_3",
+            "score": 0.4312,
+            "semantic_score": 0.0145,
+            "keyword_score": 0.1667
+          },
+          {
+            "chunk_id": "chunk_19",
+            "score": 0.3688,
+            "semantic_score": 0.0355,
+            "keyword_score": 0.3333
+          },
+          {
+            "chunk_id": "chunk_2",
+            "score": 0.3565,
+            "semantic_score": 0.0231,
+            "keyword_score": 0.3333
+          },
+          {
+            "chunk_id": "chunk_10",
+            "score": 0.3414,
+            "semantic_score": 0.008,
+            "keyword_score": 0.3333
+          }
+        ],
+        "Number of Steps through Brands": [
+          {
+            "chunk_id": "chunk_3",
+            "score": 0.3146,
+            "semantic_score": 0.048,
+            "keyword_score": 0.2667
+          },
+          {
+            "chunk_id": "chunk_19",
+            "score": 0.2989,
+            "semantic_score": 0.0322,
+            "keyword_score": 0.2667
+          },
+          {
+            "chunk_id": "chunk_11",
+            "score": 0.2308,
+            "semantic_score": 0.0308,
+            "keyword_score": 0.2
+          },
+          {
+            "chunk_id": "chunk_9",
+            "score": 0.2236,
+            "semantic_score": 0.0236,
+            "keyword_score": 0.2
+          }
+        ],
+        "Number of Steps through Generic": [
+          {
+            "chunk_id": "chunk_3",
+            "score": 0.3459,
+            "semantic_score": 0.0602,
+            "keyword_score": 0.2857
+          },
+          {
+            "chunk_id": "chunk_23",
+            "score": 0.215,
+            "semantic_score": 0.0007,
+            "keyword_score": 0.2143
+          },
+          {
+            "chunk_id": "chunk_22",
+            "score": 0.1642,
+            "semantic_score": 0.0213,
+            "keyword_score": 0.1429
+          },
+          {
+            "chunk_id": "chunk_19",
+            "score": 0.1605,
+            "semantic_score": 0.0176,
+            "keyword_score": 0.1429
+          }
+        ],
+        "Step through-Phototherapy": [
+          {
+            "chunk_id": "chunk_2",
+            "score": 0.3364,
+            "semantic_score": 0.0364,
+            "keyword_score": 0.3
+          },
+          {
+            "chunk_id": "chunk_10",
+            "score": 0.3331,
+            "semantic_score": 0.0331,
+            "keyword_score": 0.3
+          },
+          {
+            "chunk_id": "chunk_3",
+            "score": 0.2241,
+            "semantic_score": 0.0241,
+            "keyword_score": 0.2
+          },
+          {
+            "chunk_id": "chunk_24",
+            "score": 0.1069,
+            "semantic_score": 0.0069,
+            "keyword_score": 0.1
+          }
+        ],
+        "TB Test required": [
+          {
+            "chunk_id": "chunk_3",
+            "score": 0.635,
+            "semantic_score": 0.0795,
+            "keyword_score": 0.5556
+          },
+          {
+            "chunk_id": "chunk_19",
+            "score": 0.5406,
+            "semantic_score": 0.2073,
+            "keyword_score": 0.3333
+          },
+          {
+            "chunk_id": "chunk_23",
+            "score": 0.459,
+            "semantic_score": 0.0146,
+            "keyword_score": 0.4444
+          },
+          {
+            "chunk_id": "chunk_22",
+            "score": 0.3557,
+            "semantic_score": 0.0224,
+            "keyword_score": 0.3333
+          }
+        ],
+        "Initial Authorization Duration(in-months)": [
+          {
+            "chunk_id": "chunk_22",
+            "score": 0.9697,
+            "semantic_score": 0.0808,
+            "keyword_score": 0.8889
+          },
+          {
+            "chunk_id": "chunk_11",
+            "score": 0.4924,
+            "semantic_score": 0.048,
+            "keyword_score": 0.4444
+          },
+          {
+            "chunk_id": "chunk_12",
+            "score": 0.2616,
+            "semantic_score": 0.0394,
+            "keyword_score": 0.2222
+          },
+          {
+            "chunk_id": "chunk_9",
+            "score": 0.2565,
+            "semantic_score": 0.0343,
+            "keyword_score": 0.2222
+          }
+        ],
+        "Reauthorization Duration(in-months)": [
+          {
+            "chunk_id": "chunk_11",
+            "score": 0.5572,
+            "semantic_score": 0.0572,
+            "keyword_score": 0.5
+          },
+          {
+            "chunk_id": "chunk_22",
+            "score": 0.5316,
+            "semantic_score": 0.0316,
+            "keyword_score": 0.5
+          },
+          {
+            "chunk_id": "chunk_12",
+            "score": 0.301,
+            "semantic_score": 0.051,
+            "keyword_score": 0.25
+          },
+          {
+            "chunk_id": "chunk_9",
+            "score": 0.2944,
+            "semantic_score": 0.0444,
+            "keyword_score": 0.25
+          }
+        ],
+        "Reauthorization Required": [
+          {
+            "chunk_id": "chunk_22",
+            "score": 0.3974,
+            "semantic_score": 0.0337,
+            "keyword_score": 0.3636
+          },
+          {
+            "chunk_id": "chunk_3",
+            "score": 0.2079,
+            "semantic_score": 0.0261,
+            "keyword_score": 0.1818
+          },
+          {
+            "chunk_id": "chunk_12",
+            "score": 0.1116,
+            "semantic_score": 0.0207,
+            "keyword_score": 0.0909
+          },
+          {
+            "chunk_id": "chunk_9",
+            "score": 0.1089,
+            "semantic_score": 0.018,
+            "keyword_score": 0.0909
+          }
+        ],
+        "Reauthorization Requirements Documented in Policy": [
+          {
+            "chunk_id": "chunk_2",
+            "score": 0.3899,
+            "semantic_score": 0.0262,
+            "keyword_score": 0.3636
+          },
+          {
+            "chunk_id": "chunk_10",
+            "score": 0.3875,
+            "semantic_score": 0.0238,
+            "keyword_score": 0.3636
+          },
+          {
+            "chunk_id": "chunk_24",
+            "score": 0.3071,
+            "semantic_score": 0.0344,
+            "keyword_score": 0.2727
+          },
+          {
+            "chunk_id": "chunk_20",
+            "score": 0.3071,
+            "semantic_score": 0.0344,
+            "keyword_score": 0.2727
+          }
+        ],
+        "Specialist Types": [
+          {
+            "chunk_id": "chunk_23",
+            "score": 0.3079,
+            "semantic_score": 0.0352,
+            "keyword_score": 0.2727
+          },
+          {
+            "chunk_id": "chunk_19",
+            "score": 0.2919,
+            "semantic_score": 0.0192,
+            "keyword_score": 0.2727
+          },
+          {
+            "chunk_id": "chunk_2",
+            "score": 0.2823,
+            "semantic_score": 0.0096,
+            "keyword_score": 0.2727
+          },
+          {
+            "chunk_id": "chunk_14",
+            "score": 0.1902,
+            "semantic_score": 0.0084,
+            "keyword_score": 0.1818
+          }
+        ],
+        "Quantity Limits": [
+          {
+            "chunk_id": "chunk_22",
+            "score": 0.6973,
+            "semantic_score": 0.0723,
+            "keyword_score": 0.625
+          },
+          {
+            "chunk_id": "chunk_21",
+            "score": 0.2785,
+            "semantic_score": 0.0285,
+            "keyword_score": 0.25
+          },
+          {
+            "chunk_id": "chunk_24",
+            "score": 0.2704,
+            "semantic_score": 0.0204,
+            "keyword_score": 0.25
+          },
+          {
+            "chunk_id": "chunk_20",
+            "score": 0.2704,
+            "semantic_score": 0.0204,
+            "keyword_score": 0.25
+          }
+        ]
+      }
+    },
+    "llm_model": "gemini-3.1-flash-lite",
+    "llm_error": null
+  }
+}
