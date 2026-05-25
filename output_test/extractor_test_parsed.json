@@ -1,0 +1,67 @@
+[
+  {
+    "brand_name": "ACITRETIN",
+    "normalized_brand_name": "Acitretin",
+    "confidence": 1.0
+  },
+  {
+    "brand_name": "ACTIMMUNE",
+    "normalized_brand_name": "Actimmune",
+    "confidence": 1.0
+  },
+  {
+    "brand_name": "AIMOVIG",
+    "normalized_brand_name": "Aimovig",
+    "confidence": 1.0
+  },
+  {
+    "brand_name": "AKEEGA",
+    "normalized_brand_name": "Akeega",
+    "confidence": 1.0
+  },
+  {
+    "brand_name": "ALDURAZYME",
+    "normalized_brand_name": "Aldurazyme",
+    "confidence": 1.0
+  },
+  {
+    "brand_name": "ALECENSA",
+    "normalized_brand_name": "Alecensa",
+    "confidence": 1.0
+  },
+  {
+    "brand_name": "ARALAST NP",
+    "normalized_brand_name": "Aralast NP",
+    "confidence": 1.0
+  },
+  {
+    "brand_name": "PROLASTIN-C",
+    "normalized_brand_name": "Prolastin-C",
+    "confidence": 1.0
+  },
+  {
+    "brand_name": "ZEMAIRA",
+    "normalized_brand_name": "Zemaira",
+    "confidence": 1.0
+  },
+  {
+    "brand_name": "ALUNBRIG",
+    "normalized_brand_name": "Alunbrig",
+    "confidence": 1.0
+  },
+  {
+    "brand_name": "ALVAIZ",
+    "normalized_brand_name": "Alvaiz",
+    "confidence": 1.0
+  },
+  {
+    "brand_name": "ARCALYST",
+    "normalized_brand_name": "ARCALYST",
+    "confidence": 1.0
+  },
+  {
+    "brand_name": "BAFIERTAM",
+    "normalized_brand_name": "BAFIERTAM",
+    "confidence": 1.0
+  }
+]

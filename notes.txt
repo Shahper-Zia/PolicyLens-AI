@@ -1,0 +1,2 @@
+for parameter extraction the chunking strategy shoud be proper
+look into hreadings as well cause some pdfs are specifically for the heading brands
