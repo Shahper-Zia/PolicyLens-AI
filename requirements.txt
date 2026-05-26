@@ -2,3 +2,4 @@ docling==2.95.0
 pymupdf==1.27.2.3
 pymupdf-layout==1.27.2.3
 pymupdf4llm==1.27.2.3
+groq==1.2.0

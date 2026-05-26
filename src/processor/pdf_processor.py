@@ -1,93 +1,16 @@
 import os
-import re
-from pathlib import Path
-
 import fitz
-import pymupdf.layout
 import pymupdf4llm
-from docling.backend.pypdfium2_backend import PyPdfiumDocumentBackend
-from docling.datamodel.base_models import InputFormat
-from docling.datamodel.pipeline_options import (
-    PdfPipelineOptions,
-    TableFormerMode,
-    TableStructureOptions,
-)
-from docling.document_converter import DocumentConverter, PdfFormatOption
-
+from pathlib import Path
 
 class PDFProcessor:
     def __init__(
         self,
         pdf_path,
-        processed_pdf_path=None,
-        *,
-        do_ocr=True,
-        table_mode="accurate",
-        force_backend_text=False,
-        export_format="markdown",
-        markdown_compact_tables=True,
+        processed_pdf_path=None
     ):
         self.pdf_path = pdf_path
         self.processed_pdf_path = processed_pdf_path
-        self.do_ocr = bool(do_ocr)
-        self.table_mode = str(table_mode).lower()
-        self.force_backend_text = bool(force_backend_text)
-        self.export_format = str(export_format).lower()
-        self.markdown_compact_tables = bool(markdown_compact_tables)
-
-    def _clean_text(self, text):
-        text = text.replace("\x00", " ")
-        text = re.sub(r"\s+", " ", text)
-        text = re.sub(r"[-=]{3,}", " ", text)
-        return text.strip()
-
-    def _resolve_table_mode(self):
-        if self.table_mode == "fast":
-            return TableFormerMode.FAST
-        return TableFormerMode.ACCURATE
-
-    def _export_document(self, doc):
-        if self.export_format == "html":
-            return doc.export_to_html()
-        if self.export_format == "doctags":
-            return doc.export_to_doctags()
-        if self.export_format == "text":
-            return doc.export_to_text()
-        return doc.export_to_markdown(
-            strict_text=False,
-            compact_tables=self.markdown_compact_tables,
-            escape_underscores=False,
-        )
-
-    def _with_docling(self):
-        print(f"Processing PDF with docling: {self.pdf_path}")
-        pipeline_options = PdfPipelineOptions(
-            do_ocr=self.do_ocr,
-            do_table_structure=True,
-            generate_picture_images=False,
-            do_picture_description=False,
-            force_backend_text=self.force_backend_text,
-            table_structure_options=TableStructureOptions(
-                mode=self._resolve_table_mode(),
-                do_cell_matching=True,
-            ),
-        )
-        converter = DocumentConverter(
-            format_options={
-                InputFormat.PDF: PdfFormatOption(
-                    pipeline_options=pipeline_options,
-                    backend=PyPdfiumDocumentBackend,
-                )
-            }
-        )
-
-        result = converter.convert(self.pdf_path)
-        doc = result.document
-        extracted_content = self._export_document(doc)
-        cleaned_text = self._clean_text(extracted_content)
-
-        print(f"Finished processing PDF with docling: {self.pdf_path}")
-        return extracted_content, cleaned_text
 
     def extract_text(self) -> str:
         """
@@ -167,12 +90,6 @@ class PDFProcessor:
                 errors.append(f"{name}: {exc}")
 
         raise RuntimeError("PyMuPDF extraction failed. " + " | ".join(errors))
-
-    def extract_layout_text(self) -> str:
-        return self.extract_text_with_pymupdf()
-
-    def extract__text_with_pymupdf(self) -> str:
-        return self.extract_text_with_pymupdf()
 
     @staticmethod
     def validate_pdf(pdf_path):
