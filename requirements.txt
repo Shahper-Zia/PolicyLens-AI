@@ -2,4 +2,8 @@ docling==2.95.0
 pymupdf==1.27.2.3
 pymupdf-layout==1.27.2.3
 pymupdf4llm==1.27.2.3
-groq==1.2.0
+
+# for launching API
+fastapi==0.136.3
+uvicorn==0.48.0
+python-multipart==0.0.29

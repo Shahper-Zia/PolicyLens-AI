@@ -6,11 +6,9 @@ from pathlib import Path
 class PDFProcessor:
     def __init__(
         self,
-        pdf_path,
-        processed_pdf_path=None
+        pdf_path
     ):
         self.pdf_path = pdf_path
-        self.processed_pdf_path = processed_pdf_path
 
     def extract_text(self) -> str:
         """
@@ -20,12 +18,6 @@ class PDFProcessor:
         print(f"Extracting text from PDF: {pdf_name}")
 
         extracted_content = self.extract_text_with_pymupdf()
-
-        print(f"Extracted text from PDF: {pdf_name}")
-        if self.processed_pdf_path:
-            file_path = f"{self.processed_pdf_path}/{pdf_name}.md"
-            with open(file_path, "w", encoding="utf-8") as f:
-                f.write(extracted_content)
 
         return extracted_content
 

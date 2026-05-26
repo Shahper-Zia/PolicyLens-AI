@@ -1,0 +1,1 @@
+processed_pdf_path = "data/extracted_pdfs_mds"  

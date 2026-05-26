@@ -1,45 +1,55 @@
-from processor.pdf_processor import PDFProcessor
-import os
+from fastapi import FastAPI, UploadFile, File, Form, HTTPException
+from typing import Optional
+
+from src.orchestrator.orchestrator import PolicyOrchestrator
+policy_orchestrator = PolicyOrchestrator()
+
+app = FastAPI(
+    title="PolicyLens-AI",
+    description="Payer Policy Intelligence API",
+    version="1.0.0"
+)
+
+# =========================================================
+# HEALTH ENDPOINTS
+# =========================================================
+
+@app.get("/")
+async def root():
+    return {
+        "message": "PolicyLens-AI API Running",
+        "status": "healthy"
+    }
 
 
-if __name__ == "__main__":
+@app.get("/health")
+async def health_check():
+    return {
+        "status": "healthy"
+    }
 
-    """
-    csv -> 
-    for pdf_name(1), brand_name(1) in csv:
-        pdf_name -> pdf_path -> extract text -> output text file path
-        output text file path + brand_name -> extract branded chunks 
-        -> (12) brand attributes (rule, schema) ->(1) calculate access score 
-        -> df.append(brand_attributes)
+# =========================================================
+# MAIN EXTRACTION ENDPOINT
+# =========================================================
 
-    df.save_csv()
-    """
+from src.validation.output_schema import ExtractionResponse
 
-    processed_pdf_path = "data/extracted_pdfs_mds"  # Replace with your desired output directory
+@app.post("/extract", response_model=ExtractionResponse)
+async def extract_policy(
+    pdf_file: UploadFile = File(...),
+    indication: Optional[str] = "Psoriasis",
+    brand_names: Optional[str] = Form(None)
+):
 
-    # Inputs
-    pdf_path = "data/raw_pdfs/195158-4643510.pdf"  # Replace with your PDF file path
-    brand_name = "TREMFYA"  # Replace with the actual brand name
+    # -----------------------------------------------------
+    # VALIDATE FILE
+    # -----------------------------------------------------
 
-    # Process PDF and extract text (configurable via env vars)
-    pdf_processor = PDFProcessor(
-        pdf_path,
-        processed_pdf_path,
-        do_ocr=os.getenv("DOCLING_DO_OCR", "true").lower() == "true",
-        table_mode=os.getenv("DOCLING_TABLE_MODE", "accurate"),  # fast | accurate
-        force_backend_text=os.getenv("DOCLING_FORCE_BACKEND_TEXT", "false").lower() == "true",
-        export_format=os.getenv("DOCLING_EXPORT_FORMAT", "markdown"),  # markdown | html | doctags | text
-        markdown_compact_tables=os.getenv("DOCLING_MD_COMPACT_TABLES", "true").lower() == "true",
-    )
-    extracted_md = pdf_processor.extract_text()
-
-    # Get brand chunks
-
-
-    # Get brand attributes
-
-
-    # Calculate access score
-
-
-    # Save results to CSV
+    if not pdf_file.filename.endswith(".pdf"):
+        raise HTTPException(
+            status_code=400,
+            detail="Only PDF files are allowed"
+        )
+    
+    response = await policy_orchestrator.process_pdf(pdf_file, brand_names, indication)
+    return response

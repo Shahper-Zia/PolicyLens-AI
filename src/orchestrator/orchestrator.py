@@ -1,0 +1,127 @@
+from src.orchestrator.processor.pdf_processor import PDFProcessor
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+from src.config.logging import logger
+from src.validation.output_schema import ExtractionResponse, BrandAttribute
+from src.config.app_settings import processed_pdf_path
+
+class PolicyOrchestrator:
+
+    def __init__(self):
+        logger.info("PolicyOrchestrator initialized")
+        self.processed_pdf_path = processed_pdf_path  # Replace with your desired output directory
+        self.pdf_processor = PDFProcessor
+
+    async def _save_pdf_to_raw_pdfs(self, pdf_file):
+        """
+        Save the uploaded PDF file to data/raw_pdfs with its original filename. Create data/raw_pdfs if it doesn't exist.
+        """
+        raw_pdf_path = os.path.join("data/raw_pdfs", pdf_file.filename)
+        os.makedirs(os.path.dirname(raw_pdf_path), exist_ok=True)
+        with open(raw_pdf_path, "wb") as f:
+            content = await pdf_file.read()
+            f.write(content)
+        return raw_pdf_path
+
+    def _save_extracted_md(self, pdf_file, extracted_md):
+        # now save the extracted md to processed_pdf_path with same name as pdf but .md extension
+        pdf_md_filename = pdf_file.filename.split(".")[0] + ".md"
+        output_path = os.path.join(self.processed_pdf_path, pdf_md_filename)
+        with open(output_path, "w", encoding="utf-8") as f:
+            f.write(extracted_md)
+        logger.info(f"Saved extracted markdown for {pdf_file.filename} to {output_path}")
+
+    async def extract_text_from_pdf(self, pdf_file):
+        """
+        Also check if pdf md is already extracted and saved in processed_pdf_path. If so, load and return that instead of re-extracting.
+        """
+        
+        pdf_md_filename = pdf_file.filename.split(".")[0] + ".md"
+        # previously extracted md files are saved with same name as pdf but with .md extension in processed_pdf_path
+        if pdf_md_filename in os.listdir(self.processed_pdf_path):
+            logger.info(f"Found existing extracted markdown for {pdf_file.filename}, loading from file")
+            with open(os.path.join(self.processed_pdf_path, pdf_md_filename), "r") as f:
+                extracted_md = f.read()
+            logger.info(f"Loaded existing extracted markdown for {pdf_file.filename}, length: {len(extracted_md)} characters")
+        else:
+            logger.info(f"Extracting text from PDF: {pdf_file.filename}")
+            pdf_file_path = await self._save_pdf_to_raw_pdfs(pdf_file)
+            extracted_md = self.pdf_processor(pdf_file_path).extract_text()
+            self._save_extracted_md(pdf_file, extracted_md)
+        
+        return extracted_md
+    
+    def extract_brands_from_text(self, text):
+        logger.info(f"Extracting brands from text. Text length: {len(text)} characters")
+        # Implement brand extraction logic here
+        dummy_brand_names = ["TREMFYA", "STELARA"]  # Default brands to look for
+        return dummy_brand_names
+    
+    def split_brand_sections(self, text, brands, indication):
+        logger.info(f"Splitting text into sections for brands: {brands}")
+        # Implement logic to split text into brand-specific sections here
+        dummy_sections = {brand: [f"Extracted section {i+1} for {brand} and {indication}" for i in range(3)] for brand in brands}
+        return dummy_sections
+    
+    def extract_brand_attributes(self, filename, brand_section, brand, indication) -> BrandAttribute:
+        logger.info(f"Extracting attributes for brand: {brand}")
+        # Implement logic to extract attributes for a given brand section here
+        dummy_attributes = BrandAttribute(
+            filename=filename,
+            brand=brand,
+            indication=indication,
+            age="18+",
+            step_therapy_requirements="None",
+            number_of_steps_brands="0",
+            number_of_steps_generic="0",
+            step_through_phototherapy="No",
+            tb_test_required="No",
+            initial_auth_duration="12 months",
+            reauthorization_duration="12 months",
+            reauthorization_required="Yes",
+            reauthorization_requirements="Same as initial",
+            specialist_types="Dermatologist, Rheumatologist",
+            quantity_limits="Up to 4 syringes per month",
+            access_score="8/10"
+        )
+        return dummy_attributes
+
+    def extract_attributes(self, filename, brand_sections, indication) -> ExtractionResponse:
+        logger.info(f"Extracting attributes from brand sections.")
+        # Implement logic to extract attributes for each brand section based on indication here
+        dummy_attributes = []
+        for brand, sections in brand_sections.items():
+            brand_section = "\n".join(sections)
+            attributes = self.extract_brand_attributes(filename, brand_section, brand, indication)
+            dummy_attributes.append(attributes)
+        return dummy_attributes
+
+    async def process_pdf(self, pdf_file, brand_names=None, indication="Psoriasis") -> ExtractionResponse:
+
+        # Step 1: Extract text from PDF
+        extracted_md = await self.extract_text_from_pdf(pdf_file)
+
+        # Step 2: Process extracted text to identify brands
+        if not brand_names:
+            logger.info("No brand names provided, using default list")
+            brand_names = self.extract_brands_from_text(extracted_md)
+        else:
+            brand_names = [brand.strip() for brand in brand_names.split(",")]
+            logger.info(f"Using provided brand names: {brand_names}")
+
+        # Step 3: Extract brands chunks from text
+        brand_sections = self.split_brand_sections(extracted_md, brand_names, indication)
+
+        # Step 4: Extract attributes for each brand section
+        brand_attributes = self.extract_attributes(pdf_file.filename, brand_sections, indication)
+
+        # Step 5: Compile results into response model
+        response = ExtractionResponse(
+            filename=pdf_file.filename,
+            detected_brands=brand_names,
+            brand_attributes=brand_attributes
+        )
+
+        return response
