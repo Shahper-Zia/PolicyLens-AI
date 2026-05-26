@@ -1,0 +1,46 @@
+{
+  "brand_aliases": {
+    "TREMFYA": ["guselkumab", "Tremfya"],
+    "STELARA": ["ustekinumab", "Stelara"]
+  },
+  "indication_aliases": {
+    "Pso": ["PsO", "plaque psoriasis", "moderate to severe plaque psoriasis", "psoriasis"],
+    "PsA": ["psoriatic arthritis"],
+    "UC": ["ulcerative colitis"],
+    "CD": ["Crohn's disease", "Crohn disease"]
+  },
+  "groups": {
+    "eligibility": ["age", "specialist_types", "tb_test_required"],
+    "step_therapy": [
+      "step_therapy_requirements",
+      "number_of_steps_brands",
+      "number_of_steps_generic",
+      "step_through_phototherapy"
+    ],
+    "authorization": [
+      "initial_auth_duration",
+      "reauthorization_duration",
+      "reauthorization_required",
+      "reauthorization_requirements"
+    ],
+    "limits": ["quantity_limits"],
+    "scoring": ["access_score"]
+  },
+  "parameters": [
+    {
+      "name": "Age",
+      "output_field": "age",
+      "group": "eligibility",
+      "keywords": ["age", "adult", "years", "FDA-approved indication"],
+      "section_priorities": ["description", "indication", "criteria"],
+      "inclusion_signals": ["adult", "years", "patients"]
+    },
+    {
+      "name": "Quantity Limits",
+      "output_field": "quantity_limits",
+      "group": "limits",
+      "keywords": ["quantity limit", "quantity limits", "QL", "maximum quantity"],
+      "exclusion_signals": ["dosage", "dosing limit", "recommended dose"]
+    }
+  ]
+}

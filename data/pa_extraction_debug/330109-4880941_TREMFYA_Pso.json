@@ -1,0 +1,635 @@
+{
+  "file_name": "330109-4880941.pdf",
+  "resolved_document": "data\\extracted_pdfs_mds\\330109-4880941.md",
+  "brand": "TREMFYA",
+  "indication": "Pso",
+  "section_count": 40,
+  "chunk_count": 41,
+  "groups": {
+    "eligibility": [
+      {
+        "chunk_index": 2,
+        "score": 31.0,
+        "reasons": [
+          "indication:Pso",
+          "keywords:adult,FDA-approved,therapy,approved",
+          "inclusion:adult,FDA-Approved Indications",
+          "section:description",
+          "proximity"
+        ],
+        "section_title": "Description:",
+        "section_type": "description",
+        "start": 612,
+        "end": 1101,
+        "preview": "[Section: Description:]\nFDA-Approved Indications\n\n- Treatment of adult patients with moderate to severe plaque psoriasis (PsO) who are candidates for systemic therapy or phototherapy\n\n- Treatment of adult patients with active psoriatic arthritis (PsA)\n\n- Treatment of moderately to severely active ulcerative colitis (UC) in adults\n\n- Treatment of moderately to severely active Crohn\u2019s disease (CD) in adults\n\nAll other indications are considered experimental/investigational and not medically necessary."
+      },
+      {
+        "chunk_index": 18,
+        "score": 29.0,
+        "reasons": [
+          "indication:Pso",
+          "keywords:adult,criteria,drug,indicated",
+          "inclusion:adult",
+          "section:indication",
+          "proximity"
+        ],
+        "section_title": "Plaque psoriasis (PsO)[1-6,10]",
+        "section_type": "indication",
+        "start": 3645,
+        "end": 4114,
+        "preview": "[Section: Plaque psoriasis (PsO)[1-6,10]]\nAuthorization of 12 months may be granted for adult members who have previously received a biologic or targeted synthetic drug (e.g., Sotyktu, Otezla) indicated for the treatment of moderate to severe plaque psoriasis.\n\nAuthorization of 12 months may be granted for adult members for treatment of moderate to severe plaque psoriasis when any of the following criteria is met:\n\n--- end of page.page_number=2 ---\n\n**==> picture [126 x 25] intentionally omitted <==**"
+      },
+      {
+        "chunk_index": 27,
+        "score": 23.0,
+        "reasons": [
+          "indication:Pso",
+          "keywords:adult",
+          "inclusion:adult",
+          "section:indication",
+          "proximity"
+        ],
+        "section_title": "Plaque psoriasis (PsO)[1-6]",
+        "section_type": "indication",
+        "start": 6637,
+        "end": 7176,
+        "preview": "[Section: Plaque psoriasis (PsO)[1-6]]\nAuthorization of 12 months may be granted for all adult members (including new members) who are using the requested medication for moderate to severe plaque psoriasis and who achieve or maintain a positive clinical response as evidenced by low disease activity or improvement in signs and symptoms of the condition when either of the following is met:\n\n- Reduction in body surface area (BSA) affected from baseline\n\n- Improvement in signs and symptoms from baseline (e.g., itching, redness, flaking, scaling, burning, cracking, pain)"
+      },
+      {
+        "chunk_index": 32,
+        "score": 23.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "keywords:therapy,include,must,drug",
+          "proximity"
+        ],
+        "section_title": "Other[1,7]",
+        "section_type": "unknown",
+        "start": 10183,
+        "end": 11383,
+        "preview": "[Section: Other[1,7]]\nFor all indications: Member has had a documented negative tuberculosis (TB) test (which can include a tuberculosis skin test [TST] or an interferon-release assay [IGRA]) within 12 months of initiating therapy for persons who are na\u00efve to biologic drugs or targeted synthetic drugs associated with an increased risk of TB.\n\nIf the screening testing for TB is positive, there must be further testing to confirm there is no active disease (e.g., chest x-ray). Do not administer the requested medication to members with active TB infection. If there is latent disease, TB treatment must be started before initiation of the requested medication.\n\nFor all indications: Member cannot u"
+      },
+      {
+        "chunk_index": 1,
+        "score": 21.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "keywords:criteria,drug",
+          "inclusion:patient",
+          "proximity"
+        ],
+        "section_title": "Intent:",
+        "section_type": "unknown",
+        "start": 403,
+        "end": 591,
+        "preview": "[Section: Intent:]\nThe intent of this policy/guideline is to provide information to the prescribing practitioner outlining the coverage criteria for Tremfya under the patient\u2019s prescription drug benefit."
+      },
+      {
+        "chunk_index": 19,
+        "score": 21.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "section:criteria,policy",
+          "proximity"
+        ],
+        "section_title": "AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline",
+        "section_type": "criteria",
+        "start": 4165,
+        "end": 4593,
+        "preview": "[Section: AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline]\n|Name:|Tremfya||Page:<br>3 of 7|\n|---|---|---|---|\n|Effective|Date:<br>5/1/2025||Last Review Date:<br>4/2025|\n|Applies<br>to:|\u2610Illinois<br>\u2610New Jersey<br>\u2612Pennsylvania Kids|\u2610Florida<br>\u2612Maryland<br>\u2610Virginia|\u2612Florida Kids<br>\u2610Michigan<br>\u2612KentuckyPRMD|\n\n- Crucial body areas (e.g., hands, feet, face, neck, scalp, genitals/groin, intertriginous areas) are affected.\n\n- At least 10% of body surface area (BSA) is affected."
+      },
+      {
+        "chunk_index": 30,
+        "score": 18.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "section:criteria",
+          "proximity"
+        ],
+        "section_title": "AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline",
+        "section_type": "criteria",
+        "start": 8630,
+        "end": 9189,
+        "preview": "[Section: AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline]\n|Name:|Tremfya||Page:<br>5 of 7|\n|---|---|---|---|\n|Effective|Date:<br>5/1/2025||Last Review Date:<br>4/2025|\n|Applies<br>to:|\u2610Illinois<br>\u2610New Jersey<br>\u2612Pennsylvania Kids|\u2610Florida<br>\u2612Maryland<br>\u2610Virginia|\u2612Florida Kids<br>\u2610Michigan<br>\u2612KentuckyPRMD|\n\n- Fecal calprotectin (FC)\n\n- Appearance of the mucosa on endoscopy, computed tomography enterography (CTE), magnetic resonance enterography (MRE), or intestinal ultrasound\n\n- Improvement on a disease activity scoring tool (e.g., Ulcerative Colitis Endoscopic Index of Severity [UCEIS], Mayo score)"
+      },
+      {
+        "chunk_index": 25,
+        "score": 15.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "section:criteria,policy"
+        ],
+        "section_title": "AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline",
+        "section_type": "criteria",
+        "start": 6315,
+        "end": 6572,
+        "preview": "[Section: AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline]\n|Name:|Tremfya||Page:<br>4 of 7|\n|---|---|---|---|\n|Effective|Date:<br>5/1/2025||Last Review Date:<br>4/2025|\n|Applies<br>to:|\u2610Illinois<br>\u2610New Jersey<br>\u2612Pennsylvania Kids|\u2610Florida<br>\u2612Maryland<br>\u2610Virginia|\u2612Florida Kids<br>\u2610Michigan<br>\u2612KentuckyPRMD|"
+      },
+      {
+        "chunk_index": 7,
+        "score": 12.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "section:documentation"
+        ],
+        "section_title": "Documentation > Submission of the following information is necessary to initiate the prior authorization review",
+        "section_type": "documentation",
+        "start": 1752,
+        "end": 2147,
+        "preview": "[Section: Documentation > Submission of the following information is necessary to initiate the prior authorization review]\n--- end of page.page_number=1 ---\n\n**==> picture [126 x 25] intentionally omitted <==**\n\nAETNA BETTER HEALTH\u00ae Coverage Policy/Guideline\n\n|Name:|Tremfya||Page:<br>2 of 7|\n|---|---|---|---|\n|Effective|Date:<br>5/1/2025||Last Review Date:<br>4/2025|\n|Applies<br>to:|\u2610Illinois<br>\u2610New Jersey<br>\u2612Pennsylvania Kids|\u2610Florida<br>\u2612Maryland<br>\u2610Virginia|\u2612Florida Kids<br>\u2610Michigan<br>\u2612KentuckyPRMD|"
+      }
+    ],
+    "step_therapy": [
+      {
+        "chunk_index": 32,
+        "score": 27.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "keywords:NA,before,drug,indication,name",
+          "proximity"
+        ],
+        "section_title": "Other[1,7]",
+        "section_type": "unknown",
+        "start": 10183,
+        "end": 11383,
+        "preview": "[Section: Other[1,7]]\nFor all indications: Member has had a documented negative tuberculosis (TB) test (which can include a tuberculosis skin test [TST] or an interferon-release assay [IGRA]) within 12 months of initiating therapy for persons who are na\u00efve to biologic drugs or targeted synthetic drugs associated with an increased risk of TB.\n\nIf the screening testing for TB is positive, there must be further testing to confirm there is no active disease (e.g., chest x-ray). Do not administer the requested medication to members with active TB infection. If there is latent disease, TB treatment must be started before initiation of the requested medication.\n\nFor all indications: Member cannot u"
+      },
+      {
+        "chunk_index": 18,
+        "score": 26.0,
+        "reasons": [
+          "indication:Pso",
+          "keywords:biologic,Otezla,drug,criteria",
+          "inclusion:biologic",
+          "proximity"
+        ],
+        "section_title": "Plaque psoriasis (PsO)[1-6,10]",
+        "section_type": "indication",
+        "start": 3645,
+        "end": 4114,
+        "preview": "[Section: Plaque psoriasis (PsO)[1-6,10]]\nAuthorization of 12 months may be granted for adult members who have previously received a biologic or targeted synthetic drug (e.g., Sotyktu, Otezla) indicated for the treatment of moderate to severe plaque psoriasis.\n\nAuthorization of 12 months may be granted for adult members for treatment of moderate to severe plaque psoriasis when any of the following criteria is met:\n\n--- end of page.page_number=2 ---\n\n**==> picture [126 x 25] intentionally omitted <==**"
+      },
+      {
+        "chunk_index": 19,
+        "score": 23.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "keywords:name",
+          "section:criteria,policy",
+          "proximity"
+        ],
+        "section_title": "AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline",
+        "section_type": "criteria",
+        "start": 4165,
+        "end": 4593,
+        "preview": "[Section: AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline]\n|Name:|Tremfya||Page:<br>3 of 7|\n|---|---|---|---|\n|Effective|Date:<br>5/1/2025||Last Review Date:<br>4/2025|\n|Applies<br>to:|\u2610Illinois<br>\u2610New Jersey<br>\u2612Pennsylvania Kids|\u2610Florida<br>\u2612Maryland<br>\u2610Virginia|\u2612Florida Kids<br>\u2610Michigan<br>\u2612KentuckyPRMD|\n\n- Crucial body areas (e.g., hands, feet, face, neck, scalp, genitals/groin, intertriginous areas) are affected.\n\n- At least 10% of body surface area (BSA) is affected."
+      },
+      {
+        "chunk_index": 3,
+        "score": 23.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "keywords:drug,preferred,Applicable",
+          "inclusion:preferred",
+          "proximity"
+        ],
+        "section_title": "Applicable Drug List:",
+        "section_type": "unknown",
+        "start": 1131,
+        "end": 1157,
+        "preview": "[Section: Applicable Drug List:]\nNon-Preferred: Tremfya"
+      },
+      {
+        "chunk_index": 25,
+        "score": 23.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "keywords:name",
+          "section:criteria,policy",
+          "proximity"
+        ],
+        "section_title": "AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline",
+        "section_type": "criteria",
+        "start": 6315,
+        "end": 6572,
+        "preview": "[Section: AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline]\n|Name:|Tremfya||Page:<br>4 of 7|\n|---|---|---|---|\n|Effective|Date:<br>5/1/2025||Last Review Date:<br>4/2025|\n|Applies<br>to:|\u2610Illinois<br>\u2610New Jersey<br>\u2612Pennsylvania Kids|\u2610Florida<br>\u2612Maryland<br>\u2610Virginia|\u2612Florida Kids<br>\u2610Michigan<br>\u2612KentuckyPRMD|"
+      },
+      {
+        "chunk_index": 30,
+        "score": 23.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "keywords:name",
+          "section:criteria,policy",
+          "proximity"
+        ],
+        "section_title": "AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline",
+        "section_type": "criteria",
+        "start": 8630,
+        "end": 9189,
+        "preview": "[Section: AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline]\n|Name:|Tremfya||Page:<br>5 of 7|\n|---|---|---|---|\n|Effective|Date:<br>5/1/2025||Last Review Date:<br>4/2025|\n|Applies<br>to:|\u2610Illinois<br>\u2610New Jersey<br>\u2612Pennsylvania Kids|\u2610Florida<br>\u2612Maryland<br>\u2610Virginia|\u2612Florida Kids<br>\u2610Michigan<br>\u2612KentuckyPRMD|\n\n- Fecal calprotectin (FC)\n\n- Appearance of the mucosa on endoscopy, computed tomography enterography (CTE), magnetic resonance enterography (MRE), or intestinal ultrasound\n\n- Improvement on a disease activity scoring tool (e.g., Ulcerative Colitis Endoscopic Index of Severity [UCEIS], Mayo score)"
+      },
+      {
+        "chunk_index": 2,
+        "score": 22.0,
+        "reasons": [
+          "indication:Pso",
+          "keywords:phototherapy,therapy,indications",
+          "proximity"
+        ],
+        "section_title": "Description:",
+        "section_type": "description",
+        "start": 612,
+        "end": 1101,
+        "preview": "[Section: Description:]\nFDA-Approved Indications\n\n- Treatment of adult patients with moderate to severe plaque psoriasis (PsO) who are candidates for systemic therapy or phototherapy\n\n- Treatment of adult patients with active psoriatic arthritis (PsA)\n\n- Treatment of moderately to severely active ulcerative colitis (UC) in adults\n\n- Treatment of moderately to severely active Crohn\u2019s disease (CD) in adults\n\nAll other indications are considered experimental/investigational and not medically necessary."
+      },
+      {
+        "chunk_index": 27,
+        "score": 21.0,
+        "reasons": [
+          "indication:Pso",
+          "keywords:including",
+          "section:indication",
+          "proximity"
+        ],
+        "section_title": "Plaque psoriasis (PsO)[1-6]",
+        "section_type": "indication",
+        "start": 6637,
+        "end": 7176,
+        "preview": "[Section: Plaque psoriasis (PsO)[1-6]]\nAuthorization of 12 months may be granted for all adult members (including new members) who are using the requested medication for moderate to severe plaque psoriasis and who achieve or maintain a positive clinical response as evidenced by low disease activity or improvement in signs and symptoms of the condition when either of the following is met:\n\n- Reduction in body surface area (BSA) affected from baseline\n\n- Improvement in signs and symptoms from baseline (e.g., itching, redness, flaking, scaling, burning, cracking, pain)"
+      },
+      {
+        "chunk_index": 1,
+        "score": 19.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "keywords:drug,criteria",
+          "proximity"
+        ],
+        "section_title": "Intent:",
+        "section_type": "unknown",
+        "start": 403,
+        "end": 591,
+        "preview": "[Section: Intent:]\nThe intent of this policy/guideline is to provide information to the prescribing practitioner outlining the coverage criteria for Tremfya under the patient\u2019s prescription drug benefit."
+      },
+      {
+        "chunk_index": 5,
+        "score": 16.0,
+        "reasons": [
+          "keywords:trial,contraindication,intolerance,indications",
+          "inclusion:trial,preferred,inadequate,contraindication",
+          "section:all indications,indication",
+          "missing_target_scope"
+        ],
+        "section_title": "Documentation for all indications:",
+        "section_type": "indication",
+        "start": 1227,
+        "end": 1631,
+        "preview": "[Section: Documentation for all indications:]\nThe patient is unable to take THREE preferred products, where indicated, for the given diagnosis due to a trial and inadequate treatment response or intolerance, or a contraindication. Documentation is required for approval. THREE preferred products:\n\n- A preferred ustekinumab product\n\n- TWO additional preferred products\n\n- A preferred adalimumab product OR Enbrel\n\n- Rinvoq\n\n- Otezla"
+      }
+    ],
+    "authorization": [
+      {
+        "chunk_index": 27,
+        "score": 28.0,
+        "reasons": [
+          "indication:Pso",
+          "keywords:months,granted,authorization,either",
+          "inclusion:authorization,months",
+          "proximity"
+        ],
+        "section_title": "Plaque psoriasis (PsO)[1-6]",
+        "section_type": "indication",
+        "start": 6637,
+        "end": 7176,
+        "preview": "[Section: Plaque psoriasis (PsO)[1-6]]\nAuthorization of 12 months may be granted for all adult members (including new members) who are using the requested medication for moderate to severe plaque psoriasis and who achieve or maintain a positive clinical response as evidenced by low disease activity or improvement in signs and symptoms of the condition when either of the following is met:\n\n- Reduction in body surface area (BSA) affected from baseline\n\n- Improvement in signs and symptoms from baseline (e.g., itching, redness, flaking, scaling, burning, cracking, pain)"
+      },
+      {
+        "chunk_index": 18,
+        "score": 26.0,
+        "reasons": [
+          "indication:Pso",
+          "keywords:months,granted,authorization",
+          "inclusion:authorization,months",
+          "proximity"
+        ],
+        "section_title": "Plaque psoriasis (PsO)[1-6,10]",
+        "section_type": "indication",
+        "start": 3645,
+        "end": 4114,
+        "preview": "[Section: Plaque psoriasis (PsO)[1-6,10]]\nAuthorization of 12 months may be granted for adult members who have previously received a biologic or targeted synthetic drug (e.g., Sotyktu, Otezla) indicated for the treatment of moderate to severe plaque psoriasis.\n\nAuthorization of 12 months may be granted for adult members for treatment of moderate to severe plaque psoriasis when any of the following criteria is met:\n\n--- end of page.page_number=2 ---\n\n**==> picture [126 x 25] intentionally omitted <==**"
+      },
+      {
+        "chunk_index": 7,
+        "score": 24.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "keywords:coverage,authorization",
+          "inclusion:authorization",
+          "section:authorization",
+          "proximity"
+        ],
+        "section_title": "Documentation > Submission of the following information is necessary to initiate the prior authorization review",
+        "section_type": "documentation",
+        "start": 1752,
+        "end": 2147,
+        "preview": "[Section: Documentation > Submission of the following information is necessary to initiate the prior authorization review]\n--- end of page.page_number=1 ---\n\n**==> picture [126 x 25] intentionally omitted <==**\n\nAETNA BETTER HEALTH\u00ae Coverage Policy/Guideline\n\n|Name:|Tremfya||Page:<br>2 of 7|\n|---|---|---|---|\n|Effective|Date:<br>5/1/2025||Last Review Date:<br>4/2025|\n|Applies<br>to:|\u2610Illinois<br>\u2610New Jersey<br>\u2612Pennsylvania Kids|\u2610Florida<br>\u2612Maryland<br>\u2610Virginia|\u2612Florida Kids<br>\u2610Michigan<br>\u2612KentuckyPRMD|"
+      },
+      {
+        "chunk_index": 32,
+        "score": 23.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "keywords:months,coverage,indication",
+          "inclusion:months",
+          "proximity"
+        ],
+        "section_title": "Other[1,7]",
+        "section_type": "unknown",
+        "start": 10183,
+        "end": 11383,
+        "preview": "[Section: Other[1,7]]\nFor all indications: Member has had a documented negative tuberculosis (TB) test (which can include a tuberculosis skin test [TST] or an interferon-release assay [IGRA]) within 12 months of initiating therapy for persons who are na\u00efve to biologic drugs or targeted synthetic drugs associated with an increased risk of TB.\n\nIf the screening testing for TB is positive, there must be further testing to confirm there is no active disease (e.g., chest x-ray). Do not administer the requested medication to members with active TB infection. If there is latent disease, TB treatment must be started before initiation of the requested medication.\n\nFor all indications: Member cannot u"
+      },
+      {
+        "chunk_index": 37,
+        "score": 21.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "keywords:coverage,authorization",
+          "inclusion:authorization",
+          "proximity"
+        ],
+        "section_title": "Quantity Level Limit:",
+        "section_type": "quantity",
+        "start": 12289,
+        "end": 12814,
+        "preview": "[Section: Quantity Level Limit:]\n- Tremfya (guselkumab) 100 mg/mL prefilled syringe/One-press injector: `o` 1 syringe/injector per 56 days\n\n- Exception limit: 2 syringes/injectors per 28 days\n\n- Tremfya (guselkumab) 200 mg/2 mL prefilled syringe/pen: `o` 1 syringe/pen per 28 days `o` Exception limit: 6 syringes/pens per 56 days\n\n- Tremfya (guselkumab) 200 mg/2 mL prefilled pen Induction Pack for Crohn\u2019s Disease: `o` Exception limit: 3 cartons (6 pens) per 56 days\n\n* Coverage up to the exception limits may be provided with prior authorization"
+      },
+      {
+        "chunk_index": 30,
+        "score": 21.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "keywords:improvement,disease",
+          "inclusion:improvement",
+          "proximity"
+        ],
+        "section_title": "AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline",
+        "section_type": "criteria",
+        "start": 8630,
+        "end": 9189,
+        "preview": "[Section: AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline]\n|Name:|Tremfya||Page:<br>5 of 7|\n|---|---|---|---|\n|Effective|Date:<br>5/1/2025||Last Review Date:<br>4/2025|\n|Applies<br>to:|\u2610Illinois<br>\u2610New Jersey<br>\u2612Pennsylvania Kids|\u2610Florida<br>\u2612Maryland<br>\u2610Virginia|\u2612Florida Kids<br>\u2610Michigan<br>\u2612KentuckyPRMD|\n\n- Fecal calprotectin (FC)\n\n- Appearance of the mucosa on endoscopy, computed tomography enterography (CTE), magnetic resonance enterography (MRE), or intestinal ultrasound\n\n- Improvement on a disease activity scoring tool (e.g., Ulcerative Colitis Endoscopic Index of Severity [UCEIS], Mayo score)"
+      },
+      {
+        "chunk_index": 19,
+        "score": 20.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "keywords:coverage",
+          "section:criteria",
+          "proximity"
+        ],
+        "section_title": "AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline",
+        "section_type": "criteria",
+        "start": 4165,
+        "end": 4593,
+        "preview": "[Section: AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline]\n|Name:|Tremfya||Page:<br>3 of 7|\n|---|---|---|---|\n|Effective|Date:<br>5/1/2025||Last Review Date:<br>4/2025|\n|Applies<br>to:|\u2610Illinois<br>\u2610New Jersey<br>\u2612Pennsylvania Kids|\u2610Florida<br>\u2612Maryland<br>\u2610Virginia|\u2612Florida Kids<br>\u2610Michigan<br>\u2612KentuckyPRMD|\n\n- Crucial body areas (e.g., hands, feet, face, neck, scalp, genitals/groin, intertriginous areas) are affected.\n\n- At least 10% of body surface area (BSA) is affected."
+      },
+      {
+        "chunk_index": 1,
+        "score": 19.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "keywords:criteria,benefit",
+          "proximity"
+        ],
+        "section_title": "Intent:",
+        "section_type": "unknown",
+        "start": 403,
+        "end": 591,
+        "preview": "[Section: Intent:]\nThe intent of this policy/guideline is to provide information to the prescribing practitioner outlining the coverage criteria for Tremfya under the patient\u2019s prescription drug benefit."
+      },
+      {
+        "chunk_index": 2,
+        "score": 18.0,
+        "reasons": [
+          "indication:Pso",
+          "keywords:therapy",
+          "proximity"
+        ],
+        "section_title": "Description:",
+        "section_type": "description",
+        "start": 612,
+        "end": 1101,
+        "preview": "[Section: Description:]\nFDA-Approved Indications\n\n- Treatment of adult patients with moderate to severe plaque psoriasis (PsO) who are candidates for systemic therapy or phototherapy\n\n- Treatment of adult patients with active psoriatic arthritis (PsA)\n\n- Treatment of moderately to severely active ulcerative colitis (UC) in adults\n\n- Treatment of moderately to severely active Crohn\u2019s disease (CD) in adults\n\nAll other indications are considered experimental/investigational and not medically necessary."
+      },
+      {
+        "chunk_index": 0,
+        "score": 17.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "keywords:coverage",
+          "proximity"
+        ],
+        "section_title": "Document Preface",
+        "section_type": "unknown",
+        "start": 0,
+        "end": 387,
+        "preview": "[Section: Document Preface]\n**==> picture [126 x 25] intentionally omitted <==**\n\nAETNA BETTER HEALTH\u00ae Coverage Policy/Guideline\n\n|Name:|Tremfya||Page:<br>1 of 7|\n|---|---|---|---|\n|Effective|Date:<br>5/1/2025||Last Review Date:<br>4/2025|\n|Applies<br>to:|\u2610Illinois<br>New Jersey<br>Pennsylvania Kids<br>\u2610<br>\u2612|\u2610Florida<br>Maryland<br>Virginia<br>\u2612<br>\u2610|\u2612<br>\u2610<br>Florida Kids<br>Michigan<br>KentuckyPRMD<br>\u2612|"
+      },
+      {
+        "chunk_index": 8,
+        "score": 10.0,
+        "reasons": [
+          "indication:Pso"
+        ],
+        "section_title": "Plaque psoriasis (PsO)",
+        "section_type": "indication",
+        "start": 2174,
+        "end": 2175,
+        "preview": "[Section: Plaque psoriasis (PsO)]\n"
+      }
+    ],
+    "limits": [
+      {
+        "chunk_index": 37,
+        "score": 24.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "keywords:Quantity,limits,limit",
+          "section:quantity",
+          "proximity"
+        ],
+        "section_title": "Quantity Level Limit:",
+        "section_type": "quantity",
+        "start": 12289,
+        "end": 12814,
+        "preview": "[Section: Quantity Level Limit:]\n- Tremfya (guselkumab) 100 mg/mL prefilled syringe/One-press injector: `o` 1 syringe/injector per 56 days\n\n- Exception limit: 2 syringes/injectors per 28 days\n\n- Tremfya (guselkumab) 200 mg/2 mL prefilled syringe/pen: `o` 1 syringe/pen per 28 days `o` Exception limit: 6 syringes/pens per 56 days\n\n- Tremfya (guselkumab) 200 mg/2 mL prefilled pen Induction Pack for Crohn\u2019s Disease: `o` Exception limit: 3 cartons (6 pens) per 56 days\n\n* Coverage up to the exception limits may be provided with prior authorization"
+      },
+      {
+        "chunk_index": 19,
+        "score": 12.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "section:policy"
+        ],
+        "section_title": "AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline",
+        "section_type": "criteria",
+        "start": 4165,
+        "end": 4593,
+        "preview": "[Section: AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline]\n|Name:|Tremfya||Page:<br>3 of 7|\n|---|---|---|---|\n|Effective|Date:<br>5/1/2025||Last Review Date:<br>4/2025|\n|Applies<br>to:|\u2610Illinois<br>\u2610New Jersey<br>\u2612Pennsylvania Kids|\u2610Florida<br>\u2612Maryland<br>\u2610Virginia|\u2612Florida Kids<br>\u2610Michigan<br>\u2612KentuckyPRMD|\n\n- Crucial body areas (e.g., hands, feet, face, neck, scalp, genitals/groin, intertriginous areas) are affected.\n\n- At least 10% of body surface area (BSA) is affected."
+      },
+      {
+        "chunk_index": 25,
+        "score": 12.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "section:policy"
+        ],
+        "section_title": "AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline",
+        "section_type": "criteria",
+        "start": 6315,
+        "end": 6572,
+        "preview": "[Section: AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline]\n|Name:|Tremfya||Page:<br>4 of 7|\n|---|---|---|---|\n|Effective|Date:<br>5/1/2025||Last Review Date:<br>4/2025|\n|Applies<br>to:|\u2610Illinois<br>\u2610New Jersey<br>\u2612Pennsylvania Kids|\u2610Florida<br>\u2612Maryland<br>\u2610Virginia|\u2612Florida Kids<br>\u2610Michigan<br>\u2612KentuckyPRMD|"
+      },
+      {
+        "chunk_index": 30,
+        "score": 12.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "section:policy"
+        ],
+        "section_title": "AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline",
+        "section_type": "criteria",
+        "start": 8630,
+        "end": 9189,
+        "preview": "[Section: AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline]\n|Name:|Tremfya||Page:<br>5 of 7|\n|---|---|---|---|\n|Effective|Date:<br>5/1/2025||Last Review Date:<br>4/2025|\n|Applies<br>to:|\u2610Illinois<br>\u2610New Jersey<br>\u2612Pennsylvania Kids|\u2610Florida<br>\u2612Maryland<br>\u2610Virginia|\u2612Florida Kids<br>\u2610Michigan<br>\u2612KentuckyPRMD|\n\n- Fecal calprotectin (FC)\n\n- Appearance of the mucosa on endoscopy, computed tomography enterography (CTE), magnetic resonance enterography (MRE), or intestinal ultrasound\n\n- Improvement on a disease activity scoring tool (e.g., Ulcerative Colitis Endoscopic Index of Severity [UCEIS], Mayo score)"
+      },
+      {
+        "chunk_index": 2,
+        "score": 10.0,
+        "reasons": [
+          "indication:Pso"
+        ],
+        "section_title": "Description:",
+        "section_type": "description",
+        "start": 612,
+        "end": 1101,
+        "preview": "[Section: Description:]\nFDA-Approved Indications\n\n- Treatment of adult patients with moderate to severe plaque psoriasis (PsO) who are candidates for systemic therapy or phototherapy\n\n- Treatment of adult patients with active psoriatic arthritis (PsA)\n\n- Treatment of moderately to severely active ulcerative colitis (UC) in adults\n\n- Treatment of moderately to severely active Crohn\u2019s disease (CD) in adults\n\nAll other indications are considered experimental/investigational and not medically necessary."
+      },
+      {
+        "chunk_index": 8,
+        "score": 10.0,
+        "reasons": [
+          "indication:Pso"
+        ],
+        "section_title": "Plaque psoriasis (PsO)",
+        "section_type": "indication",
+        "start": 2174,
+        "end": 2175,
+        "preview": "[Section: Plaque psoriasis (PsO)]\n"
+      }
+    ],
+    "scoring": [
+      {
+        "chunk_index": 7,
+        "score": 20.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "keywords:authorization",
+          "section:authorization",
+          "proximity"
+        ],
+        "section_title": "Documentation > Submission of the following information is necessary to initiate the prior authorization review",
+        "section_type": "documentation",
+        "start": 1752,
+        "end": 2147,
+        "preview": "[Section: Documentation > Submission of the following information is necessary to initiate the prior authorization review]\n--- end of page.page_number=1 ---\n\n**==> picture [126 x 25] intentionally omitted <==**\n\nAETNA BETTER HEALTH\u00ae Coverage Policy/Guideline\n\n|Name:|Tremfya||Page:<br>2 of 7|\n|---|---|---|---|\n|Effective|Date:<br>5/1/2025||Last Review Date:<br>4/2025|\n|Applies<br>to:|\u2610Illinois<br>\u2610New Jersey<br>\u2612Pennsylvania Kids|\u2610Florida<br>\u2612Maryland<br>\u2610Virginia|\u2612Florida Kids<br>\u2610Michigan<br>\u2612KentuckyPRMD|"
+      },
+      {
+        "chunk_index": 18,
+        "score": 18.0,
+        "reasons": [
+          "indication:Pso",
+          "keywords:authorization",
+          "proximity"
+        ],
+        "section_title": "Plaque psoriasis (PsO)[1-6,10]",
+        "section_type": "indication",
+        "start": 3645,
+        "end": 4114,
+        "preview": "[Section: Plaque psoriasis (PsO)[1-6,10]]\nAuthorization of 12 months may be granted for adult members who have previously received a biologic or targeted synthetic drug (e.g., Sotyktu, Otezla) indicated for the treatment of moderate to severe plaque psoriasis.\n\nAuthorization of 12 months may be granted for adult members for treatment of moderate to severe plaque psoriasis when any of the following criteria is met:\n\n--- end of page.page_number=2 ---\n\n**==> picture [126 x 25] intentionally omitted <==**"
+      },
+      {
+        "chunk_index": 27,
+        "score": 18.0,
+        "reasons": [
+          "indication:Pso",
+          "keywords:authorization",
+          "proximity"
+        ],
+        "section_title": "Plaque psoriasis (PsO)[1-6]",
+        "section_type": "indication",
+        "start": 6637,
+        "end": 7176,
+        "preview": "[Section: Plaque psoriasis (PsO)[1-6]]\nAuthorization of 12 months may be granted for all adult members (including new members) who are using the requested medication for moderate to severe plaque psoriasis and who achieve or maintain a positive clinical response as evidenced by low disease activity or improvement in signs and symptoms of the condition when either of the following is met:\n\n- Reduction in body surface area (BSA) affected from baseline\n\n- Improvement in signs and symptoms from baseline (e.g., itching, redness, flaking, scaling, burning, cracking, pain)"
+      },
+      {
+        "chunk_index": 19,
+        "score": 12.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "section:criteria"
+        ],
+        "section_title": "AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline",
+        "section_type": "criteria",
+        "start": 4165,
+        "end": 4593,
+        "preview": "[Section: AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline]\n|Name:|Tremfya||Page:<br>3 of 7|\n|---|---|---|---|\n|Effective|Date:<br>5/1/2025||Last Review Date:<br>4/2025|\n|Applies<br>to:|\u2610Illinois<br>\u2610New Jersey<br>\u2612Pennsylvania Kids|\u2610Florida<br>\u2612Maryland<br>\u2610Virginia|\u2612Florida Kids<br>\u2610Michigan<br>\u2612KentuckyPRMD|\n\n- Crucial body areas (e.g., hands, feet, face, neck, scalp, genitals/groin, intertriginous areas) are affected.\n\n- At least 10% of body surface area (BSA) is affected."
+      },
+      {
+        "chunk_index": 25,
+        "score": 12.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "section:criteria"
+        ],
+        "section_title": "AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline",
+        "section_type": "criteria",
+        "start": 6315,
+        "end": 6572,
+        "preview": "[Section: AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline]\n|Name:|Tremfya||Page:<br>4 of 7|\n|---|---|---|---|\n|Effective|Date:<br>5/1/2025||Last Review Date:<br>4/2025|\n|Applies<br>to:|\u2610Illinois<br>\u2610New Jersey<br>\u2612Pennsylvania Kids|\u2610Florida<br>\u2612Maryland<br>\u2610Virginia|\u2612Florida Kids<br>\u2610Michigan<br>\u2612KentuckyPRMD|"
+      },
+      {
+        "chunk_index": 30,
+        "score": 12.0,
+        "reasons": [
+          "brand:TREMFYA",
+          "section:criteria"
+        ],
+        "section_title": "AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline",
+        "section_type": "criteria",
+        "start": 8630,
+        "end": 9189,
+        "preview": "[Section: AETNA BETTER HEALTH\u00ae Coverage Policy/Guideline]\n|Name:|Tremfya||Page:<br>5 of 7|\n|---|---|---|---|\n|Effective|Date:<br>5/1/2025||Last Review Date:<br>4/2025|\n|Applies<br>to:|\u2610Illinois<br>\u2610New Jersey<br>\u2612Pennsylvania Kids|\u2610Florida<br>\u2612Maryland<br>\u2610Virginia|\u2612Florida Kids<br>\u2610Michigan<br>\u2612KentuckyPRMD|\n\n- Fecal calprotectin (FC)\n\n- Appearance of the mucosa on endoscopy, computed tomography enterography (CTE), magnetic resonance enterography (MRE), or intestinal ultrasound\n\n- Improvement on a disease activity scoring tool (e.g., Ulcerative Colitis Endoscopic Index of Severity [UCEIS], Mayo score)"
+      }
+    ]
+  },
+  "final_record": {
+    "filename": "330109-4880941.pdf",
+    "brand": "TREMFYA",
+    "age": "Treatment of adult patients with moderate to severe plaque psoriasis (PsO) who are candidates for systemic therapy or phototherapy",
+    "step_therapy_requirements": "[Section: Documentation for all indications:] The patient is unable to take THREE preferred products, where indicated, for the given diagnosis due to a trial and inadequate treatment response or intolerance, or a contraindication.; THREE preferred products:; TWO additional preferred products",
+    "number_of_steps_brands": "3",
+    "number_of_steps_generic": "",
+    "step_through_phototherapy": "No",
+    "tb_test_required": "Yes",
+    "initial_auth_duration": "12 months",
+    "reauthorization_duration": "",
+    "reauthorization_required": "Yes",
+    "reauthorization_requirements": "[Section: Plaque psoriasis (PsO)[1-6]] Authorization of 12 months may be granted for all adult members (including new members) who are using the requested medication for moderate to severe plaque psoriasis and who achieve or maintain a positive clinical response as evidenced by low disease activity or improvement in signs and symptoms of the condition when either of the following is met:; Improvement in signs and symptoms from baseline (e.g., itching, redness, flaking, scaling, burning, cracking, pain); Improvement on a disease activity scoring tool (e.g., Ulcerative Colitis Endoscopic Index of Severity [UCEIS], Mayo score)",
+    "specialist_types": "",
+    "quantity_limits": "",
+    "access_score": "Moderate"
+  }
+}

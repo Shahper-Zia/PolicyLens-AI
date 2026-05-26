@@ -45,10 +45,10 @@ def _respect_rpm_limit() -> None:
 
 def call_gemini(prompt: str, *, model_name: str | None = None, max_retries: int | None = None) -> str:
     try:
-        import google.generativeai as genai
+        from google import genai
     except ImportError as exc:
         raise ImportError(
-            "google-generativeai is not installed. Add it to requirements.txt."
+            "google-genai is not installed. Add it to requirements.txt."
         ) from exc
 
     api_key = os.getenv("GEMINI_API_KEY")
@@ -59,14 +59,16 @@ def call_gemini(prompt: str, *, model_name: str | None = None, max_retries: int 
     max_retries = max_retries or int(os.getenv("GEMINI_MAX_RETRIES", "4"))
     sleep_base = float(os.getenv("GEMINI_RETRY_SLEEP_BASE", "2"))
 
-    genai.configure(api_key=api_key)
-    model = genai.GenerativeModel(model_name)
+    client = genai.Client(api_key=api_key)
 
     last_error: Exception | None = None
     for attempt in range(1, max_retries + 1):
         try:
             _respect_rpm_limit()
-            response = model.generate_content(prompt)
+            response = client.models.generate_content(
+                model=model_name,
+                contents=prompt,
+            )
             return getattr(response, "text", "") or str(response)
         except Exception as exc:
             last_error = exc

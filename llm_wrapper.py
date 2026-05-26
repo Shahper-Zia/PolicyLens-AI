@@ -1,7 +1,9 @@
-"""Lightweight LLM router for brand extraction.
+"""Legacy LLM wrapper kept for compatibility.
 
-Default provider: Gemini
-Optional provider: llama via local Ollama endpoint.
+The shared router now resolves provider aliases:
+- `gemini` -> Google Gemini
+- `groq` or `llama` -> Groq-hosted Llama models
+- `ollama` or `local` -> local Ollama endpoint
 """
 
 from __future__ import annotations
@@ -94,10 +96,9 @@ def _call_llama(prompt: str) -> str:
 
 
 def call_llm(prompt: str, provider: str | None = None) -> str:
-    provider = (provider or os.getenv("LLM_PROVIDER", "gemini")).lower().strip()
-    if provider == "llama":
-        return _call_llama(prompt)
-    return _call_gemini(prompt)
+    from src.llm.router import call_llm as shared_call_llm
+
+    return shared_call_llm(prompt, provider=provider)
 
 
 def extract_brands_from_markdown(file_name: str, markdown_text: str, provider: str | None = None) -> Dict[str, List[str]]:
