@@ -7,12 +7,12 @@ import time
 from pathlib import Path
 from typing import Dict, List
 
-from services.brand_extraction_service import extract_brands_from_markdown
+from src.services.brand_extraction_service import extract_brands_from_markdown
 
 
 def run_brand_extraction_pipeline(
     input_dir: str | Path = "data/extracted_pdfs_mds",
-    output_dir: str | Path = "data/brand_file_univ",
+    output_dir: str | Path = "data/brand_file_univ_non_hallucinated",
     failed_log_path: str | Path = "data/brand_file_univ/failed_brand_extraction.txt",
     provider: str | None = None,
     max_retries: int = 3,

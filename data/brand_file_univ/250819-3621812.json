@@ -9,7 +9,6 @@
     "COSENTYX",
     "ENBREL",
     "ENTYVIO",
-    "HUMIRA",
     "ILARIS",
     "ILUMYA",
     "INFLECTRA",
@@ -22,13 +21,11 @@
     "RINVOQ",
     "SILIQ",
     "SIMPONI",
-    "SIMPONI ARIA",
     "SKYRIZI",
     "STELARA",
     "TALTZ",
     "TREMFYA",
     "TYSABRI",
-    "XELJANZ",
-    "XELJANZ XR"
+    "XELJANZ"
   ]
 }

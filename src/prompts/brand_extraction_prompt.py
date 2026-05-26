@@ -18,6 +18,9 @@ Read carefully across:
 
 Rules:
 - Return only actual drug brand names or branded product names.
+- DO NOT HALLUCINATE OR INVENT BRAND NAMES. 
+- DO NOT CREATE NAMES BASED ON DRUG DESCRIPTIONS.
+- DO NOT WRITE NAMES WHICH ARE NOT EXPLICITLY PRESENT IN THE FILE.
 - Keep uppercase when possible.
 - Remove duplicates.
 - Do not include generic section labels, document headings, page numbers, or policy boilerplate.
