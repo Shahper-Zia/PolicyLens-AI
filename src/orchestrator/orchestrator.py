@@ -69,9 +69,22 @@ class PolicyOrchestrator:
             source=text,
             brands=brands,
             indication=indication,
+            use_llm_scoring=False,
         )
         if relevant_chunks:
             logger.info(f"Extracted relevant chunks for brands: {list(relevant_chunks.keys())}")
+            for brand, payload in relevant_chunks.items():
+                logger.info(f"{brand} chunk count: {len(payload.get('chunks', []))}")
+                for chunk in payload.get("chunks", []):
+                    logger.info(
+                    f"{brand} | idx={chunk.get('chunk_index')} | "
+                    f"rule_score={chunk.get('score')} | "
+                    f"llm_score={chunk.get('llm_score')} | "
+                    f"final_score={chunk.get('final_score')} | "
+                    f"selection={chunk.get('selection_reason')} | "
+                    f"reasons={chunk.get('reasons')} | "
+                    f"section={chunk.get('section_title')}"
+                )
             return relevant_chunks
 
         return {
@@ -136,6 +149,8 @@ class PolicyOrchestrator:
 
         # Step 3: Extract brands chunks from text
         brand_sections = self.split_brand_sections(extracted_md, brand_names, indication)
+        if brand_sections:
+            logger.info(f"Extracted brand sections for brands: {list(brand_sections.keys())}")
 
         # Step 4: Extract attributes for each brand section
         brand_attributes = self.extract_attributes(pdf_file.filename, brand_sections, indication)
