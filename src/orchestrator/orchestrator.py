@@ -1,4 +1,5 @@
 from src.orchestrator.processor.pdf_processor import PDFProcessor
+from src.orchestrator.chunker import relevant_chunker
 import os
 from dotenv import load_dotenv
 load_dotenv()
@@ -13,6 +14,7 @@ class PolicyOrchestrator:
         logger.info("PolicyOrchestrator initialized")
         self.processed_pdf_path = processed_pdf_path  # Replace with your desired output directory
         self.pdf_processor = PDFProcessor
+        self.chunker = relevant_chunker
 
     async def _save_pdf_to_raw_pdfs(self, pdf_file):
         """
@@ -42,7 +44,9 @@ class PolicyOrchestrator:
         # previously extracted md files are saved with same name as pdf but with .md extension in processed_pdf_path
         if pdf_md_filename in os.listdir(self.processed_pdf_path):
             logger.info(f"Found existing extracted markdown for {pdf_file.filename}, loading from file")
-            with open(os.path.join(self.processed_pdf_path, pdf_md_filename), "r") as f:
+            #with open(os.path.join(self.processed_pdf_path, pdf_md_filename), "r") as f:
+            #    extracted_md = f.read()
+            with open(os.path.join(self.processed_pdf_path, pdf_md_filename), "r", encoding="utf-8") as f:
                 extracted_md = f.read()
             logger.info(f"Loaded existing extracted markdown for {pdf_file.filename}, length: {len(extracted_md)} characters")
         else:
@@ -61,9 +65,25 @@ class PolicyOrchestrator:
     
     def split_brand_sections(self, text, brands, indication):
         logger.info(f"Splitting text into sections for brands: {brands}")
-        # Implement logic to split text into brand-specific sections here
-        dummy_sections = {brand: [f"Extracted section {i+1} for {brand} and {indication}" for i in range(3)] for brand in brands}
-        return dummy_sections
+        relevant_chunks = relevant_chunker.get_brand_indication_chunks(
+            source=text,
+            brands=brands,
+            indication=indication,
+        )
+        if relevant_chunks:
+            logger.info(f"Extracted relevant chunks for brands: {list(relevant_chunks.keys())}")
+            return relevant_chunks
+
+        return {
+            brand: {
+                "brand": brand,
+                "indication": indication,
+                "selected_sections": [],
+                "chunks": [],
+                "section_scores": [],
+            }
+            for brand in brands
+        }
     
     def extract_brand_attributes(self, filename, brand_section, brand, indication) -> BrandAttribute:
         logger.info(f"Extracting attributes for brand: {brand}")
@@ -90,10 +110,13 @@ class PolicyOrchestrator:
 
     def extract_attributes(self, filename, brand_sections, indication) -> ExtractionResponse:
         logger.info(f"Extracting attributes from brand sections.")
-        # Implement logic to extract attributes for each brand section based on indication here
         dummy_attributes = []
-        for brand, sections in brand_sections.items():
-            brand_section = "\n".join(sections)
+        for brand, payload in brand_sections.items():
+            chunks = payload.get("chunks", []) if isinstance(payload, dict) else payload
+            brand_section = "\n".join(
+                chunk.get("text", "") if isinstance(chunk, dict) else str(chunk)
+                for chunk in chunks
+            )
             attributes = self.extract_brand_attributes(filename, brand_section, brand, indication)
             dummy_attributes.append(attributes)
         return dummy_attributes
