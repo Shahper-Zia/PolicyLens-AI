@@ -1,5 +1,6 @@
 from src.orchestrator.processor.pdf_processor import PDFProcessor
 from src.orchestrator.chunker import relevant_chunker
+from src.orchestrator.param_extractor import param_extractor    
 import os
 from dotenv import load_dotenv
 load_dotenv()
@@ -101,6 +102,24 @@ class PolicyOrchestrator:
     def extract_brand_attributes(self, filename, brand_section, brand, indication) -> BrandAttribute:
         logger.info(f"Extracting attributes for brand: {brand}")
         # Implement logic to extract attributes for a given brand section here
+        parameters = ['age', 'step_therapy_requirements', 'number_of_steps_brands', 'number_of_steps_generic', 'step_through_phototherapy', 'tb_test_required', 'initial_auth_duration', 'reauthorization_duration', 'reauthorization_required', 'reauthorization_requirements', 'specialist_types', 'quantity_limits', 'access_score']
+        rule_content_map = {}
+        for param in parameters:
+            rule_file = f"{param}".replace(" ", "_") + ".md"
+            rule_path = os.path.join("src/orchestrator/rules", rule_file)
+            
+            if os.path.exists(rule_path):                
+                with open(rule_path, "r", encoding="utf-8") as f:
+                    rule_content = f.read()
+                    value = param_extractor.extract_parameter(brand_section, rule_content)
+                    rule_content_map[param] = value
+        final_attributes = BrandAttribute(
+            filename=filename,
+            brand=brand,
+            indication=indication,
+            **rule_content_map
+        )
+
         dummy_attributes = BrandAttribute(
             filename=filename,
             brand=brand,
@@ -119,9 +138,12 @@ class PolicyOrchestrator:
             quantity_limits="Up to 4 syringes per month",
             access_score="8/10"
         )
-        return dummy_attributes
+        if not final_attributes:
+            logger.warning(f"Failed to extract attributes for brand: {brand}, returning dummy attributes")
+            return dummy_attributes
+        return final_attributes
 
-    def extract_attributes(self, filename, brand_sections, indication) -> ExtractionResponse:
+    def extract_attributes(self, filename, brand_sections) -> ExtractionResponse:
         logger.info(f"Extracting attributes from brand sections.")
         dummy_attributes = []
         for brand, payload in brand_sections.items():
@@ -130,6 +152,7 @@ class PolicyOrchestrator:
                 chunk.get("text", "") if isinstance(chunk, dict) else str(chunk)
                 for chunk in chunks
             )
+            indication = payload.get("indication", "N/A") if isinstance(payload, dict) else "Psoriasis"
             attributes = self.extract_brand_attributes(filename, brand_section, brand, indication)
             dummy_attributes.append(attributes)
         return dummy_attributes
@@ -153,7 +176,7 @@ class PolicyOrchestrator:
             logger.info(f"Extracted brand sections for brands: {list(brand_sections.keys())}")
 
         # Step 4: Extract attributes for each brand section
-        brand_attributes = self.extract_attributes(pdf_file.filename, brand_sections, indication)
+        brand_attributes = self.extract_attributes(pdf_file.filename, brand_sections)
 
         # Step 5: Compile results into response model
         response = ExtractionResponse(
