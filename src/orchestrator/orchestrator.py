@@ -103,16 +103,38 @@ class PolicyOrchestrator:
         logger.info(f"Extracting attributes for brand: {brand}")
         # Implement logic to extract attributes for a given brand section here
         parameters = ['age', 'step_therapy_requirements', 'number_of_steps_brands', 'number_of_steps_generic', 'step_through_phototherapy', 'tb_test_required', 'initial_auth_duration', 'reauthorization_duration', 'reauthorization_required', 'reauthorization_requirements', 'specialist_types', 'quantity_limits', 'access_score']
+        rule_file_map = {
+            "age": "age.md",
+            "step_therapy_requirements": "step_therapy_requirements_documented_in_policy.md",
+            "number_of_steps_brands": "number_of_steps_through_brands.md",
+            "number_of_steps_generic": "number_of_steps_through_generic.md",
+            "step_through_phototherapy": "step_through_phototherapy.md",
+            "tb_test_required": "tb_test_required.md",
+            "initial_auth_duration": "initial_authorization_duration_in_months.md",
+            "reauthorization_duration": "reauthorization_duration_in_months.md",
+            "reauthorization_required": "reauthorization_required.md",
+            "reauthorization_requirements": "reauthorization_requirements_documented_in_policy.md",
+            "specialist_types": "specialist_types.md",
+            "quantity_limits": "quantity_limits.md",
+            "access_score": "access_score.md",
+        }
         rule_content_map = {}
         for param in parameters:
-            rule_file = f"{param}".replace(" ", "_") + ".md"
-            rule_path = os.path.join("src/orchestrator/rules", rule_file)
+            rule_file = rule_file_map.get(param, f"{param}".replace(" ", "_") + ".md")
+            rule_path = os.path.join("rules", rule_file)
             
             if os.path.exists(rule_path):                
                 with open(rule_path, "r", encoding="utf-8") as f:
                     rule_content = f.read()
-                    value = param_extractor.extract_parameter(brand_section, rule_content)
+                    value = param_extractor.extract_parameter(
+                        brand_section,
+                        rule_content,
+                        brand=brand,
+                        indication=indication,
+                    )
                     rule_content_map[param] = value
+            else:
+                logger.warning(f"Rule file not found for parameter {param}: {rule_path}")
         final_attributes = BrandAttribute(
             filename=filename,
             brand=brand,
