@@ -19,7 +19,7 @@ from src.orchestrator.chunker.Documents_chunked import (
 def get_brand_indication_chunks(
     source: Any,
     brands: list[str],
-    indication: str,
+    indication: str | None = None,
     *,
     brand_aliases: list[str] | None = None,
     indication_aliases: list[str] | None = None,
@@ -34,11 +34,14 @@ def get_brand_indication_chunks(
     Chunk a policy document and keep chunks that look relevant to a brand and
     indication.
 
+    If no indication is provided, defaults to Psoriasis.
+
     The selection logic is intentionally two-stage:
     1. score each chunk using scope terms in the body and the section title
     2. keep weak chunks only when they immediately follow a strong chunk
     """
 
+    indication = indication or "Psoriasis"
     document_text, source_name = _coerce_text_source(source)
     sections = parse_document_into_sections(document_text)
     chunks = build_contextual_chunks(sections, max_chars=max_chars)

@@ -6,11 +6,11 @@ This rule helps determine whether renewed approval is required after the initial
 
 ## Extraction Rule
 
-Determine whether reassessment and renewed approval are needed after the initial authorization period.
+Determine whether reassessment and renewed approval are needed after the initial authorization period ends.
 
 ## What to Look For
 
-Look for reauthorization, renewal, continuation approval, continuation of therapy, reassessment, or updated documentation requirements after the initial coverage period.
+Look for reauthorization, renewal, continuation approval, continuation of therapy, reassessment, or updated documentation requirements after the initial coverage period kind of terms..
 
 ## Decision Logic
 

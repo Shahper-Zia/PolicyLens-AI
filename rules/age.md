@@ -10,7 +10,7 @@ Extract whether the policy includes age-based eligibility criteria for the thera
 
 ## What to Look For
 
-Look for explicit age restrictions such as `18 years of age or older`, `adult members`, pediatric age thresholds, or other age eligibility language.
+Look for explicit age restrictions such as `18 years of age or older`, `adult members`, or mention of `>=` or `<` etc. pediatric age thresholds, or other age eligibility language.
 
 If the policy does not specify a numerical age threshold and instead says the therapy is covered according to FDA-labelled age or FDA-approved indication, output `FDA labelled age`.
 

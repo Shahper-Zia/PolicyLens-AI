@@ -18,7 +18,7 @@ Return `Yes` when phototherapy is a mandatory required step in the combined crit
 
 Return `No` when the policy does not mention phototherapy as a required step for approval of the target drug and indication.
 
-Return `N/A` when the policy lists no approval criteria at all in the available chunks.
+Return `N/A` when the policy lists no criteria at all in the available chunks about `Phototherapy`/`PUVA`/`psolaren combined with UVA`.
 
 ## Output Guidance
 

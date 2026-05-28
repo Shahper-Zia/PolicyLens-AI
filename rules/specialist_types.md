@@ -12,7 +12,9 @@ Extract the specific medical specialties that are acceptable for initiating, pre
 
 Look for requirements that the drug must be prescribed by, managed by, or prescribed in consultation with a specialist.
 
-Examples of specialties can include dermatologist, rheumatologist, gastroenterologist, infectious disease specialist, or other explicitly named specialties.
+Examples of specialties can include dermatologist, rheumatologist, gastroenterologist, infectious disease specialist, or other explicitly named specialties or multiple specialities.
+
+If multiple specialities are mentioned then extract all and return with a `;` separating them.
 
 ## Output Guidance
 

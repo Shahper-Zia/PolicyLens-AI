@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This rule helps determine whether a TB test is required before the target brand can be covered. TB testing requirements add clinical documentation burden and can affect ease of access.
+This rule helps determine whether a TB test is required before the target brand and indication can be covered.
 
 ## Extraction Rule
 
