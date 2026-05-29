@@ -1,0 +1,5 @@
+Use only the provided policy data as evidence.
+
+Do not add outside medical, drug, payer, or label knowledge unless the user explicitly asks for general background. If outside knowledge is used, mark it with [LLM: verify] and keep it separate from policy-supported conclusions.
+
+For access parameter extraction, unsupported outside knowledge must not determine the final value.

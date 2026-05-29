@@ -8,15 +8,13 @@ This rule helps count branded or biologic step requirements for a target brand a
 
 Count the number of branded or biologic steps required before the target drug can be approved.
 
-A preferred ustekinumab product counts as a branded step.
+If the extract mentions that a product belonging to any generic medicines like ustekinumab or adalimumab or anything else is preferrable this emplies as branded step requirement.
 
-A preferred adalimumab product counts as a branded step.
+If the policy references a drug indicaion and the target drug belongs to that indication, the indication-level step counts as a branded step for that drug.
 
-If the policy references a drug class and the target drug belongs to that class, the class-level step counts as a branded step for that drug.
+The document might mention AND/OR conditions of various steps needed for a drug to be covered by the insurance company .so multiple and statements implies the number od steps needed to be coverd. Multiple statements joined by OR imply just one step because the condition is OR.
 
 ## Counting Logic
-
-Combine universal criteria that apply generally with indication-specific or brand-specific criteria. Treat universal criteria and indication/brand-specific criteria as both required when both are present.
 
 From the combined required criteria, identify the least restrictive approval path. If requirements appear in an OR statement, count the path with fewer required branded or biologic steps.
 

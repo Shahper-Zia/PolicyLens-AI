@@ -1,0 +1,147 @@
+-Goal-
+Given a prior authorization policy text chunk and a list of allowed entity types, identify the policy entities and relationships that are useful for extracting brand-level access parameters.
+
+The graph should support answers about:
+- age requirements
+- step therapy requirements
+- number of branded or biologic steps
+- number of generic or non-biologic steps
+- phototherapy step-through
+- TB testing
+- initial authorization duration
+- reauthorization duration
+- reauthorization required
+- reauthorization criteria
+- specialist requirements
+- quantity limits
+
+-Important policy reasoning rules-
+1. Preserve applicability. Capture whether a rule applies to a brand, indication, drug class, all indications, all brands, preferred products, non-preferred products, initial authorization, or reauthorization.
+2. Preserve AND/OR logic. If a requirement has alternatives joined by OR, describe it as an alternative path. If requirements are cumulative or joined by AND, describe them as jointly required.
+3. Preserve exceptions. Contraindication, intolerance, inadequate response, inability to use, continuation criteria, and other exceptions should become entities or be included in relationship descriptions.
+4. Preserve severity. If the text distinguishes moderate-to-severe psoriasis from severe psoriasis, capture the severity level and link it to the relevant indication or rule.
+5. Distinguish step types. Biologics, biosimilars, targeted drugs, named branded products, ustekinumab, adalimumab, and therapy classes count as branded/biologic step concepts. Topical agents and unnamed non-biologic requirements count as generic/non-biologic step concepts. Phototherapy is its own concept and should not be merged into branded or generic step counts.
+6. Distinguish quantity limits from dosing. Extract a quantity limit only when the text explicitly frames it as a quantity limit or equivalent quantity-limit restriction.
+7. Do not infer unsupported facts. Do not invent generic names, indications, drug classes, ages, durations, or relationships that are not supported by the text.
+
+-Entity extraction-
+For each identified entity, extract:
+- entity_name: A concise canonical name, capitalized.
+- entity_type: One of the following allowed types: [{entity_types}]
+- entity_description: A comprehensive but evidence-grounded description of what the text says about this entity, including values, applicability, and important conditions.
+
+Format each entity exactly as:
+("entity"<|><entity_name><|><entity_type><|><entity_description>)
+
+-Relationship extraction-
+From the entities identified above, identify clearly supported relationships. Prefer relationships that help downstream extraction of PA parameters.
+
+For each relationship, extract:
+- source_entity: name of the source entity, as identified above
+- target_entity: name of the target entity, as identified above
+- relationship_description: include the relationship type in plain English, such as applies to, requires, has criterion, has exception, has duration, has quantity limit, requires specialist, requires lab test, is alternative to, is jointly required with, or is restricted to
+- relationship_strength: 1-10, where 10 means the relationship is explicit and central to coverage, 5 means useful but contextual, and 1 means weakly related
+
+Format each relationship exactly as:
+("relationship"<|><source_entity><|><target_entity><|><relationship_description><|><relationship_strength>)
+
+Return output in English as a single list of all entities and relationships. Use ## as the list delimiter.
+When finished, output <|COMPLETE|>.
+
+######################
+-Examples-
+######################
+Example 1:
+Entity_types: policy,brand,indication,step_requirement,generic_drug,universal_rule,exception
+Text:
+For plaque psoriasis, non-preferred biologic agents require documented trial and failure, contraindication, or intolerance to one preferred topical agent and one preferred adalimumab product. This requirement applies to all non-preferred agents unless otherwise specified.
+######################
+Output:
+("entity"<|>PLAQUE PSORIASIS<|>indication<|>Plaque psoriasis is the indication for the coverage criteria in this text.)
+##
+("entity"<|>NON-PREFERRED BIOLOGIC AGENTS<|>brand<|>Non-preferred biologic agents are the target product group subject to the step therapy requirement for plaque psoriasis.)
+##
+("entity"<|>PREFERRED TOPICAL AGENT STEP<|>step_requirement<|>The policy requires documented trial and failure, contraindication, or intolerance to one preferred topical agent before approval of a non-preferred biologic agent.)
+##
+("entity"<|>PREFERRED ADALIMUMAB PRODUCT STEP<|>step_requirement<|>The policy requires documented trial and failure, contraindication, or intolerance to one preferred adalimumab product before approval of a non-preferred biologic agent.)
+##
+("entity"<|>ALL NON-PREFERRED AGENTS RULE<|>universal_rule<|>The step therapy requirement applies to all non-preferred agents unless otherwise specified.)
+##
+("entity"<|>CONTRAINDICATION OR INTOLERANCE EXCEPTION<|>exception<|>Contraindication or intolerance can satisfy the prior therapy requirement instead of trial and failure.)
+##
+("relationship"<|>ALL NON-PREFERRED AGENTS RULE<|>NON-PREFERRED BIOLOGIC AGENTS<|>The universal rule applies to all non-preferred biologic agents unless otherwise specified.<|>9)
+##
+("relationship"<|>NON-PREFERRED BIOLOGIC AGENTS<|>PLAQUE PSORIASIS<|>The non-preferred biologic coverage criteria apply to plaque psoriasis.<|>9)
+##
+("relationship"<|>NON-PREFERRED BIOLOGIC AGENTS<|>PREFERRED TOPICAL AGENT STEP<|>Approval requires the preferred topical agent step as one generic or non-biologic step.<|>10)
+##
+("relationship"<|>NON-PREFERRED BIOLOGIC AGENTS<|>PREFERRED ADALIMUMAB PRODUCT STEP<|>Approval requires the preferred adalimumab product step as one branded or biologic step.<|>10)
+##
+("relationship"<|>PREFERRED TOPICAL AGENT STEP<|>CONTRAINDICATION OR INTOLERANCE EXCEPTION<|>Contraindication or intolerance is an exception path for satisfying this step requirement.<|>8)
+##
+("relationship"<|>PREFERRED ADALIMUMAB PRODUCT STEP<|>CONTRAINDICATION OR INTOLERANCE EXCEPTION<|>Contraindication or intolerance is an exception path for satisfying this step requirement.<|>8)
+<|COMPLETE|>
+
+######################
+Example 2:
+Entity_types: brand,indication,age_requirement,specialist_requirement,lab_requirement,initial_authorization_duration,reauthorization_requirement,reauthorization_duration
+Text:
+Tremfya is medically necessary for adults with moderate-to-severe plaque psoriasis when prescribed by or in consultation with a dermatologist. Initial authorization is 12 months. Continued therapy may be approved for 12 months when chart notes document positive clinical response. TB screening is required before treatment.
+######################
+Output:
+("entity"<|>TREMFYA<|>brand<|>Tremfya is the target therapy evaluated for coverage in adults with moderate-to-severe plaque psoriasis.)
+##
+("entity"<|>MODERATE-TO-SEVERE PLAQUE PSORIASIS<|>indication<|>Moderate-to-severe plaque psoriasis is the indication for Tremfya coverage in this text.)
+##
+("entity"<|>ADULTS<|>age_requirement<|>Coverage is limited to adults.)
+##
+("entity"<|>DERMATOLOGIST<|>specialist_requirement<|>Tremfya must be prescribed by or in consultation with a dermatologist.)
+##
+("entity"<|>TB SCREENING<|>lab_requirement<|>TB screening is required before treatment.)
+##
+("entity"<|>INITIAL AUTHORIZATION 12 MONTHS<|>initial_authorization_duration<|>Initial authorization for Tremfya is 12 months.)
+##
+("entity"<|>CONTINUED THERAPY POSITIVE CLINICAL RESPONSE<|>reauthorization_requirement<|>Continued therapy requires chart notes documenting positive clinical response.)
+##
+("entity"<|>REAUTHORIZATION 12 MONTHS<|>reauthorization_duration<|>Continued therapy may be approved for 12 months.)
+##
+("relationship"<|>TREMFYA<|>MODERATE-TO-SEVERE PLAQUE PSORIASIS<|>Tremfya coverage criteria apply to adults with moderate-to-severe plaque psoriasis.<|>10)
+##
+("relationship"<|>TREMFYA<|>ADULTS<|>Tremfya has an adult age requirement.<|>9)
+##
+("relationship"<|>TREMFYA<|>DERMATOLOGIST<|>Tremfya requires prescribing by or consultation with a dermatologist.<|>10)
+##
+("relationship"<|>TREMFYA<|>TB SCREENING<|>Tremfya requires TB screening before treatment.<|>10)
+##
+("relationship"<|>TREMFYA<|>INITIAL AUTHORIZATION 12 MONTHS<|>Tremfya has an initial authorization duration of 12 months.<|>10)
+##
+("relationship"<|>TREMFYA<|>CONTINUED THERAPY POSITIVE CLINICAL RESPONSE<|>Tremfya reauthorization requires documented positive clinical response.<|>10)
+##
+("relationship"<|>CONTINUED THERAPY POSITIVE CLINICAL RESPONSE<|>REAUTHORIZATION 12 MONTHS<|>Continued therapy may be approved for 12 months when the reauthorization criterion is met.<|>9)
+<|COMPLETE|>
+
+######################
+Example 3:
+Entity_types: brand,quantity_limit,therapy_class,exception
+Text:
+Quantity Limit: Stelara 45 mg syringe, 1 syringe per 84 days. Dosing recommendations for other products are listed separately and are not quantity limits.
+######################
+Output:
+("entity"<|>STELARA 45 MG SYRINGE<|>brand<|>Stelara 45 mg syringe is listed with an explicit quantity limit.)
+##
+("entity"<|>1 SYRINGE PER 84 DAYS<|>quantity_limit<|>The explicit quantity limit is 1 syringe per 84 days.)
+##
+("entity"<|>DOSING RECOMMENDATIONS<|>exception<|>Dosing recommendations for other products are listed separately and are not quantity limits.)
+##
+("relationship"<|>STELARA 45 MG SYRINGE<|>1 SYRINGE PER 84 DAYS<|>Stelara 45 mg syringe has an explicit quantity limit of 1 syringe per 84 days.<|>10)
+##
+("relationship"<|>DOSING RECOMMENDATIONS<|>1 SYRINGE PER 84 DAYS<|>Dosing recommendations are excluded from quantity limit extraction unless explicitly framed as quantity limits.<|>7)
+<|COMPLETE|>
+
+######################
+-Real Data-
+######################
+Entity_types: {entity_types}
+Text: {input_text}
+######################
+Output:

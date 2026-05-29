@@ -1,0 +1,69 @@
+-Target activity-
+You are helping a market access analyst extract factual prior authorization policy claims from policy text.
+
+-Goal-
+Given a policy text chunk, an entity specification, and a claim description, extract claims that are useful for brand-level access parameter extraction.
+
+Relevant claim categories include:
+- AGE REQUIREMENT
+- STEP THERAPY REQUIREMENT
+- BRANDED OR BIOLOGIC STEP
+- GENERIC OR NON-BIOLOGIC STEP
+- PHOTOTHERAPY STEP
+- TB TEST REQUIREMENT
+- INITIAL AUTHORIZATION DURATION
+- REAUTHORIZATION REQUIRED
+- REAUTHORIZATION DURATION
+- REAUTHORIZATION CRITERIA
+- SPECIALIST REQUIREMENT
+- QUANTITY LIMIT
+- UNIVERSAL CRITERIA
+- EXCEPTION OR ALTERNATIVE PATH
+
+-Rules-
+1. Extract only claims directly supported by the text.
+2. Preserve applicability to brand, indication, drug class, all brands, all indications, preferred products, or non-preferred products.
+3. Preserve AND/OR structure, exceptions, contraindication, intolerance, inadequate response, and continuation criteria.
+4. Do not infer a quantity limit from dosing language unless the text explicitly calls it a quantity limit or equivalent.
+5. Do not invent drug generic names, drug classes, ages, durations, or payer rules.
+6. If dates are not present, use NONE for claim_start_date and claim_end_date.
+
+-Steps-
+1. Extract all named entities that match the entity specification.
+2. For each entity, extract all claims that match the claim description and are useful for the parameter definitions above.
+3. For each claim, extract:
+- Subject: name of the entity that is the subject of the claim, capitalized.
+- Object: name of the entity affected by the claim. If unknown, use NONE.
+- Claim Type: one of the relevant claim categories above, capitalized.
+- Claim Status: TRUE, FALSE, or SUSPECTED. Use TRUE for policy language stated as a requirement or allowance. Use FALSE only for explicit negation. Use SUSPECTED only when the text is ambiguous.
+- Claim Description: concise description with applicability, value, and logic.
+- Claim Date: period when the claim was made, if present. If no date is present, use NONE.
+- Claim Source Text: all short quotes from the original text that support the claim.
+
+Format each claim exactly as:
+(<subject_entity><|><object_entity><|><claim_type><|><claim_status><|><claim_start_date><|><claim_end_date><|><claim_description><|><claim_source>)
+
+Return output in English as a single list of all claims. Use ## as the list delimiter.
+When finished, output <|COMPLETE|>.
+
+-Example-
+Entity specification: brand, indication, step_requirement
+Claim description: Prior authorization policy facts and access restrictions.
+Text:
+For plaque psoriasis, non-preferred biologics require inadequate response, contraindication, or intolerance to one preferred topical agent and one preferred adalimumab product. Initial authorization is 12 months.
+Output:
+(NON-PREFERRED BIOLOGICS<|>PLAQUE PSORIASIS<|>STEP THERAPY REQUIREMENT<|>TRUE<|>NONE<|>NONE<|>For plaque psoriasis, non-preferred biologics require prior use or exception to both a preferred topical agent and a preferred adalimumab product.<|>For plaque psoriasis, non-preferred biologics require inadequate response, contraindication, or intolerance to one preferred topical agent and one preferred adalimumab product.)
+##
+(NON-PREFERRED BIOLOGICS<|>PREFERRED TOPICAL AGENT<|>GENERIC OR NON-BIOLOGIC STEP<|>TRUE<|>NONE<|>NONE<|>The preferred topical agent is a generic or non-biologic step requirement.<|>one preferred topical agent)
+##
+(NON-PREFERRED BIOLOGICS<|>PREFERRED ADALIMUMAB PRODUCT<|>BRANDED OR BIOLOGIC STEP<|>TRUE<|>NONE<|>NONE<|>The preferred adalimumab product is a branded or biologic step requirement.<|>one preferred adalimumab product)
+##
+(NON-PREFERRED BIOLOGICS<|>INITIAL AUTHORIZATION<|>INITIAL AUTHORIZATION DURATION<|>TRUE<|>NONE<|>NONE<|>Initial authorization is 12 months.<|>Initial authorization is 12 months.)
+<|COMPLETE|>
+
+-Real Data-
+Use the following input for your answer.
+Entity specification: {entity_specs}
+Claim description: {claim_description}
+Text: {input_text}
+Output:
