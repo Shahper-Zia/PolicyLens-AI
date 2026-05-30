@@ -18,8 +18,8 @@
         "initial_auth_duration": "3",
         "reauthorization_duration": "12",
         "reauthorization_required": "Yes",
-        "reauthorization_requirements": "[\"1. Continued diagnosis of Psoriasis / PsO.\", \"2. Documentation of positive clinical response to TREMFYA.\", \"3. No intolerance/contraindication/unacceptable toxicity to TREMFYA.\", \"4. TB test required before therapy.\", \"5. No live vaccines while being treated with TREMFYA.\"]",
-        "specialist_types": "Dermatologist",
+        "reauthorization_requirements": "NA",
+        "specialist_types": "dermatologist; rheumatologist",
         "quantity_limits": "NA",
         "access_score": "NA"
       }
@@ -366,7 +366,7 @@
     "step_through_phototherapy": {
       "value": "Yes",
       "llm_evidence": "[s003-c0003 | lines 15-38 | tags: approval, denial, drug_or_therapy, indication, parameter | title: APPROVAL CRITERIA[1,2,3 ]] 1. Confirmation patient is **not** receiving concurrent phototherapy",
-      "llm_reasoning": "The policy requires the patient to confirm they are not receiving concurrent phototherapy for initial authorization, which implies that phototherapy is a required step before the target brand can be approved.",
+      "llm_reasoning": "The policy requires the patient to confirm they are not receiving concurrent phototherapy for approval, which implies that phototherapy is a required step.",
       "dependency_context": {
         "source_parameter": "step_therapy_requirements",
         "source_value": [
@@ -677,28 +677,9 @@
       ]
     },
     "reauthorization_requirements": {
-      "value": [
-        "1. Continued diagnosis of Psoriasis / PsO.",
-        "2. Documentation of positive clinical response to TREMFYA.",
-        "3. No intolerance/contraindication/unacceptable toxicity to TREMFYA.",
-        "4. TB test required before therapy.",
-        "5. No live vaccines while being treated with TREMFYA."
-      ],
-      "llm_evidence": [
-        {
-          "chunk_id": "s006-c0006",
-          "policy_text": "Patients should be evaluated for tuberculosis (TB) prior to initiating guselkumab. Guselkumab should not be initiated in a patient with an active TB infection."
-        },
-        {
-          "chunk_id": "s006-c0006",
-          "policy_text": "Patients should not receive live vaccines while being treated with guselkumab."
-        },
-        {
-          "chunk_id": "s002-c0002",
-          "policy_text": "Tremfya[®] is an interleukin-23 antagonist indicated for the treatment of adult patients with: - moderate to severe plaques psoriasis who are candidates for systemic therapy or phototherapy"
-        }
-      ],
-      "llm_reasoning": "The policy requires continued diagnosis of PsO, positive clinical response to TREMFYA, no intolerance/contraindication/unacceptable toxicity, TB test before therapy, and no live vaccines while being treated with TREMFYA.",
+      "value": "NA",
+      "llm_evidence": "",
+      "llm_reasoning": "Model did not return valid rule-adherent JSON with evidence.",
       "dependency_context": {},
       "retrieved_context": [
         {
@@ -743,9 +724,9 @@
       ]
     },
     "specialist_types": {
-      "value": "Dermatologist",
+      "value": "dermatologist; rheumatologist",
       "llm_evidence": "[s002-c0002 | lines 5-14 | tags: brand, drug_or_therapy, indication, parameter | title: FDA INDICATIONS AND USAGE[1]]",
-      "llm_reasoning": "The policy explicitly states that Tremfya is indicated for treatment by a dermatologist for moderate to severe plaques psoriasis.",
+      "llm_reasoning": "The policy mentions that Tremfya is indicated for treatment of adult patients with moderate to severe plaques psoriasis who are candidates for systemic therapy or phototherapy, which implies that a dermatologist or rheumatologist is required for initiating treatment.",
       "dependency_context": {},
       "retrieved_context": [
         {

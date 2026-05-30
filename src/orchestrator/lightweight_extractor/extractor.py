@@ -2,7 +2,10 @@ import json
 from typing import Any, Dict, Iterable, List, Optional, Sequence, Tuple
 
 from src.orchestrator.lightweight_extractor.chunker import PolicyChunk, split_markdown
-from src.orchestrator.lightweight_extractor.groq_client import GroqClient
+try:
+    from src.orchestrator.llm.groq_client import GroqClient
+except ImportError:  # pragma: no cover
+    from orchestrator.llm.groq_client import GroqClient
 from src.orchestrator.lightweight_extractor.retriever import (
     format_chunks_for_prompt,
     retrieve_parameter_context,

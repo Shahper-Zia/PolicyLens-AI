@@ -7,7 +7,10 @@ from src.orchestrator.large_doc_extractor.retriever import (
     retrieve_large_doc_parameter_context,
 )
 from src.orchestrator.large_doc_extractor.vocabulary import build_large_doc_vocabulary
-from src.orchestrator.lightweight_extractor.groq_client import GroqClient
+try:
+    from src.orchestrator.llm.groq_client import GroqClient
+except ImportError:  # pragma: no cover
+    from orchestrator.llm.groq_client import GroqClient
 from src.orchestrator.lightweight_extractor.rules import load_parameter_rules
 from src.validation.output_schema import BrandAttribute, ExtractionResponse
 

@@ -4,7 +4,10 @@ from collections import Counter
 from typing import Any, Dict, Iterable, List, Sequence
 
 from src.orchestrator.large_doc_extractor.chunker import LargeDocChunk
-from src.orchestrator.lightweight_extractor.groq_client import GroqClient
+try:
+    from src.orchestrator.llm.groq_client import GroqClient
+except ImportError:  # pragma: no cover
+    from orchestrator.llm.groq_client import GroqClient
 
 
 KNOWN_BRAND_ALIASES = {

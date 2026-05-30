@@ -6,11 +6,12 @@ This rule helps extract documented reauthorization requirements for the target b
 
 ## Extraction Rule
 
-Extract EXPLICIT criteria that must be met for reauthorization, renewal, continuation approval, or continuation of therapy.
+Extract criteria that EXPLICITLY MENTION reauthorization, renewal, continuation approval, or continuation of therapy.
 
 ## What to Look For
 
 ONLY SELECT CRITERIA WHICH EXPLICITLY MENTION FOR reauthorization, renewal, continuation approval, or continuation of therapy. Look for requirements such as continued clinical benefit, continued positive response, low disease activity, improvement in signs or symptoms, lack of disease progression, required lab values, or updated clinical documentation.
+
 
 ## Output Guidance
 
