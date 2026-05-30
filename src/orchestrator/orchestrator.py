@@ -1,3 +1,7 @@
+from asyncio import log
+
+import pandas as pd
+
 from src.orchestrator.processor.pdf_processor import PDFProcessor
 import os
 from dotenv import load_dotenv
@@ -6,6 +10,8 @@ load_dotenv()
 from src.config.logging import logger
 from src.validation.output_schema import ExtractionResponse, BrandAttribute
 from src.config.app_settings import processed_pdf_path
+from src.orchestrator.kg_maker import kg_maker
+from src.orchestrator.param_extractor import param_extractor
 
 class PolicyOrchestrator:
 
@@ -53,6 +59,26 @@ class PolicyOrchestrator:
         
         return extracted_md
     
+    def clean_extracted_text(self, text):
+        logger.info(f"Cleaning extracted text. Original length: {len(text)} characters")
+        # Implement text cleaning logic here (e.g., remove extra whitespace, fix encoding issues)
+        cleaned_text = " ".join(text.split())
+        logger.info(f"Cleaned extracted text. Cleaned length: {len(cleaned_text)} characters")
+        return cleaned_text
+    
+    #Build graph once per unique PDF
+    def make_graph():
+        df = pd.read_csv("submissions.csv") 
+        unique_files = df.iloc[:, 0].dropna().unique()
+        for file_name in unique_files:
+            log(f"\n\n######## BUILDING GRAPH FOR {file_name} ########")
+            status = kg_maker.build_graph_if_needed(file_name, force_rebuild=False)
+            if not status:
+                log(f"ERROR building graph for {file_name}. Skipping to next file.")
+                continue
+            log(f"Graph ready for {file_name}")
+        return status
+    """
     def extract_brands_from_text(self, text):
         logger.info(f"Extracting brands from text. Text length: {len(text)} characters")
         # Implement brand extraction logic here
@@ -64,7 +90,8 @@ class PolicyOrchestrator:
         # Implement logic to split text into brand-specific sections here
         dummy_sections = {brand: [f"Extracted section {i+1} for {brand} and {indication}" for i in range(3)] for brand in brands}
         return dummy_sections
-    
+    """
+
     def extract_brand_attributes(self, filename, brand_section, brand, indication) -> BrandAttribute:
         logger.info(f"Extracting attributes for brand: {brand}")
         # Implement logic to extract attributes for a given brand section here

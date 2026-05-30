@@ -1,0 +1,127 @@
+models:
+  default_chat_model:
+    type: openai_chat
+    api_key: ${GRAPHRAG_API_KEY}
+    model: llama-3.1-8b-instant
+    api_base: https://api.groq.com/openai/v1
+    max_tokens: 4000
+    model_supports_json: true
+    concurrent_requests: 1
+    tokens_per_minute: 5000
+    requests_per_minute: 30
+    encoding_model: cl100k_base
+  default_embedding_model:
+    type: openai_embedding
+    api_key: ${GRAPHRAG_API_KEY}
+    model: nomic-ai/nomic-embed-text-v1.5-GGUF/nomic-embed-text-v1.5.Q5_K_M.gguf
+    api_base: http://localhost:1234/v1
+    concurrent_requests: 1
+    encoding_model: cl100k_base
+encoding_model: cl100k_base
+input:
+  type: text
+  storage:
+    type: file
+    base_dir: src/orchestrator/kg_maker/input
+  file_pattern: 361486\-4654549\.md
+  encoding: utf-8
+chunking:
+  type: tokens
+  size: 600
+  overlap: 100
+  encoding_model: cl100k_base
+output:
+  type: file
+  base_dir: src/orchestrator/kg_maker/output/361486-4654549_output
+reporting:
+  type: file
+  base_dir: src/orchestrator/kg_maker/logs
+cache:
+  type: json
+  storage:
+    type: file
+    base_dir: src/orchestrator/kg_maker/cache
+vector_store:
+  default_vector_store:
+    type: lancedb
+    db_uri: src/orchestrator/kg_maker/lancedb/361486-4654549_lancedb
+embed_text:
+  embedding_model_id: default_embedding_model
+extract_graph:
+  completion_model_id: default_completion_model
+  prompt: src/orchestrator/kg_maker/prompts/extract_graph.txt
+  entity_types:
+  - policy
+  - payer
+  - brand
+  - branded_drug
+  - generic_drug
+  - indication
+  - therapy_class
+  - coverage_criterion
+  - step_requirement
+  - phototherapy_requirement
+  - age_requirement
+  - quantity_limit
+  - specialist_requirement
+  - tb_test_requirement
+  - lab_requirement
+  - initial_authorization_duration
+  - reauthorization_requirement
+  - reauthorization_duration
+  - universal_rule
+  - exception
+  - severity_level
+  max_gleanings: 1
+summarize_descriptions:
+  completion_model_id: default_completion_model
+  prompt: src/orchestrator/kg_maker/prompts/summarize_descriptions.txt
+  max_length: 500
+  max_input_length: 2000
+extract_graph_nlp:
+  text_analyzer:
+    extractor_type: regex_english
+cluster_graph:
+  max_cluster_size: 10
+extract_claims:
+  enabled: false
+  completion_model_id: default_completion_model
+  prompt: src/orchestrator/kg_maker/prompts/extract_claims.txt
+  description: Prior authorization policy facts, coverage criteria, restrictions,
+    exceptions, durations, and step therapy requirements.
+  max_gleanings: 1
+community_reports:
+  completion_model_id: default_completion_model
+  graph_prompt: src/orchestrator/kg_maker/prompts/community_report_graph.txt
+  text_prompt: src/orchestrator/kg_maker/prompts/community_report_text.txt
+  max_length: 1500
+  max_input_length: 4000
+snapshots:
+  graphml: false
+  embeddings: false
+local_search:
+  completion_model_id: default_completion_model
+  embedding_model_id: default_embedding_model
+  prompt: src/orchestrator/kg_maker/prompts/local_search_system_prompt.txt
+  top_k_entities: 10
+  top_k_relationships: 10
+  max_context_tokens: 8000
+global_search:
+  completion_model_id: default_completion_model
+  map_prompt: src/orchestrator/kg_maker/prompts/global_search_map_system_prompt.txt
+  reduce_prompt: src/orchestrator/kg_maker/prompts/global_search_reduce_system_prompt.txt
+  knowledge_prompt: src/orchestrator/kg_maker/prompts/global_search_knowledge_system_prompt.txt
+  data_max_tokens: 8000
+drift_search:
+  completion_model_id: default_completion_model
+  embedding_model_id: default_embedding_model
+  prompt: src/orchestrator/kg_maker/prompts/drift_search_system_prompt.txt
+  reduce_prompt: src/orchestrator/kg_maker/prompts/drift_reduce_prompt.txt
+  data_max_tokens: 8000
+  local_search_max_data_tokens: 8000
+basic_search:
+  completion_model_id: default_completion_model
+  embedding_model_id: default_embedding_model
+  prompt: src/orchestrator/kg_maker/prompts/basic_search_system_prompt.txt
+  k: 10
+  max_context_tokens: 8000
