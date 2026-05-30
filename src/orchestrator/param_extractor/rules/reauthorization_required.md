@@ -2,15 +2,15 @@
 
 ## Purpose
 
-This rule helps determine whether renewed approval is required after the initial coverage period expires for the target brand and PsO/Psoriasis.
+This rule helps determine whether renewed approval is required after the initial coverage period expires for the target brand and indication.
 
 ## Extraction Rule
 
-Determine whether reassessment and renewed approval are needed after the initial authorization period ends.
+Determine whether reassessment and renewed approval are needed after the initial authorization period ends or reauthorization is required or not from the language of the texts you receive.
 
 ## What to Look For
 
-Look for reauthorization, renewal, continuation approval, continuation of therapy, reassessment, or updated documentation requirements after the initial coverage period.
+Look for reauthorization, renewal, continuation approval, continuation of therapy, reassessment, or updated documentation requirements after the initial coverage period. Even if there is mention of reauthorization duration or renewal duration then this parameter means `Yes`
 
 ## Decision Logic
 

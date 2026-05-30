@@ -2,11 +2,11 @@
 
 ## Purpose
 
-This rule helps extract the initial authorization duration for the target brand and PsO/Psoriasis from Prior Authorization policy chunks. Shorter initial approval periods can indicate tighter utilization management and more restricted access.
+This rule helps extract the initial authorization duration for the target brand and indication from Prior Authorization policy chunks.
 
 ## Extraction Rule
 
-Extract the time period for which coverage is initially granted upon Prior Authorization approval. This is typically expressed in months, such as `6 months` or `12 months`, and may vary by product, indication/class, or payer.
+Extract the time period for which coverage is initially granted upon Prior Authorization approval. This is typically expressed in months, such as `6 months` or `12 months` or any number of months, and may vary by product, indication/class, or payer.
 
 ## What to Look For
 

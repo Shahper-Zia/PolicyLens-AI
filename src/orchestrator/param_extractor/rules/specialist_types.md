@@ -14,7 +14,7 @@ Look for requirements that the drug must be prescribed by, managed by, or prescr
 
 Examples of specialties can include dermatologist, rheumatologist, gastroenterologist, infectious disease specialist, or other explicitly named specialties.
 
-If multiple specialties are mentioned, extract all of them and separate them with `;`.
+If multiple specialties are mentioned, extract all of them which can are mentioned and can be implied to be included DO NOT MENTION SPECIALITIES WHICH ARE DENIED and separate them with `;`.
 
 ## Output Guidance
 

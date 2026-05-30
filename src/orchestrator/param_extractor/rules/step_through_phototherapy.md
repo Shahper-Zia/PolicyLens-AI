@@ -8,11 +8,13 @@ This rule helps determine whether phototherapy is required before the target bra
 
 Determine whether the policy requires the patient to step through phototherapy before the target drug can be approved.
 
+Denial of Phototherapy/PUVA or any synonym also means that the step would be required.
+
 Phototherapy includes PUVA, psoralen combined with UVA light exposure, ultraviolet light therapy, UVB, narrowband UVB, or similar light therapy terms.
 
 ## Decision Logic
 
-Combine universal criteria that apply generally with indication-specific, class-specific, or brand-specific criteria. Treat universal criteria and indication/class/brand-specific criteria as both required when both are present.
+Determine logically whether the phototherapy would be needed to be done by the patient so that the drug is covered by the payer.
 
 Return `Yes` when phototherapy is a mandatory required step in the combined criteria and is not merely one option inside an OR statement.
 

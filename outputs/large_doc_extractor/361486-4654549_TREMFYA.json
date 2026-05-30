@@ -1,0 +1,1430 @@
+{
+  "extraction": {
+    "filename": "361486-4654549.pdf",
+    "detected_brands": [
+      "TREMFYA"
+    ],
+    "brand_attributes": [
+      {
+        "filename": "361486-4654549.pdf",
+        "brand": "TREMFYA",
+        "indication": "Psoriasis",
+        "age": "FDA labelled age",
+        "step_therapy_requirements": "Patient must have tried and failed a TNF blocker and at least one other therapy to include at least one topical agent. Patient must have a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent). Patient must not be receiving concurrent phototherapy.",
+        "number_of_steps_brands": "2",
+        "number_of_steps_generic": "2",
+        "step_through_phototherapy": "Yes",
+        "tb_test_required": "Yes",
+        "initial_auth_duration": "3",
+        "reauthorization_duration": "12",
+        "reauthorization_required": "Yes",
+        "reauthorization_requirements": "Patient meets FDA labeled age; AND Has moderate to severe Ps; AND Has a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent); AND Has tried and failed a TNF blocker and at least one other therapy to include at least one topical agent.",
+        "specialist_types": "dermatologist",
+        "quantity_limits": "NA",
+        "access_score": "NA"
+      }
+    ]
+  },
+  "decision_context": {
+    "age": {
+      "value": "FDA labelled age",
+      "llm_evidence": "[ld-s0003-c00003 | page ? | lines 15-38 | tags: approval, denial, drug_or_therapy, indication, universal | title: APPROVAL CRITERIA[1,2,3 ]] Patient meets FDA labeled age; **AND**",
+      "llm_reasoning": "The policy states that the patient must meet FDA labeled age for approval.",
+      "dependency_context": {},
+      "retrieved_context": [
+        {
+          "chunk_id": "ld-s0002-c00002",
+          "title": "FDA INDICATIONS AND USAGE[1]",
+          "start_line": 5,
+          "end_line": 14,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "brand",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## **FDA INDICATIONS AND USAGE[1]** \n\nTremfya[®] is an interleukin-23 antagonist indicated for the treatment of adult patients with: \n\n- moderate to severe plaques psoriasis who are candidates for systemic therapy or phototherapy \n\n- • active psoriatic arthritis \n\n- moderately to severely active ulcerative colitis"
+        },
+        {
+          "chunk_id": "ld-s0003-c00003",
+          "title": "APPROVAL CRITERIA[1,2,3 ]",
+          "start_line": 15,
+          "end_line": 38,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "denial",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## **APPROVAL CRITERIA[1,2,3 ]** \n\n1. Initial Authorization Request must include: \n\n   - Monitoring plan \n\n   - Previous therapies trialed and the nature of the failure \n\n   - Complete medication regimen \n\n   - Confirmation patient is **not** receiving concurrent phototherapy \n\n   - Requested dosing which conforms to an FDA approved regimen based on indication \n\nPlaque psoriasis (PsO) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severe Ps; **AND** \n\n3. Has a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy to include at least one topical agent."
+        },
+        {
+          "chunk_id": "ld-s0004-c00004",
+          "title": "Psoriatic Arthritis (PsA)",
+          "start_line": 39,
+          "end_line": 58,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## Psoriatic Arthritis (PsA) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has active PsA; **AND** \n\n3. Has a Health Assessment Questionnaire-Disability Index (HAQ-DI) score ≥ 2 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy. \n\nUlcerative Colitis (UC) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severely active UC; **AND** \n\n3. Baseline Mayo score (or equivalent) has been submitted; **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy (e.g. azathioprine, cyclosporine, mesalamine, etc.)."
+        },
+        {
+          "chunk_id": "ld-s0007-c00007",
+          "title": "CAUTIONS**[1 ]",
+          "start_line": 75,
+          "end_line": 84,
+          "page_start": 1,
+          "page_end": 1,
+          "tags": [
+            "brand",
+            "drug_or_therapy",
+            "safety"
+          ],
+          "text": "## **CAUTIONS**[1 ] \n\n1. Patients should be evaluated for tuberculosis (TB) prior to initiating guselkumab. Guselkumab should not be initiated in a patient with an active TB infection. \n\n2. Patients should not receive live vaccines while being treated with guselkumab. \n\n3. Serious hypersensitivity reactions, including anaphylaxis, have been reported \n\n4. Tremfya may increase the risk of infection.  If a clinically significant infection develops while being treated with guselkumab, discontinue until the infection resolves."
+        },
+        {
+          "chunk_id": "ld-s0005-c00005",
+          "title": "DENIAL CRITERIA[1]",
+          "start_line": 59,
+          "end_line": 70,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "brand",
+            "denial",
+            "drug_or_therapy",
+            "safety"
+          ],
+          "text": "## **DENIAL CRITERIA[1]** \n\n1. Known hypersensitivity to guselkumab or any of its excipients. \n\n2. Current active severe infection. \n\n3. Concurrent therapy with another biologic agent. \n\n4. Concurrent phototherapy. \n\nTremfya[® ] Criteria Version: 1 Original: 10/10/2024 Accepted: 11/15/2024 Effective: 01/01/2025"
+        }
+      ]
+    },
+    "step_therapy_requirements": {
+      "value": "Patient must have tried and failed a TNF blocker and at least one other therapy to include at least one topical agent. Patient must have a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent). Patient must not be receiving concurrent phototherapy.",
+      "llm_evidence": "[ld-s0003-c00003 | page ? | lines 15-38 | tags: approval, denial, drug_or_therapy, indication, universal | title: APPROVAL CRITERIA[1,2,3 ]]",
+      "llm_reasoning": "The policy requires that the patient has tried and failed a TNF blocker and at least one other therapy to include at least one topical agent, and has a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent). Additionally, the patient must not be receiving concurrent phototherapy.",
+      "dependency_context": {},
+      "retrieved_context": [
+        {
+          "chunk_id": "ld-s0002-c00002",
+          "title": "FDA INDICATIONS AND USAGE[1]",
+          "start_line": 5,
+          "end_line": 14,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "brand",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## **FDA INDICATIONS AND USAGE[1]** \n\nTremfya[®] is an interleukin-23 antagonist indicated for the treatment of adult patients with: \n\n- moderate to severe plaques psoriasis who are candidates for systemic therapy or phototherapy \n\n- • active psoriatic arthritis \n\n- moderately to severely active ulcerative colitis"
+        },
+        {
+          "chunk_id": "ld-s0003-c00003",
+          "title": "APPROVAL CRITERIA[1,2,3 ]",
+          "start_line": 15,
+          "end_line": 38,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "denial",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## **APPROVAL CRITERIA[1,2,3 ]** \n\n1. Initial Authorization Request must include: \n\n   - Monitoring plan \n\n   - Previous therapies trialed and the nature of the failure \n\n   - Complete medication regimen \n\n   - Confirmation patient is **not** receiving concurrent phototherapy \n\n   - Requested dosing which conforms to an FDA approved regimen based on indication \n\nPlaque psoriasis (PsO) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severe Ps; **AND** \n\n3. Has a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy to include at least one topical agent."
+        },
+        {
+          "chunk_id": "ld-s0005-c00005",
+          "title": "DENIAL CRITERIA[1]",
+          "start_line": 59,
+          "end_line": 70,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "brand",
+            "denial",
+            "drug_or_therapy",
+            "safety"
+          ],
+          "text": "## **DENIAL CRITERIA[1]** \n\n1. Known hypersensitivity to guselkumab or any of its excipients. \n\n2. Current active severe infection. \n\n3. Concurrent therapy with another biologic agent. \n\n4. Concurrent phototherapy. \n\nTremfya[® ] Criteria Version: 1 Original: 10/10/2024 Accepted: 11/15/2024 Effective: 01/01/2025"
+        },
+        {
+          "chunk_id": "ld-s0004-c00004",
+          "title": "Psoriatic Arthritis (PsA)",
+          "start_line": 39,
+          "end_line": 58,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## Psoriatic Arthritis (PsA) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has active PsA; **AND** \n\n3. Has a Health Assessment Questionnaire-Disability Index (HAQ-DI) score ≥ 2 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy. \n\nUlcerative Colitis (UC) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severely active UC; **AND** \n\n3. Baseline Mayo score (or equivalent) has been submitted; **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy (e.g. azathioprine, cyclosporine, mesalamine, etc.)."
+        },
+        {
+          "chunk_id": "ld-s0007-c00007",
+          "title": "CAUTIONS**[1 ]",
+          "start_line": 75,
+          "end_line": 84,
+          "page_start": 1,
+          "page_end": 1,
+          "tags": [
+            "brand",
+            "drug_or_therapy",
+            "safety"
+          ],
+          "text": "## **CAUTIONS**[1 ] \n\n1. Patients should be evaluated for tuberculosis (TB) prior to initiating guselkumab. Guselkumab should not be initiated in a patient with an active TB infection. \n\n2. Patients should not receive live vaccines while being treated with guselkumab. \n\n3. Serious hypersensitivity reactions, including anaphylaxis, have been reported \n\n4. Tremfya may increase the risk of infection.  If a clinically significant infection develops while being treated with guselkumab, discontinue until the infection resolves."
+        },
+        {
+          "chunk_id": "ld-s0001-c00001",
+          "title": "Tremfya[®] (guselkumab)",
+          "start_line": 3,
+          "end_line": 4,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "brand",
+            "drug_or_therapy"
+          ],
+          "text": "## **Tremfya[®] (guselkumab)**"
+        }
+      ]
+    },
+    "number_of_steps_brands": {
+      "value": "2",
+      "llm_evidence": "[ld-s0003-c00003 | page ? | lines 15-38 | tags: approval, denial, drug_or_therapy, indication, universal | title: APPROVAL CRITERIA[1,2,3 ]]",
+      "llm_reasoning": "The policy requires the patient to have tried and failed a TNF blocker and at least one other therapy to include at least one topical agent, which counts as 2 branded steps.",
+      "dependency_context": {
+        "source_parameter": "step_therapy_requirements",
+        "source_value": "Patient must have tried and failed a TNF blocker and at least one other therapy to include at least one topical agent. Patient must have a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent). Patient must not be receiving concurrent phototherapy.",
+        "source_evidence": {
+          "value": "Patient must have tried and failed a TNF blocker and at least one other therapy to include at least one topical agent. Patient must have a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent). Patient must not be receiving concurrent phototherapy.",
+          "llm_evidence": "[ld-s0003-c00003 | page ? | lines 15-38 | tags: approval, denial, drug_or_therapy, indication, universal | title: APPROVAL CRITERIA[1,2,3 ]]",
+          "llm_reasoning": "The policy requires that the patient has tried and failed a TNF blocker and at least one other therapy to include at least one topical agent, and has a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent). Additionally, the patient must not be receiving concurrent phototherapy.",
+          "dependency_context": {},
+          "retrieved_context": [
+            {
+              "chunk_id": "ld-s0002-c00002",
+              "title": "FDA INDICATIONS AND USAGE[1]",
+              "start_line": 5,
+              "end_line": 14,
+              "page_start": null,
+              "page_end": null,
+              "tags": [
+                "brand",
+                "drug_or_therapy",
+                "indication",
+                "universal"
+              ],
+              "text": "## **FDA INDICATIONS AND USAGE[1]** \n\nTremfya[®] is an interleukin-23 antagonist indicated for the treatment of adult patients with: \n\n- moderate to severe plaques psoriasis who are candidates for systemic therapy or phototherapy \n\n- • active psoriatic arthritis \n\n- moderately to severely active ulcerative colitis"
+            },
+            {
+              "chunk_id": "ld-s0003-c00003",
+              "title": "APPROVAL CRITERIA[1,2,3 ]",
+              "start_line": 15,
+              "end_line": 38,
+              "page_start": null,
+              "page_end": null,
+              "tags": [
+                "approval",
+                "denial",
+                "drug_or_therapy",
+                "indication",
+                "universal"
+              ],
+              "text": "## **APPROVAL CRITERIA[1,2,3 ]** \n\n1. Initial Authorization Request must include: \n\n   - Monitoring plan \n\n   - Previous therapies trialed and the nature of the failure \n\n   - Complete medication regimen \n\n   - Confirmation patient is **not** receiving concurrent phototherapy \n\n   - Requested dosing which conforms to an FDA approved regimen based on indication \n\nPlaque psoriasis (PsO) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severe Ps; **AND** \n\n3. Has a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy to include at least one topical agent."
+            },
+            {
+              "chunk_id": "ld-s0005-c00005",
+              "title": "DENIAL CRITERIA[1]",
+              "start_line": 59,
+              "end_line": 70,
+              "page_start": null,
+              "page_end": null,
+              "tags": [
+                "approval",
+                "brand",
+                "denial",
+                "drug_or_therapy",
+                "safety"
+              ],
+              "text": "## **DENIAL CRITERIA[1]** \n\n1. Known hypersensitivity to guselkumab or any of its excipients. \n\n2. Current active severe infection. \n\n3. Concurrent therapy with another biologic agent. \n\n4. Concurrent phototherapy. \n\nTremfya[® ] Criteria Version: 1 Original: 10/10/2024 Accepted: 11/15/2024 Effective: 01/01/2025"
+            },
+            {
+              "chunk_id": "ld-s0004-c00004",
+              "title": "Psoriatic Arthritis (PsA)",
+              "start_line": 39,
+              "end_line": 58,
+              "page_start": null,
+              "page_end": null,
+              "tags": [
+                "approval",
+                "drug_or_therapy",
+                "indication",
+                "universal"
+              ],
+              "text": "## Psoriatic Arthritis (PsA) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has active PsA; **AND** \n\n3. Has a Health Assessment Questionnaire-Disability Index (HAQ-DI) score ≥ 2 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy. \n\nUlcerative Colitis (UC) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severely active UC; **AND** \n\n3. Baseline Mayo score (or equivalent) has been submitted; **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy (e.g. azathioprine, cyclosporine, mesalamine, etc.)."
+            },
+            {
+              "chunk_id": "ld-s0007-c00007",
+              "title": "CAUTIONS**[1 ]",
+              "start_line": 75,
+              "end_line": 84,
+              "page_start": 1,
+              "page_end": 1,
+              "tags": [
+                "brand",
+                "drug_or_therapy",
+                "safety"
+              ],
+              "text": "## **CAUTIONS**[1 ] \n\n1. Patients should be evaluated for tuberculosis (TB) prior to initiating guselkumab. Guselkumab should not be initiated in a patient with an active TB infection. \n\n2. Patients should not receive live vaccines while being treated with guselkumab. \n\n3. Serious hypersensitivity reactions, including anaphylaxis, have been reported \n\n4. Tremfya may increase the risk of infection.  If a clinically significant infection develops while being treated with guselkumab, discontinue until the infection resolves."
+            },
+            {
+              "chunk_id": "ld-s0001-c00001",
+              "title": "Tremfya[®] (guselkumab)",
+              "start_line": 3,
+              "end_line": 4,
+              "page_start": null,
+              "page_end": null,
+              "tags": [
+                "brand",
+                "drug_or_therapy"
+              ],
+              "text": "## **Tremfya[®] (guselkumab)**"
+            }
+          ]
+        }
+      },
+      "retrieved_context": [
+        {
+          "chunk_id": "ld-s0002-c00002",
+          "title": "FDA INDICATIONS AND USAGE[1]",
+          "start_line": 5,
+          "end_line": 14,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "brand",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## **FDA INDICATIONS AND USAGE[1]** \n\nTremfya[®] is an interleukin-23 antagonist indicated for the treatment of adult patients with: \n\n- moderate to severe plaques psoriasis who are candidates for systemic therapy or phototherapy \n\n- • active psoriatic arthritis \n\n- moderately to severely active ulcerative colitis"
+        },
+        {
+          "chunk_id": "ld-s0003-c00003",
+          "title": "APPROVAL CRITERIA[1,2,3 ]",
+          "start_line": 15,
+          "end_line": 38,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "denial",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## **APPROVAL CRITERIA[1,2,3 ]** \n\n1. Initial Authorization Request must include: \n\n   - Monitoring plan \n\n   - Previous therapies trialed and the nature of the failure \n\n   - Complete medication regimen \n\n   - Confirmation patient is **not** receiving concurrent phototherapy \n\n   - Requested dosing which conforms to an FDA approved regimen based on indication \n\nPlaque psoriasis (PsO) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severe Ps; **AND** \n\n3. Has a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy to include at least one topical agent."
+        },
+        {
+          "chunk_id": "ld-s0005-c00005",
+          "title": "DENIAL CRITERIA[1]",
+          "start_line": 59,
+          "end_line": 70,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "brand",
+            "denial",
+            "drug_or_therapy",
+            "safety"
+          ],
+          "text": "## **DENIAL CRITERIA[1]** \n\n1. Known hypersensitivity to guselkumab or any of its excipients. \n\n2. Current active severe infection. \n\n3. Concurrent therapy with another biologic agent. \n\n4. Concurrent phototherapy. \n\nTremfya[® ] Criteria Version: 1 Original: 10/10/2024 Accepted: 11/15/2024 Effective: 01/01/2025"
+        },
+        {
+          "chunk_id": "ld-s0004-c00004",
+          "title": "Psoriatic Arthritis (PsA)",
+          "start_line": 39,
+          "end_line": 58,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## Psoriatic Arthritis (PsA) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has active PsA; **AND** \n\n3. Has a Health Assessment Questionnaire-Disability Index (HAQ-DI) score ≥ 2 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy. \n\nUlcerative Colitis (UC) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severely active UC; **AND** \n\n3. Baseline Mayo score (or equivalent) has been submitted; **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy (e.g. azathioprine, cyclosporine, mesalamine, etc.)."
+        },
+        {
+          "chunk_id": "ld-s0007-c00007",
+          "title": "CAUTIONS**[1 ]",
+          "start_line": 75,
+          "end_line": 84,
+          "page_start": 1,
+          "page_end": 1,
+          "tags": [
+            "brand",
+            "drug_or_therapy",
+            "safety"
+          ],
+          "text": "## **CAUTIONS**[1 ] \n\n1. Patients should be evaluated for tuberculosis (TB) prior to initiating guselkumab. Guselkumab should not be initiated in a patient with an active TB infection. \n\n2. Patients should not receive live vaccines while being treated with guselkumab. \n\n3. Serious hypersensitivity reactions, including anaphylaxis, have been reported \n\n4. Tremfya may increase the risk of infection.  If a clinically significant infection develops while being treated with guselkumab, discontinue until the infection resolves."
+        },
+        {
+          "chunk_id": "ld-s0001-c00001",
+          "title": "Tremfya[®] (guselkumab)",
+          "start_line": 3,
+          "end_line": 4,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "brand",
+            "drug_or_therapy"
+          ],
+          "text": "## **Tremfya[®] (guselkumab)**"
+        }
+      ]
+    },
+    "number_of_steps_generic": {
+      "value": "2",
+      "llm_evidence": "[ld-s0003-c00003 | page ? | lines 15-38 | tags: approval, denial, drug_or_therapy, indication, universal | title: APPROVAL CRITERIA[1,2,3 ]]",
+      "llm_reasoning": "The policy requires patient to have tried and failed a TNF blocker and at least one other therapy to include at least one topical agent, which counts as 2 generic steps.",
+      "dependency_context": {
+        "source_parameter": "step_therapy_requirements",
+        "source_value": "Patient must have tried and failed a TNF blocker and at least one other therapy to include at least one topical agent. Patient must have a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent). Patient must not be receiving concurrent phototherapy.",
+        "source_evidence": {
+          "value": "Patient must have tried and failed a TNF blocker and at least one other therapy to include at least one topical agent. Patient must have a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent). Patient must not be receiving concurrent phototherapy.",
+          "llm_evidence": "[ld-s0003-c00003 | page ? | lines 15-38 | tags: approval, denial, drug_or_therapy, indication, universal | title: APPROVAL CRITERIA[1,2,3 ]]",
+          "llm_reasoning": "The policy requires that the patient has tried and failed a TNF blocker and at least one other therapy to include at least one topical agent, and has a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent). Additionally, the patient must not be receiving concurrent phototherapy.",
+          "dependency_context": {},
+          "retrieved_context": [
+            {
+              "chunk_id": "ld-s0002-c00002",
+              "title": "FDA INDICATIONS AND USAGE[1]",
+              "start_line": 5,
+              "end_line": 14,
+              "page_start": null,
+              "page_end": null,
+              "tags": [
+                "brand",
+                "drug_or_therapy",
+                "indication",
+                "universal"
+              ],
+              "text": "## **FDA INDICATIONS AND USAGE[1]** \n\nTremfya[®] is an interleukin-23 antagonist indicated for the treatment of adult patients with: \n\n- moderate to severe plaques psoriasis who are candidates for systemic therapy or phototherapy \n\n- • active psoriatic arthritis \n\n- moderately to severely active ulcerative colitis"
+            },
+            {
+              "chunk_id": "ld-s0003-c00003",
+              "title": "APPROVAL CRITERIA[1,2,3 ]",
+              "start_line": 15,
+              "end_line": 38,
+              "page_start": null,
+              "page_end": null,
+              "tags": [
+                "approval",
+                "denial",
+                "drug_or_therapy",
+                "indication",
+                "universal"
+              ],
+              "text": "## **APPROVAL CRITERIA[1,2,3 ]** \n\n1. Initial Authorization Request must include: \n\n   - Monitoring plan \n\n   - Previous therapies trialed and the nature of the failure \n\n   - Complete medication regimen \n\n   - Confirmation patient is **not** receiving concurrent phototherapy \n\n   - Requested dosing which conforms to an FDA approved regimen based on indication \n\nPlaque psoriasis (PsO) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severe Ps; **AND** \n\n3. Has a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy to include at least one topical agent."
+            },
+            {
+              "chunk_id": "ld-s0005-c00005",
+              "title": "DENIAL CRITERIA[1]",
+              "start_line": 59,
+              "end_line": 70,
+              "page_start": null,
+              "page_end": null,
+              "tags": [
+                "approval",
+                "brand",
+                "denial",
+                "drug_or_therapy",
+                "safety"
+              ],
+              "text": "## **DENIAL CRITERIA[1]** \n\n1. Known hypersensitivity to guselkumab or any of its excipients. \n\n2. Current active severe infection. \n\n3. Concurrent therapy with another biologic agent. \n\n4. Concurrent phototherapy. \n\nTremfya[® ] Criteria Version: 1 Original: 10/10/2024 Accepted: 11/15/2024 Effective: 01/01/2025"
+            },
+            {
+              "chunk_id": "ld-s0004-c00004",
+              "title": "Psoriatic Arthritis (PsA)",
+              "start_line": 39,
+              "end_line": 58,
+              "page_start": null,
+              "page_end": null,
+              "tags": [
+                "approval",
+                "drug_or_therapy",
+                "indication",
+                "universal"
+              ],
+              "text": "## Psoriatic Arthritis (PsA) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has active PsA; **AND** \n\n3. Has a Health Assessment Questionnaire-Disability Index (HAQ-DI) score ≥ 2 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy. \n\nUlcerative Colitis (UC) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severely active UC; **AND** \n\n3. Baseline Mayo score (or equivalent) has been submitted; **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy (e.g. azathioprine, cyclosporine, mesalamine, etc.)."
+            },
+            {
+              "chunk_id": "ld-s0007-c00007",
+              "title": "CAUTIONS**[1 ]",
+              "start_line": 75,
+              "end_line": 84,
+              "page_start": 1,
+              "page_end": 1,
+              "tags": [
+                "brand",
+                "drug_or_therapy",
+                "safety"
+              ],
+              "text": "## **CAUTIONS**[1 ] \n\n1. Patients should be evaluated for tuberculosis (TB) prior to initiating guselkumab. Guselkumab should not be initiated in a patient with an active TB infection. \n\n2. Patients should not receive live vaccines while being treated with guselkumab. \n\n3. Serious hypersensitivity reactions, including anaphylaxis, have been reported \n\n4. Tremfya may increase the risk of infection.  If a clinically significant infection develops while being treated with guselkumab, discontinue until the infection resolves."
+            },
+            {
+              "chunk_id": "ld-s0001-c00001",
+              "title": "Tremfya[®] (guselkumab)",
+              "start_line": 3,
+              "end_line": 4,
+              "page_start": null,
+              "page_end": null,
+              "tags": [
+                "brand",
+                "drug_or_therapy"
+              ],
+              "text": "## **Tremfya[®] (guselkumab)**"
+            }
+          ]
+        }
+      },
+      "retrieved_context": [
+        {
+          "chunk_id": "ld-s0002-c00002",
+          "title": "FDA INDICATIONS AND USAGE[1]",
+          "start_line": 5,
+          "end_line": 14,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "brand",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## **FDA INDICATIONS AND USAGE[1]** \n\nTremfya[®] is an interleukin-23 antagonist indicated for the treatment of adult patients with: \n\n- moderate to severe plaques psoriasis who are candidates for systemic therapy or phototherapy \n\n- • active psoriatic arthritis \n\n- moderately to severely active ulcerative colitis"
+        },
+        {
+          "chunk_id": "ld-s0003-c00003",
+          "title": "APPROVAL CRITERIA[1,2,3 ]",
+          "start_line": 15,
+          "end_line": 38,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "denial",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## **APPROVAL CRITERIA[1,2,3 ]** \n\n1. Initial Authorization Request must include: \n\n   - Monitoring plan \n\n   - Previous therapies trialed and the nature of the failure \n\n   - Complete medication regimen \n\n   - Confirmation patient is **not** receiving concurrent phototherapy \n\n   - Requested dosing which conforms to an FDA approved regimen based on indication \n\nPlaque psoriasis (PsO) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severe Ps; **AND** \n\n3. Has a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy to include at least one topical agent."
+        },
+        {
+          "chunk_id": "ld-s0005-c00005",
+          "title": "DENIAL CRITERIA[1]",
+          "start_line": 59,
+          "end_line": 70,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "brand",
+            "denial",
+            "drug_or_therapy",
+            "safety"
+          ],
+          "text": "## **DENIAL CRITERIA[1]** \n\n1. Known hypersensitivity to guselkumab or any of its excipients. \n\n2. Current active severe infection. \n\n3. Concurrent therapy with another biologic agent. \n\n4. Concurrent phototherapy. \n\nTremfya[® ] Criteria Version: 1 Original: 10/10/2024 Accepted: 11/15/2024 Effective: 01/01/2025"
+        },
+        {
+          "chunk_id": "ld-s0004-c00004",
+          "title": "Psoriatic Arthritis (PsA)",
+          "start_line": 39,
+          "end_line": 58,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## Psoriatic Arthritis (PsA) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has active PsA; **AND** \n\n3. Has a Health Assessment Questionnaire-Disability Index (HAQ-DI) score ≥ 2 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy. \n\nUlcerative Colitis (UC) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severely active UC; **AND** \n\n3. Baseline Mayo score (or equivalent) has been submitted; **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy (e.g. azathioprine, cyclosporine, mesalamine, etc.)."
+        },
+        {
+          "chunk_id": "ld-s0007-c00007",
+          "title": "CAUTIONS**[1 ]",
+          "start_line": 75,
+          "end_line": 84,
+          "page_start": 1,
+          "page_end": 1,
+          "tags": [
+            "brand",
+            "drug_or_therapy",
+            "safety"
+          ],
+          "text": "## **CAUTIONS**[1 ] \n\n1. Patients should be evaluated for tuberculosis (TB) prior to initiating guselkumab. Guselkumab should not be initiated in a patient with an active TB infection. \n\n2. Patients should not receive live vaccines while being treated with guselkumab. \n\n3. Serious hypersensitivity reactions, including anaphylaxis, have been reported \n\n4. Tremfya may increase the risk of infection.  If a clinically significant infection develops while being treated with guselkumab, discontinue until the infection resolves."
+        },
+        {
+          "chunk_id": "ld-s0001-c00001",
+          "title": "Tremfya[®] (guselkumab)",
+          "start_line": 3,
+          "end_line": 4,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "brand",
+            "drug_or_therapy"
+          ],
+          "text": "## **Tremfya[®] (guselkumab)**"
+        }
+      ]
+    },
+    "step_through_phototherapy": {
+      "value": "Yes",
+      "llm_evidence": "[ld-s0003-c00003 | page ? | lines 15-38 | tags: approval, denial, drug_or_therapy, indication, universal | title: APPROVAL CRITERIA[1,2,3 ]]",
+      "llm_reasoning": "The policy requires confirmation that the patient is not receiving concurrent phototherapy for approval of the target drug and indication.",
+      "dependency_context": {
+        "source_parameter": "step_therapy_requirements",
+        "source_value": "Patient must have tried and failed a TNF blocker and at least one other therapy to include at least one topical agent. Patient must have a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent). Patient must not be receiving concurrent phototherapy.",
+        "source_evidence": {
+          "value": "Patient must have tried and failed a TNF blocker and at least one other therapy to include at least one topical agent. Patient must have a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent). Patient must not be receiving concurrent phototherapy.",
+          "llm_evidence": "[ld-s0003-c00003 | page ? | lines 15-38 | tags: approval, denial, drug_or_therapy, indication, universal | title: APPROVAL CRITERIA[1,2,3 ]]",
+          "llm_reasoning": "The policy requires that the patient has tried and failed a TNF blocker and at least one other therapy to include at least one topical agent, and has a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent). Additionally, the patient must not be receiving concurrent phototherapy.",
+          "dependency_context": {},
+          "retrieved_context": [
+            {
+              "chunk_id": "ld-s0002-c00002",
+              "title": "FDA INDICATIONS AND USAGE[1]",
+              "start_line": 5,
+              "end_line": 14,
+              "page_start": null,
+              "page_end": null,
+              "tags": [
+                "brand",
+                "drug_or_therapy",
+                "indication",
+                "universal"
+              ],
+              "text": "## **FDA INDICATIONS AND USAGE[1]** \n\nTremfya[®] is an interleukin-23 antagonist indicated for the treatment of adult patients with: \n\n- moderate to severe plaques psoriasis who are candidates for systemic therapy or phototherapy \n\n- • active psoriatic arthritis \n\n- moderately to severely active ulcerative colitis"
+            },
+            {
+              "chunk_id": "ld-s0003-c00003",
+              "title": "APPROVAL CRITERIA[1,2,3 ]",
+              "start_line": 15,
+              "end_line": 38,
+              "page_start": null,
+              "page_end": null,
+              "tags": [
+                "approval",
+                "denial",
+                "drug_or_therapy",
+                "indication",
+                "universal"
+              ],
+              "text": "## **APPROVAL CRITERIA[1,2,3 ]** \n\n1. Initial Authorization Request must include: \n\n   - Monitoring plan \n\n   - Previous therapies trialed and the nature of the failure \n\n   - Complete medication regimen \n\n   - Confirmation patient is **not** receiving concurrent phototherapy \n\n   - Requested dosing which conforms to an FDA approved regimen based on indication \n\nPlaque psoriasis (PsO) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severe Ps; **AND** \n\n3. Has a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy to include at least one topical agent."
+            },
+            {
+              "chunk_id": "ld-s0005-c00005",
+              "title": "DENIAL CRITERIA[1]",
+              "start_line": 59,
+              "end_line": 70,
+              "page_start": null,
+              "page_end": null,
+              "tags": [
+                "approval",
+                "brand",
+                "denial",
+                "drug_or_therapy",
+                "safety"
+              ],
+              "text": "## **DENIAL CRITERIA[1]** \n\n1. Known hypersensitivity to guselkumab or any of its excipients. \n\n2. Current active severe infection. \n\n3. Concurrent therapy with another biologic agent. \n\n4. Concurrent phototherapy. \n\nTremfya[® ] Criteria Version: 1 Original: 10/10/2024 Accepted: 11/15/2024 Effective: 01/01/2025"
+            },
+            {
+              "chunk_id": "ld-s0004-c00004",
+              "title": "Psoriatic Arthritis (PsA)",
+              "start_line": 39,
+              "end_line": 58,
+              "page_start": null,
+              "page_end": null,
+              "tags": [
+                "approval",
+                "drug_or_therapy",
+                "indication",
+                "universal"
+              ],
+              "text": "## Psoriatic Arthritis (PsA) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has active PsA; **AND** \n\n3. Has a Health Assessment Questionnaire-Disability Index (HAQ-DI) score ≥ 2 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy. \n\nUlcerative Colitis (UC) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severely active UC; **AND** \n\n3. Baseline Mayo score (or equivalent) has been submitted; **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy (e.g. azathioprine, cyclosporine, mesalamine, etc.)."
+            },
+            {
+              "chunk_id": "ld-s0007-c00007",
+              "title": "CAUTIONS**[1 ]",
+              "start_line": 75,
+              "end_line": 84,
+              "page_start": 1,
+              "page_end": 1,
+              "tags": [
+                "brand",
+                "drug_or_therapy",
+                "safety"
+              ],
+              "text": "## **CAUTIONS**[1 ] \n\n1. Patients should be evaluated for tuberculosis (TB) prior to initiating guselkumab. Guselkumab should not be initiated in a patient with an active TB infection. \n\n2. Patients should not receive live vaccines while being treated with guselkumab. \n\n3. Serious hypersensitivity reactions, including anaphylaxis, have been reported \n\n4. Tremfya may increase the risk of infection.  If a clinically significant infection develops while being treated with guselkumab, discontinue until the infection resolves."
+            },
+            {
+              "chunk_id": "ld-s0001-c00001",
+              "title": "Tremfya[®] (guselkumab)",
+              "start_line": 3,
+              "end_line": 4,
+              "page_start": null,
+              "page_end": null,
+              "tags": [
+                "brand",
+                "drug_or_therapy"
+              ],
+              "text": "## **Tremfya[®] (guselkumab)**"
+            }
+          ]
+        }
+      },
+      "retrieved_context": [
+        {
+          "chunk_id": "ld-s0002-c00002",
+          "title": "FDA INDICATIONS AND USAGE[1]",
+          "start_line": 5,
+          "end_line": 14,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "brand",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## **FDA INDICATIONS AND USAGE[1]** \n\nTremfya[®] is an interleukin-23 antagonist indicated for the treatment of adult patients with: \n\n- moderate to severe plaques psoriasis who are candidates for systemic therapy or phototherapy \n\n- • active psoriatic arthritis \n\n- moderately to severely active ulcerative colitis"
+        },
+        {
+          "chunk_id": "ld-s0003-c00003",
+          "title": "APPROVAL CRITERIA[1,2,3 ]",
+          "start_line": 15,
+          "end_line": 38,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "denial",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## **APPROVAL CRITERIA[1,2,3 ]** \n\n1. Initial Authorization Request must include: \n\n   - Monitoring plan \n\n   - Previous therapies trialed and the nature of the failure \n\n   - Complete medication regimen \n\n   - Confirmation patient is **not** receiving concurrent phototherapy \n\n   - Requested dosing which conforms to an FDA approved regimen based on indication \n\nPlaque psoriasis (PsO) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severe Ps; **AND** \n\n3. Has a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy to include at least one topical agent."
+        },
+        {
+          "chunk_id": "ld-s0005-c00005",
+          "title": "DENIAL CRITERIA[1]",
+          "start_line": 59,
+          "end_line": 70,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "brand",
+            "denial",
+            "drug_or_therapy",
+            "safety"
+          ],
+          "text": "## **DENIAL CRITERIA[1]** \n\n1. Known hypersensitivity to guselkumab or any of its excipients. \n\n2. Current active severe infection. \n\n3. Concurrent therapy with another biologic agent. \n\n4. Concurrent phototherapy. \n\nTremfya[® ] Criteria Version: 1 Original: 10/10/2024 Accepted: 11/15/2024 Effective: 01/01/2025"
+        },
+        {
+          "chunk_id": "ld-s0004-c00004",
+          "title": "Psoriatic Arthritis (PsA)",
+          "start_line": 39,
+          "end_line": 58,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## Psoriatic Arthritis (PsA) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has active PsA; **AND** \n\n3. Has a Health Assessment Questionnaire-Disability Index (HAQ-DI) score ≥ 2 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy. \n\nUlcerative Colitis (UC) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severely active UC; **AND** \n\n3. Baseline Mayo score (or equivalent) has been submitted; **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy (e.g. azathioprine, cyclosporine, mesalamine, etc.)."
+        },
+        {
+          "chunk_id": "ld-s0007-c00007",
+          "title": "CAUTIONS**[1 ]",
+          "start_line": 75,
+          "end_line": 84,
+          "page_start": 1,
+          "page_end": 1,
+          "tags": [
+            "brand",
+            "drug_or_therapy",
+            "safety"
+          ],
+          "text": "## **CAUTIONS**[1 ] \n\n1. Patients should be evaluated for tuberculosis (TB) prior to initiating guselkumab. Guselkumab should not be initiated in a patient with an active TB infection. \n\n2. Patients should not receive live vaccines while being treated with guselkumab. \n\n3. Serious hypersensitivity reactions, including anaphylaxis, have been reported \n\n4. Tremfya may increase the risk of infection.  If a clinically significant infection develops while being treated with guselkumab, discontinue until the infection resolves."
+        },
+        {
+          "chunk_id": "ld-s0001-c00001",
+          "title": "Tremfya[®] (guselkumab)",
+          "start_line": 3,
+          "end_line": 4,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "brand",
+            "drug_or_therapy"
+          ],
+          "text": "## **Tremfya[®] (guselkumab)**"
+        }
+      ]
+    },
+    "tb_test_required": {
+      "value": "Yes",
+      "llm_evidence": "[ld-s0007-c00007 | page 1 | lines 75-84 | tags: brand, drug_or_therapy, safety | title: CAUTIONS**[1 ]]",
+      "llm_reasoning": "TB testing is required prior to initiating guselkumab according to the CAUTIONS section.",
+      "dependency_context": {},
+      "retrieved_context": [
+        {
+          "chunk_id": "ld-s0002-c00002",
+          "title": "FDA INDICATIONS AND USAGE[1]",
+          "start_line": 5,
+          "end_line": 14,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "brand",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## **FDA INDICATIONS AND USAGE[1]** \n\nTremfya[®] is an interleukin-23 antagonist indicated for the treatment of adult patients with: \n\n- moderate to severe plaques psoriasis who are candidates for systemic therapy or phototherapy \n\n- • active psoriatic arthritis \n\n- moderately to severely active ulcerative colitis"
+        },
+        {
+          "chunk_id": "ld-s0003-c00003",
+          "title": "APPROVAL CRITERIA[1,2,3 ]",
+          "start_line": 15,
+          "end_line": 38,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "denial",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## **APPROVAL CRITERIA[1,2,3 ]** \n\n1. Initial Authorization Request must include: \n\n   - Monitoring plan \n\n   - Previous therapies trialed and the nature of the failure \n\n   - Complete medication regimen \n\n   - Confirmation patient is **not** receiving concurrent phototherapy \n\n   - Requested dosing which conforms to an FDA approved regimen based on indication \n\nPlaque psoriasis (PsO) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severe Ps; **AND** \n\n3. Has a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy to include at least one topical agent."
+        },
+        {
+          "chunk_id": "ld-s0007-c00007",
+          "title": "CAUTIONS**[1 ]",
+          "start_line": 75,
+          "end_line": 84,
+          "page_start": 1,
+          "page_end": 1,
+          "tags": [
+            "brand",
+            "drug_or_therapy",
+            "safety"
+          ],
+          "text": "## **CAUTIONS**[1 ] \n\n1. Patients should be evaluated for tuberculosis (TB) prior to initiating guselkumab. Guselkumab should not be initiated in a patient with an active TB infection. \n\n2. Patients should not receive live vaccines while being treated with guselkumab. \n\n3. Serious hypersensitivity reactions, including anaphylaxis, have been reported \n\n4. Tremfya may increase the risk of infection.  If a clinically significant infection develops while being treated with guselkumab, discontinue until the infection resolves."
+        },
+        {
+          "chunk_id": "ld-s0005-c00005",
+          "title": "DENIAL CRITERIA[1]",
+          "start_line": 59,
+          "end_line": 70,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "brand",
+            "denial",
+            "drug_or_therapy",
+            "safety"
+          ],
+          "text": "## **DENIAL CRITERIA[1]** \n\n1. Known hypersensitivity to guselkumab or any of its excipients. \n\n2. Current active severe infection. \n\n3. Concurrent therapy with another biologic agent. \n\n4. Concurrent phototherapy. \n\nTremfya[® ] Criteria Version: 1 Original: 10/10/2024 Accepted: 11/15/2024 Effective: 01/01/2025"
+        },
+        {
+          "chunk_id": "ld-s0004-c00004",
+          "title": "Psoriatic Arthritis (PsA)",
+          "start_line": 39,
+          "end_line": 58,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## Psoriatic Arthritis (PsA) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has active PsA; **AND** \n\n3. Has a Health Assessment Questionnaire-Disability Index (HAQ-DI) score ≥ 2 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy. \n\nUlcerative Colitis (UC) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severely active UC; **AND** \n\n3. Baseline Mayo score (or equivalent) has been submitted; **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy (e.g. azathioprine, cyclosporine, mesalamine, etc.)."
+        }
+      ]
+    },
+    "initial_auth_duration": {
+      "value": "3",
+      "llm_evidence": "[ld-s0008-c00008 | page 1 | lines 85-90 | tags: duration, reauthorization | title: DURATION OF APPROVAL]",
+      "llm_reasoning": "The initial authorization duration is specified as 'up to 3 months' in the DURATION OF APPROVAL section.",
+      "dependency_context": {},
+      "retrieved_context": [
+        {
+          "chunk_id": "ld-s0002-c00002",
+          "title": "FDA INDICATIONS AND USAGE[1]",
+          "start_line": 5,
+          "end_line": 14,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "brand",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## **FDA INDICATIONS AND USAGE[1]** \n\nTremfya[®] is an interleukin-23 antagonist indicated for the treatment of adult patients with: \n\n- moderate to severe plaques psoriasis who are candidates for systemic therapy or phototherapy \n\n- • active psoriatic arthritis \n\n- moderately to severely active ulcerative colitis"
+        },
+        {
+          "chunk_id": "ld-s0003-c00003",
+          "title": "APPROVAL CRITERIA[1,2,3 ]",
+          "start_line": 15,
+          "end_line": 38,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "denial",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## **APPROVAL CRITERIA[1,2,3 ]** \n\n1. Initial Authorization Request must include: \n\n   - Monitoring plan \n\n   - Previous therapies trialed and the nature of the failure \n\n   - Complete medication regimen \n\n   - Confirmation patient is **not** receiving concurrent phototherapy \n\n   - Requested dosing which conforms to an FDA approved regimen based on indication \n\nPlaque psoriasis (PsO) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severe Ps; **AND** \n\n3. Has a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy to include at least one topical agent."
+        },
+        {
+          "chunk_id": "ld-s0008-c00008",
+          "title": "DURATION OF APPROVAL",
+          "start_line": 85,
+          "end_line": 90,
+          "page_start": 1,
+          "page_end": 1,
+          "tags": [
+            "duration",
+            "reauthorization"
+          ],
+          "text": "## **DURATION OF APPROVAL** \n\n- Initial Approval: up to 3 months \n\n- Reauthorization Approval: up to 12 months"
+        },
+        {
+          "chunk_id": "ld-s0007-c00007",
+          "title": "CAUTIONS**[1 ]",
+          "start_line": 75,
+          "end_line": 84,
+          "page_start": 1,
+          "page_end": 1,
+          "tags": [
+            "brand",
+            "drug_or_therapy",
+            "safety"
+          ],
+          "text": "## **CAUTIONS**[1 ] \n\n1. Patients should be evaluated for tuberculosis (TB) prior to initiating guselkumab. Guselkumab should not be initiated in a patient with an active TB infection. \n\n2. Patients should not receive live vaccines while being treated with guselkumab. \n\n3. Serious hypersensitivity reactions, including anaphylaxis, have been reported \n\n4. Tremfya may increase the risk of infection.  If a clinically significant infection develops while being treated with guselkumab, discontinue until the infection resolves."
+        },
+        {
+          "chunk_id": "ld-s0005-c00005",
+          "title": "DENIAL CRITERIA[1]",
+          "start_line": 59,
+          "end_line": 70,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "brand",
+            "denial",
+            "drug_or_therapy",
+            "safety"
+          ],
+          "text": "## **DENIAL CRITERIA[1]** \n\n1. Known hypersensitivity to guselkumab or any of its excipients. \n\n2. Current active severe infection. \n\n3. Concurrent therapy with another biologic agent. \n\n4. Concurrent phototherapy. \n\nTremfya[® ] Criteria Version: 1 Original: 10/10/2024 Accepted: 11/15/2024 Effective: 01/01/2025"
+        }
+      ]
+    },
+    "reauthorization_duration": {
+      "value": "12",
+      "llm_evidence": "[ld-s0008-c00008 | page 1 | lines 85-90 | tags: duration, reauthorization | title: DURATION OF APPROVAL]",
+      "llm_reasoning": "The reauthorization duration is specified as up to 12 months in the DURATION OF APPROVAL section.",
+      "dependency_context": {},
+      "retrieved_context": [
+        {
+          "chunk_id": "ld-s0002-c00002",
+          "title": "FDA INDICATIONS AND USAGE[1]",
+          "start_line": 5,
+          "end_line": 14,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "brand",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## **FDA INDICATIONS AND USAGE[1]** \n\nTremfya[®] is an interleukin-23 antagonist indicated for the treatment of adult patients with: \n\n- moderate to severe plaques psoriasis who are candidates for systemic therapy or phototherapy \n\n- • active psoriatic arthritis \n\n- moderately to severely active ulcerative colitis"
+        },
+        {
+          "chunk_id": "ld-s0003-c00003",
+          "title": "APPROVAL CRITERIA[1,2,3 ]",
+          "start_line": 15,
+          "end_line": 38,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "denial",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## **APPROVAL CRITERIA[1,2,3 ]** \n\n1. Initial Authorization Request must include: \n\n   - Monitoring plan \n\n   - Previous therapies trialed and the nature of the failure \n\n   - Complete medication regimen \n\n   - Confirmation patient is **not** receiving concurrent phototherapy \n\n   - Requested dosing which conforms to an FDA approved regimen based on indication \n\nPlaque psoriasis (PsO) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severe Ps; **AND** \n\n3. Has a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy to include at least one topical agent."
+        },
+        {
+          "chunk_id": "ld-s0008-c00008",
+          "title": "DURATION OF APPROVAL",
+          "start_line": 85,
+          "end_line": 90,
+          "page_start": 1,
+          "page_end": 1,
+          "tags": [
+            "duration",
+            "reauthorization"
+          ],
+          "text": "## **DURATION OF APPROVAL** \n\n- Initial Approval: up to 3 months \n\n- Reauthorization Approval: up to 12 months"
+        },
+        {
+          "chunk_id": "ld-s0007-c00007",
+          "title": "CAUTIONS**[1 ]",
+          "start_line": 75,
+          "end_line": 84,
+          "page_start": 1,
+          "page_end": 1,
+          "tags": [
+            "brand",
+            "drug_or_therapy",
+            "safety"
+          ],
+          "text": "## **CAUTIONS**[1 ] \n\n1. Patients should be evaluated for tuberculosis (TB) prior to initiating guselkumab. Guselkumab should not be initiated in a patient with an active TB infection. \n\n2. Patients should not receive live vaccines while being treated with guselkumab. \n\n3. Serious hypersensitivity reactions, including anaphylaxis, have been reported \n\n4. Tremfya may increase the risk of infection.  If a clinically significant infection develops while being treated with guselkumab, discontinue until the infection resolves."
+        },
+        {
+          "chunk_id": "ld-s0005-c00005",
+          "title": "DENIAL CRITERIA[1]",
+          "start_line": 59,
+          "end_line": 70,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "brand",
+            "denial",
+            "drug_or_therapy",
+            "safety"
+          ],
+          "text": "## **DENIAL CRITERIA[1]** \n\n1. Known hypersensitivity to guselkumab or any of its excipients. \n\n2. Current active severe infection. \n\n3. Concurrent therapy with another biologic agent. \n\n4. Concurrent phototherapy. \n\nTremfya[® ] Criteria Version: 1 Original: 10/10/2024 Accepted: 11/15/2024 Effective: 01/01/2025"
+        }
+      ]
+    },
+    "reauthorization_required": {
+      "value": "Yes",
+      "llm_evidence": "[ld-s0008-c00008 | page 1 | lines 85-90 | tags: duration, reauthorization | title: DURATION OF APPROVAL]",
+      "llm_reasoning": "The policy documents a reauthorization duration of up to 12 months.",
+      "dependency_context": {},
+      "retrieved_context": [
+        {
+          "chunk_id": "ld-s0002-c00002",
+          "title": "FDA INDICATIONS AND USAGE[1]",
+          "start_line": 5,
+          "end_line": 14,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "brand",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## **FDA INDICATIONS AND USAGE[1]** \n\nTremfya[®] is an interleukin-23 antagonist indicated for the treatment of adult patients with: \n\n- moderate to severe plaques psoriasis who are candidates for systemic therapy or phototherapy \n\n- • active psoriatic arthritis \n\n- moderately to severely active ulcerative colitis"
+        },
+        {
+          "chunk_id": "ld-s0003-c00003",
+          "title": "APPROVAL CRITERIA[1,2,3 ]",
+          "start_line": 15,
+          "end_line": 38,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "denial",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## **APPROVAL CRITERIA[1,2,3 ]** \n\n1. Initial Authorization Request must include: \n\n   - Monitoring plan \n\n   - Previous therapies trialed and the nature of the failure \n\n   - Complete medication regimen \n\n   - Confirmation patient is **not** receiving concurrent phototherapy \n\n   - Requested dosing which conforms to an FDA approved regimen based on indication \n\nPlaque psoriasis (PsO) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severe Ps; **AND** \n\n3. Has a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy to include at least one topical agent."
+        },
+        {
+          "chunk_id": "ld-s0008-c00008",
+          "title": "DURATION OF APPROVAL",
+          "start_line": 85,
+          "end_line": 90,
+          "page_start": 1,
+          "page_end": 1,
+          "tags": [
+            "duration",
+            "reauthorization"
+          ],
+          "text": "## **DURATION OF APPROVAL** \n\n- Initial Approval: up to 3 months \n\n- Reauthorization Approval: up to 12 months"
+        },
+        {
+          "chunk_id": "ld-s0005-c00005",
+          "title": "DENIAL CRITERIA[1]",
+          "start_line": 59,
+          "end_line": 70,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "brand",
+            "denial",
+            "drug_or_therapy",
+            "safety"
+          ],
+          "text": "## **DENIAL CRITERIA[1]** \n\n1. Known hypersensitivity to guselkumab or any of its excipients. \n\n2. Current active severe infection. \n\n3. Concurrent therapy with another biologic agent. \n\n4. Concurrent phototherapy. \n\nTremfya[® ] Criteria Version: 1 Original: 10/10/2024 Accepted: 11/15/2024 Effective: 01/01/2025"
+        },
+        {
+          "chunk_id": "ld-s0007-c00007",
+          "title": "CAUTIONS**[1 ]",
+          "start_line": 75,
+          "end_line": 84,
+          "page_start": 1,
+          "page_end": 1,
+          "tags": [
+            "brand",
+            "drug_or_therapy",
+            "safety"
+          ],
+          "text": "## **CAUTIONS**[1 ] \n\n1. Patients should be evaluated for tuberculosis (TB) prior to initiating guselkumab. Guselkumab should not be initiated in a patient with an active TB infection. \n\n2. Patients should not receive live vaccines while being treated with guselkumab. \n\n3. Serious hypersensitivity reactions, including anaphylaxis, have been reported \n\n4. Tremfya may increase the risk of infection.  If a clinically significant infection develops while being treated with guselkumab, discontinue until the infection resolves."
+        }
+      ]
+    },
+    "reauthorization_requirements": {
+      "value": "Patient meets FDA labeled age; AND Has moderate to severe Ps; AND Has a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent); AND Has tried and failed a TNF blocker and at least one other therapy to include at least one topical agent.",
+      "llm_evidence": "[ld-s0003-c00003 | page ? | lines 15-38 | tags: approval, denial, drug_or_therapy, indication, universal | title: APPROVAL CRITERIA[1,2,3 ]]",
+      "llm_reasoning": "The reauthorization requirements are documented in the APPROVAL CRITERIA section of the policy, which outlines the conditions that must be met for initial authorization and reauthorization.",
+      "dependency_context": {},
+      "retrieved_context": [
+        {
+          "chunk_id": "ld-s0002-c00002",
+          "title": "FDA INDICATIONS AND USAGE[1]",
+          "start_line": 5,
+          "end_line": 14,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "brand",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## **FDA INDICATIONS AND USAGE[1]** \n\nTremfya[®] is an interleukin-23 antagonist indicated for the treatment of adult patients with: \n\n- moderate to severe plaques psoriasis who are candidates for systemic therapy or phototherapy \n\n- • active psoriatic arthritis \n\n- moderately to severely active ulcerative colitis"
+        },
+        {
+          "chunk_id": "ld-s0003-c00003",
+          "title": "APPROVAL CRITERIA[1,2,3 ]",
+          "start_line": 15,
+          "end_line": 38,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "denial",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## **APPROVAL CRITERIA[1,2,3 ]** \n\n1. Initial Authorization Request must include: \n\n   - Monitoring plan \n\n   - Previous therapies trialed and the nature of the failure \n\n   - Complete medication regimen \n\n   - Confirmation patient is **not** receiving concurrent phototherapy \n\n   - Requested dosing which conforms to an FDA approved regimen based on indication \n\nPlaque psoriasis (PsO) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severe Ps; **AND** \n\n3. Has a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy to include at least one topical agent."
+        },
+        {
+          "chunk_id": "ld-s0008-c00008",
+          "title": "DURATION OF APPROVAL",
+          "start_line": 85,
+          "end_line": 90,
+          "page_start": 1,
+          "page_end": 1,
+          "tags": [
+            "duration",
+            "reauthorization"
+          ],
+          "text": "## **DURATION OF APPROVAL** \n\n- Initial Approval: up to 3 months \n\n- Reauthorization Approval: up to 12 months"
+        },
+        {
+          "chunk_id": "ld-s0007-c00007",
+          "title": "CAUTIONS**[1 ]",
+          "start_line": 75,
+          "end_line": 84,
+          "page_start": 1,
+          "page_end": 1,
+          "tags": [
+            "brand",
+            "drug_or_therapy",
+            "safety"
+          ],
+          "text": "## **CAUTIONS**[1 ] \n\n1. Patients should be evaluated for tuberculosis (TB) prior to initiating guselkumab. Guselkumab should not be initiated in a patient with an active TB infection. \n\n2. Patients should not receive live vaccines while being treated with guselkumab. \n\n3. Serious hypersensitivity reactions, including anaphylaxis, have been reported \n\n4. Tremfya may increase the risk of infection.  If a clinically significant infection develops while being treated with guselkumab, discontinue until the infection resolves."
+        },
+        {
+          "chunk_id": "ld-s0005-c00005",
+          "title": "DENIAL CRITERIA[1]",
+          "start_line": 59,
+          "end_line": 70,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "brand",
+            "denial",
+            "drug_or_therapy",
+            "safety"
+          ],
+          "text": "## **DENIAL CRITERIA[1]** \n\n1. Known hypersensitivity to guselkumab or any of its excipients. \n\n2. Current active severe infection. \n\n3. Concurrent therapy with another biologic agent. \n\n4. Concurrent phototherapy. \n\nTremfya[® ] Criteria Version: 1 Original: 10/10/2024 Accepted: 11/15/2024 Effective: 01/01/2025"
+        },
+        {
+          "chunk_id": "ld-s0004-c00004",
+          "title": "Psoriatic Arthritis (PsA)",
+          "start_line": 39,
+          "end_line": 58,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## Psoriatic Arthritis (PsA) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has active PsA; **AND** \n\n3. Has a Health Assessment Questionnaire-Disability Index (HAQ-DI) score ≥ 2 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy. \n\nUlcerative Colitis (UC) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severely active UC; **AND** \n\n3. Baseline Mayo score (or equivalent) has been submitted; **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy (e.g. azathioprine, cyclosporine, mesalamine, etc.)."
+        }
+      ]
+    },
+    "specialist_types": {
+      "value": "dermatologist",
+      "llm_evidence": "[ld-s0003-c00003 | page ? | lines 15-38 | tags: approval, denial, drug_or_therapy, indication, universal | title: APPROVAL CRITERIA[1,2,3 ]]",
+      "llm_reasoning": "The policy requires that the patient be prescribed by a specialist, and the only specialist mentioned is a dermatologist.",
+      "dependency_context": {},
+      "retrieved_context": [
+        {
+          "chunk_id": "ld-s0002-c00002",
+          "title": "FDA INDICATIONS AND USAGE[1]",
+          "start_line": 5,
+          "end_line": 14,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "brand",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## **FDA INDICATIONS AND USAGE[1]** \n\nTremfya[®] is an interleukin-23 antagonist indicated for the treatment of adult patients with: \n\n- moderate to severe plaques psoriasis who are candidates for systemic therapy or phototherapy \n\n- • active psoriatic arthritis \n\n- moderately to severely active ulcerative colitis"
+        },
+        {
+          "chunk_id": "ld-s0003-c00003",
+          "title": "APPROVAL CRITERIA[1,2,3 ]",
+          "start_line": 15,
+          "end_line": 38,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "denial",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## **APPROVAL CRITERIA[1,2,3 ]** \n\n1. Initial Authorization Request must include: \n\n   - Monitoring plan \n\n   - Previous therapies trialed and the nature of the failure \n\n   - Complete medication regimen \n\n   - Confirmation patient is **not** receiving concurrent phototherapy \n\n   - Requested dosing which conforms to an FDA approved regimen based on indication \n\nPlaque psoriasis (PsO) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severe Ps; **AND** \n\n3. Has a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy to include at least one topical agent."
+        },
+        {
+          "chunk_id": "ld-s0007-c00007",
+          "title": "CAUTIONS**[1 ]",
+          "start_line": 75,
+          "end_line": 84,
+          "page_start": 1,
+          "page_end": 1,
+          "tags": [
+            "brand",
+            "drug_or_therapy",
+            "safety"
+          ],
+          "text": "## **CAUTIONS**[1 ] \n\n1. Patients should be evaluated for tuberculosis (TB) prior to initiating guselkumab. Guselkumab should not be initiated in a patient with an active TB infection. \n\n2. Patients should not receive live vaccines while being treated with guselkumab. \n\n3. Serious hypersensitivity reactions, including anaphylaxis, have been reported \n\n4. Tremfya may increase the risk of infection.  If a clinically significant infection develops while being treated with guselkumab, discontinue until the infection resolves."
+        },
+        {
+          "chunk_id": "ld-s0005-c00005",
+          "title": "DENIAL CRITERIA[1]",
+          "start_line": 59,
+          "end_line": 70,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "brand",
+            "denial",
+            "drug_or_therapy",
+            "safety"
+          ],
+          "text": "## **DENIAL CRITERIA[1]** \n\n1. Known hypersensitivity to guselkumab or any of its excipients. \n\n2. Current active severe infection. \n\n3. Concurrent therapy with another biologic agent. \n\n4. Concurrent phototherapy. \n\nTremfya[® ] Criteria Version: 1 Original: 10/10/2024 Accepted: 11/15/2024 Effective: 01/01/2025"
+        },
+        {
+          "chunk_id": "ld-s0004-c00004",
+          "title": "Psoriatic Arthritis (PsA)",
+          "start_line": 39,
+          "end_line": 58,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## Psoriatic Arthritis (PsA) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has active PsA; **AND** \n\n3. Has a Health Assessment Questionnaire-Disability Index (HAQ-DI) score ≥ 2 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy. \n\nUlcerative Colitis (UC) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severely active UC; **AND** \n\n3. Baseline Mayo score (or equivalent) has been submitted; **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy (e.g. azathioprine, cyclosporine, mesalamine, etc.)."
+        }
+      ]
+    },
+    "quantity_limits": {
+      "value": "NA",
+      "llm_evidence": "[ld-s0003-c00003 | page ? | lines 15-38 | tags: approval, denial, drug_or_therapy, indication, universal | title: APPROVAL CRITERIA[1,2,3 ]] 1. Requested dosing which conforms to an FDA approved regimen based on indication Plaque psoriasis (PsO) 1. Patient meets FDA labeled age; **AND** 2. Has moderate to severe Ps; **AND** 3. Has a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent); **AND** 4. Has tried and failed a TNF blocker and at least one other therapy to include at least one topical agent.",
+      "llm_reasoning": "The policy does not explicitly state a quantity limit for the target brand and PsO/Psoriasis.",
+      "dependency_context": {},
+      "retrieved_context": [
+        {
+          "chunk_id": "ld-s0002-c00002",
+          "title": "FDA INDICATIONS AND USAGE[1]",
+          "start_line": 5,
+          "end_line": 14,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "brand",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## **FDA INDICATIONS AND USAGE[1]** \n\nTremfya[®] is an interleukin-23 antagonist indicated for the treatment of adult patients with: \n\n- moderate to severe plaques psoriasis who are candidates for systemic therapy or phototherapy \n\n- • active psoriatic arthritis \n\n- moderately to severely active ulcerative colitis"
+        },
+        {
+          "chunk_id": "ld-s0003-c00003",
+          "title": "APPROVAL CRITERIA[1,2,3 ]",
+          "start_line": 15,
+          "end_line": 38,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "denial",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## **APPROVAL CRITERIA[1,2,3 ]** \n\n1. Initial Authorization Request must include: \n\n   - Monitoring plan \n\n   - Previous therapies trialed and the nature of the failure \n\n   - Complete medication regimen \n\n   - Confirmation patient is **not** receiving concurrent phototherapy \n\n   - Requested dosing which conforms to an FDA approved regimen based on indication \n\nPlaque psoriasis (PsO) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severe Ps; **AND** \n\n3. Has a Psoriasis Area and Severity Index (PASI) score ≥ 12 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy to include at least one topical agent."
+        },
+        {
+          "chunk_id": "ld-s0007-c00007",
+          "title": "CAUTIONS**[1 ]",
+          "start_line": 75,
+          "end_line": 84,
+          "page_start": 1,
+          "page_end": 1,
+          "tags": [
+            "brand",
+            "drug_or_therapy",
+            "safety"
+          ],
+          "text": "## **CAUTIONS**[1 ] \n\n1. Patients should be evaluated for tuberculosis (TB) prior to initiating guselkumab. Guselkumab should not be initiated in a patient with an active TB infection. \n\n2. Patients should not receive live vaccines while being treated with guselkumab. \n\n3. Serious hypersensitivity reactions, including anaphylaxis, have been reported \n\n4. Tremfya may increase the risk of infection.  If a clinically significant infection develops while being treated with guselkumab, discontinue until the infection resolves."
+        },
+        {
+          "chunk_id": "ld-s0005-c00005",
+          "title": "DENIAL CRITERIA[1]",
+          "start_line": 59,
+          "end_line": 70,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "brand",
+            "denial",
+            "drug_or_therapy",
+            "safety"
+          ],
+          "text": "## **DENIAL CRITERIA[1]** \n\n1. Known hypersensitivity to guselkumab or any of its excipients. \n\n2. Current active severe infection. \n\n3. Concurrent therapy with another biologic agent. \n\n4. Concurrent phototherapy. \n\nTremfya[® ] Criteria Version: 1 Original: 10/10/2024 Accepted: 11/15/2024 Effective: 01/01/2025"
+        },
+        {
+          "chunk_id": "ld-s0004-c00004",
+          "title": "Psoriatic Arthritis (PsA)",
+          "start_line": 39,
+          "end_line": 58,
+          "page_start": null,
+          "page_end": null,
+          "tags": [
+            "approval",
+            "drug_or_therapy",
+            "indication",
+            "universal"
+          ],
+          "text": "## Psoriatic Arthritis (PsA) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has active PsA; **AND** \n\n3. Has a Health Assessment Questionnaire-Disability Index (HAQ-DI) score ≥ 2 (or equivalent); **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy. \n\nUlcerative Colitis (UC) \n\n1. Patient meets FDA labeled age; **AND** \n\n2. Has moderate to severely active UC; **AND** \n\n3. Baseline Mayo score (or equivalent) has been submitted; **AND** \n\n4. Has tried and failed a TNF blocker and at least one other therapy (e.g. azathioprine, cyclosporine, mesalamine, etc.)."
+        }
+      ]
+    },
+    "_vocabulary": {
+      "brand_aliases": {
+        "TREMFYA": [
+          "TREMFYA",
+          "guselkumab"
+        ]
+      },
+      "drug_terms": [
+        "phototherapy",
+        "cyclosporine",
+        "topical agent",
+        "TNF blocker",
+        "systemic therapy",
+        "biologic",
+        "guselkumab"
+      ],
+      "indication_terms": [
+        "Plaque psoriasis",
+        "PsO",
+        "psoriasis",
+        "Psoriatic Arthritis",
+        "Ulcerative Colitis"
+      ],
+      "universal_markers": [
+        "candidates for systemic therapy or phototherapy",
+        "moderate to severe plaques psoriasis",
+        "active psoriatic arthritis",
+        "moderately to severely active ulcerative colitis",
+        "TNF blocker and at least one other therapy",
+        "FDA labeled age",
+        "tried and failed a TNF blocker and at least one other therapy"
+      ]
+    }
+  }
+}
