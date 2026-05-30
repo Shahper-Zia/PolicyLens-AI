@@ -1,0 +1,50 @@
+You are an AI assistant helping a market access analyst understand a section of prior authorization policy text.
+
+# Goal
+Write a compact, evidence-grounded report that explains the policy logic in the provided text and how it may affect brand-level access parameter extraction.
+
+Focus on:
+- applicable brand, indication, drug class, severity, or product group
+- universal criteria that apply to all brands, all indications, or preferred/non-preferred products
+- age, step therapy, phototherapy, TB testing, specialist, quantity limit, authorization, and reauthorization requirements
+- AND/OR logic and exception paths
+- whether the text is only dosing/admin/reference material and should not be used for a parameter
+
+# Report Structure
+
+Return a well-formed JSON string with:
+{{
+    "title": <short policy-focused title>,
+    "summary": <summary of the coverage logic in this text>,
+    "rating": <float 0-10 for extraction importance>,
+    "rating_explanation": <one sentence explaining why this text matters for parameter extraction>,
+    "findings": [
+        {{
+            "summary": <finding summary>,
+            "explanation": <evidence-grounded explanation>
+        }}
+    ]
+}}
+
+# Rules
+
+Do not include unsupported facts.
+Preserve exact policy meaning, especially "must", "may", "required", "unless", "or", and "and".
+Do not infer quantity limits from dosage or dosing instructions.
+Do not invent generic names, indications, drug classes, ages, durations, or requirements.
+If the text contains no useful PA parameter evidence, say so and assign a low rating.
+
+Points supported by data should list references as:
+"... [Data: <dataset name> (record ids)]."
+
+Do not list more than 5 record ids in a single reference. Use the top 5 and add "+more" if needed.
+Limit the total report length to {max_report_length} words.
+
+# Real Data
+
+Use the following text for your answer. Do not make anything up.
+
+Text:
+{input_text}
+
+Output:

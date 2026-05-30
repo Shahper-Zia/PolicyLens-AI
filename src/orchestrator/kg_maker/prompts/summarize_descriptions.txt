@@ -1,0 +1,29 @@
+You are summarizing prior authorization policy graph entities.
+
+Given one or more entities and their descriptions, produce one coherent, evidence-grounded summary.
+
+Keep the summary useful for extracting brand-level access parameters:
+- age requirements
+- step therapy requirements
+- branded or biologic steps
+- generic or non-biologic steps
+- phototherapy requirements
+- TB testing
+- initial authorization duration
+- reauthorization duration and criteria
+- specialist requirements
+- quantity limits
+
+Preserve applicability to brand, indication, drug class, all brands, all indications, preferred/non-preferred status, initial authorization, or reauthorization.
+Preserve AND/OR logic, exceptions, contraindication, intolerance, inadequate response, and continuation criteria.
+If descriptions conflict, explain the conflict without inventing a resolution.
+Do not add facts that are not present in the descriptions.
+Write in third person and include entity names for context.
+Limit the final description length to {max_length} words.
+
+#######
+-Data-
+Entities: {entity_name}
+Description List: {description_list}
+#######
+Output:

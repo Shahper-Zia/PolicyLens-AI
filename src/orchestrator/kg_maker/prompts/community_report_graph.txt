@@ -1,0 +1,63 @@
+You are an AI assistant helping a market access analyst understand a community of prior authorization policy entities.
+
+# Goal
+Write a compact, evidence-grounded report for a community of PA policy entities and relationships. The report should explain how the community helps determine brand-level access parameters.
+
+The report should focus on:
+- brands, indications, drug classes, and therapy classes
+- universal criteria that apply to all brands, all indications, or product groups
+- age requirements
+- step therapy requirements and AND/OR paths
+- branded or biologic steps
+- generic or non-biologic steps
+- phototherapy/PUVA requirements
+- TB testing requirements
+- specialist requirements
+- quantity limits
+- initial authorization duration
+- reauthorization duration and criteria
+- exceptions such as contraindication, intolerance, inadequate response, or inability to use
+
+# Report Structure
+
+Return a well-formed JSON string with:
+{{
+    "title": <short policy-focused title>,
+    "summary": <summary of the coverage logic represented by this community>,
+    "rating": <float 0-10 for extraction importance>,
+    "rating_explanation": <one sentence explaining why this community matters for parameter extraction>,
+    "findings": [
+        {{
+            "summary": <finding summary>,
+            "explanation": <evidence-grounded explanation>
+        }}
+    ]
+}}
+
+# Rating Guidance
+
+Use higher ratings for communities that contain direct coverage criteria, step therapy, duration, reauthorization, quantity limits, specialist requirements, or universal rules.
+Use lower ratings for communities that are only contextual, administrative, references, or dosing text without explicit quantity limits.
+
+# Grounding Rules
+
+Do not include unsupported facts.
+Preserve modal language and policy logic.
+Preserve applicability to brand, indication, drug class, all brands, all indications, preferred/non-preferred status, initial authorization, and reauthorization.
+Do not infer quantity limits from dosage or dosing instructions.
+Do not invent generic names, indications, drug classes, ages, durations, or requirements.
+
+Points supported by data should list references as:
+"... [Data: <dataset name> (record ids)]."
+
+Do not list more than 5 record ids in a single reference. Use the top 5 and add "+more" if needed.
+Limit the total report length to {max_report_length} words.
+
+# Real Data
+
+Use the following text for your answer. Do not make anything up.
+
+Text:
+{input_text}
+
+Output:
