@@ -14,7 +14,7 @@ LARGE_DOC_OUTPUT_DIR = PROJECT_ROOT / "outputs" / "large_doc_extractor"
 SCORING_FRAMEWORK_PATH = Path(__file__).with_name("access_score_scoring_framework.md")
 
 
-def calculate_access_score(file_name: str, brand: str) -> Dict[str, Any]:
+def calculate_access_score(file_name: str, brand: str) -> Dict[str, Any]: # type: ignore
     file_brand_key = f"{Path(str(file_name)).stem}_{brand}".lower()
     output_file = find_large_doc_output(file_name, brand)
 
@@ -108,3 +108,4 @@ def _normalize_score(value: Any) -> int:
         value = match.group(0)
 
     return max(0, min(100, round(float(value))))
+
